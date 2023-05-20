@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.0.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.att.lms.lim</groupId>
+    <artifactId>lim-bis-rest</artifactId>
+    <version>1.0.97</version>
+
+    <name>LmsLimBisRest</name>
+    <description>LIM BIS Rest Service</description>
+
+    <properties>
+        <!--<tomcat.version>7.0.56</tomcat.version>-->
+        <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+        <swagger.directory>${basedir}/target/classes/META-INF/resources/swagger</swagger.directory>
+        <java.version>1.8</java.version>
+        <docker.registry>dockercentral.it.att.com:5100</docker.registry>
+        <assembly.id>distribution</assembly.id>
+        <build.number>local</build.number>
+        <kube.namespace>com-att-aiops-networkhealth-trma</kube.namespace>
+        <name.space>com.att.aiops.networkhealth.trma</name.space>     <!-- <name.space>${namespace}</name.space> -->
+        <grm.namespace>com.att.aiops.networkhealth.trma</grm.namespace>
+        <serviceArtifactName>casetodecisionengineservice</serviceArtifactName>
+
+        <!-- Sonar -->
+        <sonar.java.source>1.8</sonar.java.source>
+        <sonar.att.view.type>release</sonar.att.view.type>
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.surefire.reportsPath>${basedir}/target/surefire-reports</sonar.surefire.reportsPath>
+        <sonar.failsafe.reportsPath>${basedir}/target/failsafe-reports</sonar.failsafe.reportsPath>
+        <jacoco.path>${basedir}/target/jacoco_report</jacoco.path>
+        <jacoco.itPath>${basedir}/target/jacoco_itReport</jacoco.itPath>
+        <sonar.jacoco.reportPath>${basedir}/target/jacoco-ut.exec</sonar.jacoco.reportPath>
+        <sonar.jacoco.itReportPath>${basedir}/target/jacoco-it.exec</sonar.jacoco.itReportPath>
+        <sonar.language>java</sonar.language>
+        <ilib.version>2.0.20</ilib.version>
+        <hfrapm.agent.version>0.13.1-28</hfrapm.agent.version> <!-- 0.13.1-13g -->
+
+        <prometheus.java.agent.version>2.0.2</prometheus.java.agent.version>
+
+        <!-- BEGIN Custom Properties for CaseToDecisionEngineService -->
+
+        <srcCodeDir>src/main/java</srcCodeDir>
+        <testCodeDir>src/test/java</testCodeDir>
+        <aiopsPackage>com/att/aiops</aiopsPackage>
+        <aiopsPackageDir>${srcCodeDir}/${aiopsPackage}</aiopsPackageDir>
+
+        <!-- Denroy's Additions -->
+        <junit.jupiter.version>5.7.0-M1</junit.jupiter.version>
+        <junit.vintage.version>5.7.0-M1</junit.vintage.version>
+        <junit.platform.version>3.0.0-M3</junit.platform.version>
+        <junit.platform.surefire.provider.version>1.3.2</junit.platform.surefire.provider.version>
+        <failsafe.plugin.version>3.0.0-M4</failsafe.plugin.version>
+
+        <!-- Checkstyle -->
+        <checkstyle.version>3.1.0</checkstyle.version>
+        <checkstyle.rules>google_checks.xml</checkstyle.rules>
+        <springboot.version>2.3.0.RELEASE</springboot.version>
+        <springboot.starter.test>2.3.0.RELEASE</springboot.starter.test>
+        <spring.version>5.2.6.RELEASE</spring.version>
+
+        <vavr.version>0.10.3</vavr.version>
+        <vavr.jackson.version>0.10.0</vavr.jackson.version>
+
+        <apache.commons.version>3.10</apache.commons.version>
+        <mockito.core.version>3.3.3</mockito.core.version>
+        <wiremock.jre8.version>2.22.0</wiremock.jre8.version>
+        <wiremock.webhooks.extension.version>1.0.0</wiremock.webhooks.extension.version>
+
+        <arrays.override.version>1.0</arrays.override.version>
+        <common.rest.version>1.1.4</common.rest.version>
+
+        <!-- First, we have to add two properties to the properties section of
+            our POM file: The skip.unit.tests property is true if Maven should skip our
+            unit tests. Because only unit tests are run by default, the default value
+            of this property must be false. The skip.integration.tests property is true
+            if Maven should skip our integration tests. The default value of this property
+            must be true. -->
+        <skip.unit.tests>true</skip.unit.tests>
+
+        <!-- First, we have to rename the skip.integration.tests property to skip.failsafe.plugin.
+            The reason for this is that the old name doesn’t really describe the purpose
+            of the property because the Maven Failsafe plugin runs both integration and
+            end-to-end tests. -->
+        <skip.failsafe.plugin>true</skip.failsafe.plugin>
+
+    </properties>
+
+    <profiles>
+
+        <profile>
+            <id>all-tests</id>
+            <properties>
+                <build.profile.id>all-tests</build.profile.id>
+                <!-- All tests are run. -->
+                <skip.integration.tests>true</skip.integration.tests>
+                <skip.unit.tests>false</skip.unit.tests>
+            </properties>
+        </profile>
+
+        <!-- Second, we have to create the required Maven profiles by following
+            these steps: We have to create a profile called: dev and ensure that this
+            profile is active by default. We have to create a profile called: integration-test
+            and ensure that Maven runs only our integration tests when this profile is
+            active. -->
+
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+        </profile>
+
+        <profile>
+            <id>integration-test</id>
+            <properties>
+                <!--Third, we have to add the junit.category configuration property to
+                    the configuration of the integration-test profile. This ensures that the
+                    Maven Failsafe plugin runs the test methods that belong to the IntegrationTest
+                    category when we run our integration tests. After we have added this configuration
+                    property to configuration of the integration-test profile, the profiles section
+                    of our POM file looks as follows: -->
+                <junit.category>com.att.aiops.opxtestrunner.common.test.IntegrationTest</junit.category>
+                <!-- Configuring Our Maven Profiles As we remember, we can run our integration
+                    tests by using the Maven Failsafe plugin. Because we will also run our end-to-end
+                    tests by using the same plugin, we have to make the following changes to
+                    the configuration of our Maven profiles: First, we have to rename the skip.integration.tests
+                    property to skip.failsafe.plugin. The reason for this is that the old name
+                    doesn’t really describe the purpose of the property because the Maven Failsafe
+                    plugin runs both integration and end-to-end tests. After we have renamed
+                    this property, the profiles section of our pom.xml file looks as follows: -->
+                <skip.failsafe.plugin>false</skip.failsafe.plugin>
+            </properties>
+        </profile>
+
+        <!-- Second, we have to create a new Maven profile called: end-to-end-test.
+            This profile ensures that only end-to-end tests are run when the end-to-end-test
+            profile is used. Also, because the Maven Failsafe plugin runs both integration
+            and end-to-end tests, we have to create a new configuration property called:
+            junit.category which configures the category of the test methods (com.testwithspring.intermediate.EndToEndTest)
+            that are run when the end-to-end-test profile is used. After we have created
+            this Maven profile, the profiles section of our POM file looks as follows: -->
+        <profile>
+            <id>e2e-test</id>
+            <properties>
+                <junit.category>com.att.aiops.opxtestrunner.common.test.EndToEndTest</junit.category>
+                <skip.failsafe.plugin>false</skip.failsafe.plugin>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>unit-test</id>
+            <properties>
+                <!-- Used to locate the profile specific configuration file. -->
+                <build.profile.id>unit-test</build.profile.id>
+                <!-- Only unit tests are run. -->
+                <skip.integration.tests>true</skip.integration.tests>
+                <skip.unit.tests>false</skip.unit.tests>
+            </properties>
+        </profile>
+
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.att.lms.rest</groupId>
+            <artifactId>lms-common-rest</artifactId>
+            <version>${common.rest.version}</version>
+        </dependency>
+
+        <!--Rest API Support-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${springboot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${springboot.starter.test}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.mockito</groupId>
+                    <artifactId>mockito-core</artifactId>
+                </exclusion>
+                <!--
+                Fixes this problem:Found multiple occurrences of org.json.JSONObject on the class path
+                -->
+                <exclusion>
+                    <groupId>com.vaadin.external.google</groupId>
+                    <artifactId>android-json</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
+            <!--<exclusions>-->
+            <!--<exclusion>-->
+            <!--<groupId>com.jayway.jsonpath</groupId>-->
+            <!--<artifactId>json-path</artifactId>-->
+            <!--</exclusion>-->
+            <!--</exclusions>-->
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+            <version>${lombok.version}</version>
+        </dependency>
+
+        <!-- VAVR-related -->
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>${vavr.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr-match</artifactId>
+            <version>${vavr.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr-test</artifactId>
+            <version>${vavr.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--CADI AAF Dependencies !! -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.2.4.Final</version>
+        </dependency>
+
+        <!-- modified from version 4.5.3 to version 4.5.12 to be compatible with io.micrometer 1.5.2 -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.12</version>
+        </dependency>
+
+        <!-- Rest Assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+        </dependency>
+
+        <!-- JUnit 5 / Junit 4 mixture - dependencies -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>  <!--Only necessary for surefire to run spock tests during the maven build -->
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <version>${junit.vintage.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>1.5.0-M1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.core.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.16.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Wiremock Librariews-->
+        <dependency>
+            <groupId>com.github.tomakehurst</groupId>
+            <artifactId>wiremock-jre8</artifactId>
+            <version>${wiremock.jre8.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- LIM dependencies -->
+        <dependency>
+            <groupId>org.springframework.restdocs</groupId>
+            <artifactId>spring-restdocs-restassured</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.bis</groupId>
+            <artifactId>lms-lim-idl_exception_types</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sbc</groupId>
+            <artifactId>sbcl</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- lms-lim_dto -->
+        <dependency>
+            <groupId>com.att.lms.bis.dto</groupId>
+            <artifactId>lms-lim_dto</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- lms-sm_dto -->
+        <dependency>
+            <groupId>com.att.lms.bis.dto</groupId>
+            <artifactId>lms-sm_dto</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- idl-common_types -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl-internal-common_types</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.att.lms.bis</groupId>
+            <artifactId>att-lms-response-handler</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- idl-ais_types -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl-ais_types</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- idl-bim_types -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl-bim_types</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- idl-bimx_types -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl-bimx_types</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- lms-bimx_dto -->
+        <dependency>
+            <groupId>com.att.lms.bis.dto</groupId>
+            <artifactId>lms-bimx_dto</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- idl-lim_types -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl-lim_types</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+
+        <!-- idl-nam_types -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl-nam_types</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- idl-rm_types -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl-rm_types</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- idl-pm_types -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl-pm_types</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+
+        <!-- idl-sm_types -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl-sm_types</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.att.bcf</groupId>
+            <artifactId>bcf</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- LIM dependencies -->
+        <dependency>
+            <groupId>org.springframework.restdocs</groupId>
+            <artifactId>spring-restdocs-restassured</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.att.bcf</groupId>
+            <artifactId>bcf</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att</groupId>
+            <artifactId>AFTCentrifuge1.1r20100301</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att.aft.jms</groupId>
+            <artifactId>AFTCtxFactory_1.6r20100426</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att.aft.discovery</groupId>
+            <artifactId>AFTDiscoveryClient5_2.7r20091218</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.emory.mathcs.backport</groupId>
+            <artifactId>backport-util-concurrent</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.omg</groupId>
+            <artifactId>bcam_client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.eia.bis</groupId>
+            <artifactId>bcam_jaxb</artifactId>
+            <version>1.0</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.omg</groupId>-->
+<!--            <artifactId>bimx-client</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
+		<dependency>
+		  <groupId>com.bellsouth.cbs.order.ws</groupId>
+		  <artifactId>CbsOrderValidateAddressV7-1</artifactId>
+		  <version>1.0</version>
+		</dependency>
+        <dependency>
+            <groupId>com.sbc.eia.bis</groupId>
+            <artifactId>facsrc</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>gnu.regexp</groupId>
+            <artifactId>gnu-regexp</artifactId>
+            <version>1.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.embus</groupId>
+            <artifactId>jmsops</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.eia.bis</groupId>
+            <artifactId>lim-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sonicsw</groupId>
+            <artifactId>mfcontext</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.sql</groupId>
+            <artifactId>odbd</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.eia.bis</groupId>
+            <artifactId>ovalsNSP</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.eia.bis</groupId>
+            <artifactId>ovalsUSPS</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sonicsw.net.http</groupId>
+            <artifactId>smq_HTTP</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>vaxblite</groupId>
+            <artifactId>vaxblite_wsdlxsd_bundle</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache</groupId>-->
+        <!--            <artifactId>xercesImpl</artifactId>-->
+        <!--            <version>1.0</version>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.eia.bis</groupId>
+            <artifactId>atlas_jaxb_generated</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att.bcf</groupId>
+            <artifactId>bcf</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att.first.thirdparty</groupId>
+            <artifactId>lms-catalyst</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.java.util</groupId>
+            <artifactId>collections</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sbc.mif.layer</groupId>
+            <artifactId>LayerFramework</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sbc.mif</groupId>
+            <artifactId>LayerFrameworkMIF</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sbc.mif</groupId>
+            <artifactId>LayerFrameworkMIF</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+ <!--       <dependency>
+            <groupId>com.ibm.jaxws</groupId>
+            <artifactId>lms-com.ibm.jaxws.thinclient_</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.ws.webservices</groupId>
+            <artifactId>lms-com.ibm.ws.webservices.thinclient_</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+-->
+		<dependency>
+		    <groupId>org.apache.axis2</groupId>
+		    <artifactId>axis2-adb</artifactId>
+		    <version>1.8.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.axis2</groupId>
+		    <artifactId>axis2-saaj</artifactId>
+		    <version>1.8.2</version>
+		</dependency> 		
+		<dependency>
+		    <groupId>com.sun.xml.bind</groupId>
+		    <artifactId>jaxb-impl</artifactId>
+		    <version>3.0.2</version>
+		</dependency>
+        <dependency>
+            <groupId>javax.ejb</groupId>
+            <artifactId>ejb3exceptions</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.embus</groupId>
+            <artifactId>embusClient</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.embus</groupId>
+            <artifactId>embusCommon</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl_exception_types</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.hamcrest</groupId>-->
+        <!--            <artifactId>hamcrest-all</artifactId>-->
+        <!--            <version>1.3</version>-->
+        <!--        </dependency>-->
+        <!-- END LIM dependencies -->
+        <dependency>
+            <groupId>com.sbc.eia</groupId>
+            <artifactId>idl_exception_types</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.annotation</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.13.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.namespace</groupId>
+            <artifactId>jax-qname</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jaxen</groupId>
+            <artifactId>jaxen-core</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jaxen.jdom</groupId>
+            <artifactId>jaxen-jdom</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>jndi</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jndi</groupId>
+            <artifactId>ldap</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml</groupId>
+            <artifactId>namespace</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc</groupId>
+            <artifactId>ovals</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jndi</groupId>
+            <artifactId>providerutil</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.relaxng.datatype</groupId>
+            <artifactId>relaxngDatatype</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc</groupId>
+            <artifactId>sbcl</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>progress.message.jimpl.aspi</groupId>
+            <artifactId>sonic_ASPI</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>progress.message</groupId>
+            <artifactId>sonic_Channel</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sonicsw</groupId>
+            <artifactId>sonic_Client</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>progress.message</groupId>
+            <artifactId>sonic_Crypto</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>progress.message</groupId>
+            <artifactId>sonic_SF</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sonicsw.security.ssl</groupId>
+            <artifactId>sonic_SSL</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att.sbcss.lib</groupId>
+            <artifactId>sonic_XA</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>progress.message.jimpl.xmessage</groupId>
+            <artifactId>sonic_XMessage</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc</groupId>
+            <artifactId>vaxblite</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.bis.sm</groupId>
+            <artifactId>vaxblite_bundle</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.vicunalite.api</groupId>
+            <artifactId>vicunalite</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.vicunalite.api</groupId>
+            <artifactId>vicunalite11Support</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.12.2</version>
+        </dependency>
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <version>1.4.01</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>xsdlib</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jndi</groupId>
+            <artifactId>fscontext</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.msv</groupId>
+            <artifactId>jaxb-libs</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit</groupId>
+            <artifactId>junit-</artifactId>
+            <version>4.11</version>
+        </dependency>
+        <dependency>
+            <groupId>gnu.regexp</groupId>
+            <artifactId>regexp</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.j2ee</groupId>
+            <artifactId>j2ee</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.saxpath</groupId>
+            <artifactId>saxpath</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>progress.message.jimpl</groupId>
+            <artifactId>sonic_Selector</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sonicsw</groupId>
+            <artifactId>sonic_mgmt_client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>xmlParserAPIs</groupId>
+            <artifactId>xmlParserAPIs</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer.hikari</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>3.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.slf4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.slf4j</groupId>
+            <artifactId>log4j-to-slf4j</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.30</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att.amnq</groupId>
+            <artifactId>amnq-client</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ncr.teradata</groupId>
+            <artifactId>terajdbc4</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.voltage.securedata</groupId>
+            <artifactId>vibesimplejava</artifactId>
+            <version>6.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att</groupId>
+            <artifactId>voltageEnabler</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm</groupId>
+            <artifactId>jcc</artifactId>
+            <version>11.5.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.db2.jcc</groupId>
+            <artifactId>db2jcc</artifactId>
+            <version>db2jcc4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.ws</groupId>
+            <artifactId>lms-com.ibm.ws.ejb.thinclient_</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.ws</groupId>
+            <artifactId>com.ibm.ws.orb_</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm</groupId>
+            <artifactId>com.ibm.mq</artifactId>
+            <version>6.0.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm</groupId>
+            <artifactId>com.ibm.mq.allclient</artifactId>
+            <version>9.1.5.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm</groupId>
+            <artifactId>com.ibm.mqjms</artifactId>
+            <version>6.0.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.ws.jpa</groupId>
+            <artifactId>com.ibm.ws.jpa.thinclient_</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.ws</groupId>
+            <artifactId>com.ibm.ws.messagingClient</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att.aft</groupId>
+            <artifactId>ctx-factory</artifactId>
+            <version>1.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.disthub2</groupId>
+            <artifactId>dhbcore</artifactId>
+            <version>6.0.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att</groupId>
+            <artifactId>dme</artifactId>
+            <version>1.2.20</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>jms</artifactId>
+            <version>6.0.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc</groupId>
+            <artifactId>soa_midlet</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+             <dependency>
+            <groupId>org.osjava</groupId>
+            <artifactId>simple-jndi</artifactId>
+            <version>0.23.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss</groupId>
+            <artifactId>jboss-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-client-all</artifactId>
+            <version>21.0.2.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sbc.billing</groupId>
+            <artifactId>eBDM</artifactId>
+            <version>10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.att.bds</groupId>
+            <artifactId>BCAM</artifactId>
+            <version>2204.0.0506221931</version>
+        </dependency>
+        <!-- END LIM dependencies -->
+
+        <dependency>
+            <groupId>com.att.lms</groupId>
+            <artifactId>eda-producer-consumer-jar-with-dependencies</artifactId>
+            <classifier></classifier>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.kafka</groupId>
+                    <artifactId>kafka_2.11</artifactId>
+                </exclusion>
+            </exclusions>
+            <version>1.0.20</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.att.lms.rest</groupId>
+            <artifactId>lms-rc-rest</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+
+        <resources>
+            <resource>
+                <!--config and resource files-->
+                <directory>${basedir}/etc</directory>
+                <targetPath>${basedir}/target/etc</targetPath>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+            <resource>
+                <!--config and resource files-->
+                <directory>${basedir}/src/main/resources</directory>
+                <targetPath>${basedir}/target/src/main/resources</targetPath>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/docker</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <!-- <resource>
+                 <directory>src/main/kubernetes</directory>
+                 <includes>
+                     <include>**/*</include>
+                 </includes>
+                 <filtering>true</filtering>
+             </resource>
+             -->
+        </resources>
+
+        <plugins>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <filters>
+                                <filter>
+                                    <artifact>jdom:jdom</artifact>
+                                    <excludes>
+                                        <exclude>org/jdom/input/DOMBuilder.class</exclude>
+                                    </excludes>
+                                </filter>
+                               &lt;!&ndash; <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/*.SF</exclude>
+                                        <exclude>META-INF/*.DSA</exclude>
+                                        <exclude>META-INF/*.RSA</exclude>
+                                    </excludes>
+                                </filter>&ndash;&gt;
+                            </filters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.5.201505241946</version>
+                <executions>
+                    <!-- Prepares the property pointing to the JaCoCo runtime agent which
+                        is passed as VM argument when Maven the Surefire plugin is executed. -->
+                    <execution>
+                        <id>pre-unit-test</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Sets the path to the file which contains the execution data. -->
+                            <destFile>${sonar.jacoco.reportPath}</destFile>
+                            <propertyName>surefireArgLine</propertyName>
+                        </configuration>
+                    </execution>
+                    <!-- Ensures that the code coverage report for unit tests is created
+                        after unit tests have been run. -->
+                    <execution>
+                        <id>post-unit-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Sets the path to the file which contains the execution data. -->
+                            <dataFile>${sonar.jacoco.reportPath}</dataFile>
+                            <!-- Sets the output directory for the code coverage report. -->
+                            <outputDirectory>${jacoco.path}</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <!-- Ensures that Automated Unit tests adhere to code coverage expectations -->
+                    <execution>
+                        <id>unit-test-check</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <haltOnFailure>true</haltOnFailure>
+                            <dataFile>${jacoco.unit.out.exec}</dataFile>
+                            <rules>
+                                <rule>
+                                    <element>BUNDLE</element>
+                                    <limits>
+                                        <limit>
+                                            <counter>INSTRUCTION</counter>
+                                            <value>COVEREDRATIO</value>
+                                            <minimum>0.42</minimum>
+                                        </limit>
+                                        <limit>
+                                            <counter>CLASS</counter>
+                                            <value>MISSEDCOUNT</value>
+                                            <maximum>10</maximum>
+                                        </limit>
+                                    </limits>
+                                </rule>
+                            </rules>
+                        </configuration>
+                    </execution>
+                    <!-- Prepares the property pointing to the JaCoCo runtime agent which
+                        is passed as VM argument when Maven the Failsafe plugin is executed. -->
+                    <execution>
+                        <id>pre-integration-test</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Sets the path to the file which contains the execution data. -->
+                            <destFile>${sonar.jacoco.itReportPath}</destFile>
+                            <!-- Sets the name of the property containing the settings for JaCoCo
+                                runtime agent. -->
+                            <propertyName>failsafeArgLine</propertyName>
+                        </configuration>
+                    </execution>
+                    <!-- Ensures that the code coverage report for integration tests after
+                        integration tests have been run. -->
+                    <execution>
+                        <id>post-integration-test</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <!-- Sets the path to the file which contains the execution data. -->
+                            <dataFile>${sonar.jacoco.itReportPath}/</dataFile>
+                            <!-- Sets the output directory for the code coverage report. -->
+                            <outputDirectory>${jacoco.itPath}</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Used for unit tests -->
+
+            <!-- Custom Plugin for CaseToDecisionEngineService - Replaced Original -->
+            <!-- Configuring Maven to Skip Our Unit Tests The Maven Surefire Plugin
+              doesn’t run unit tests when the value of its skipTests configuration option
+              is true. Because we want to run our unit tests only when the dev profile
+              is active, we have to configure Maven to read the value of this configuration
+              option from the value of the skip.unit.tests property. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${junit.platform.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.junit.jupiter</groupId>
+                        <artifactId>junit-jupiter-engine</artifactId>
+                        <version>${junit.jupiter.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.junit.vintage</groupId>
+                        <artifactId>junit-vintage-engine</artifactId>
+                        <version>${junit.jupiter.version}</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <argLine>-Xmx10g -noverify
+                        -Dsqlite4java.library.path=${basedir}/target/dependencies
+                    </argLine>
+                    <includes>
+                        <include>**/*Test</include>
+                    </includes>
+                    <skipTests>${skip.unit.tests}</skipTests>
+                </configuration>
+            </plugin>
+
+            <!-- Used for integration tests -->
+            <!-- Custom Plugin for CaseToDecisionEngineService - Replaced Original -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.2</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.junit.jupiter</groupId>
+                        <artifactId>junit-jupiter-engine</artifactId>
+                        <version>${junit.jupiter.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.junit.vintage</groupId>
+                        <artifactId>junit-vintage-engine</artifactId>
+                        <version>${junit.jupiter.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>integration-tests</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <!--<goal>verify</goal>-->
+                        </goals>
+                        <configuration>
+                            <argLine>-Dsqlite4java.library.path=${basedir}/target/dependencies</argLine>
+                            <!--Configuring the Maven Failsafe Plugin As I already mentioned,
+                                we will run both integration and end-to-end tests by using the Maven Failsafe
+                                plugin. That is why we have to make the following changes to its configuration:
+                                Ensure that the value of the junit.category property specifies the category
+                                of the invoked test methods. Ensure that the Maven Failsafe plugin doesn’t
+                                run any test methods if the value of the skip.failsafe.plugin property is
+                                true. After we made the required changes to the configuration of the Maven
+                                Failsafe plugin, its configuration looks as follows: -->
+                            <!--groups>${junit.category}</groups>-->
+                            <skipTests>${skip.failsafe.plugin}</skipTests>
+                            <includes>
+                                <include>**/*IT</include>
+                                <include>**/*E2E</include>
+                            </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.github.kongchen</groupId>
+                <artifactId>swagger-maven-plugin</artifactId>
+                <version>3.1.7</version>
+                <configuration>
+                    <apiSources>
+                        <apiSource>
+                            <!--<locations>com.att.aiops.networkhealth.trma.service</locations>-->
+                            <locations>
+                                <location>com.att.aiops.networkhealth.trma.service</location>
+                            </locations>
+                            <basePath>/restservices/helloworld/v1</basePath>
+                            <info>
+                                <title>${project.artifactId} Service</title>
+                                <version>${project.version}</version>
+                            </info>
+                            <swaggerDirectory>${swagger.directory}</swaggerDirectory>
+                        </apiSource>
+                    </apiSources>
+                </configuration>
+                <executions>
+                    <execution>
+                        <!-- <phase>compile</phase> -->
+                        <phase>package</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <executions>
+                    <execution>
+                        <id>copy-docker-file</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${dockerLocation}</outputDirectory>
+                            <overwrite>true</overwrite>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/src/main/docker</directory>
+                                    <filtering>true</filtering>
+                                    <includes>
+                                        <include>**/*</include>
+                                    </includes>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+            <plugin>
+                <!--this plugin is set to skip. It creates an executable jar.
+                You can't add to the classpath of such jars. That won't work
+                for this project because we need to point to configurations
+                outside of the jar file-->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.att.lms.bis.LmsLimBisApplication</mainClass>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>ant-test</id>
+                        <phase>package</phase>
+                        <configuration>
+                            <tasks>
+                                <fixcrlf srcdir="${basedir}" eol="unix" includes="**/*.sh, **/*.source"/>
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Add the maven dependency plugin to copy the monitoring agent to the target -->
+            <!--plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>target</outputDirectory>
+                            <encoding>UTF-8</encoding>
+                            <artifactItems>
+                                <artifactItem>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin-->
+
+            <!-- Custom Plugin for CaseToDecisionEngineService - Replaced Original -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <useIncrementalCompilation>false</useIncrementalCompilation>
+                    <verbose>true</verbose>
+                    <annotationProcessors>
+                        <annotationProcessor>lombok.launch.AnnotationProcessorHider$AnnotationProcessor
+                        </annotationProcessor>
+                    </annotationProcessors>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <!-- Custom Plugin for CaseToDecisionEngineService -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>1.12</version>
+                <executions>
+                    <execution>
+                        <id>add-integration-test-resources</id>
+                        <phase>generate-test-resources</phase>
+                        <goals>
+                            <goal>add-test-resource</goal>
+                        </goals>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/src/e2e-test/resources</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                                <resource>
+                                    <directory>${basedir}/src/integration-test/resources</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>add-integration-and-e2e-test-sources</id>
+                        <phase>generate-test-sources</phase>
+                        <goals>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${basedir}/src/integration-test/java</source>
+                                <source>${basedir}/src/e2e-test/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                    <imageName>${project.build.finalName}:${project.version}</imageName>
+                    <workdir>/app</workdir> <!--指定工作目录-->
+                    <forceTags>false</forceTags>
+                    <baseImage>java</baseImage>
+                    <!--<exposes>-->
+                    <!--<expose>8080</expose>-->
+                    <!--</exposes>-->
+                    <!-- copy the service's jar file from target into the root directory of the image -->
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                    <runs>
+                        <run>mv /${project.build.finalName}.jar ./</run> <!--复制文件到工作目录-->
+                        <run>cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</run>
+                        <run>echo 'Asia/Shanghai' > /etc/timezone</run> <!-- 解决时区问题 -->
+                        <run>date</run>
+                        <!--<run>chmod 755 *</run>-->
+                    </runs>
+                    <entryPoint>["java", "-jar", "${project.build.finalName}.jar","--spring.profiles.active=local"]
+                    </entryPoint>
+                </configuration>
+            </plugin>
+
+            <!-- REst Docs -->
+            <plugin>
+                <groupId>org.asciidoctor</groupId>
+                <artifactId>asciidoctor-maven-plugin</artifactId>
+                <version>1.5.5</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.springframework.restdocs</groupId>
+                        <artifactId>spring-restdocs-asciidoctor</artifactId>
+                        <version>2.0.3.RELEASE</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.asciidoctor</groupId>
+                        <artifactId>asciidoctorj</artifactId>
+                        <version>1.5.5</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.asciidoctor</groupId>
+                        <artifactId>asciidoctorj-pdf</artifactId>
+                        <version>1.5.0-alpha.15</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>generate-docs</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <backend>html</backend>
+                            <doctype>book</doctype>
+                            <sourceHighlighter>highlightjs</sourceHighlighter>
+                            <attributes>
+                                <snippets>${project.build.directory}/generated-snippets</snippets>
+                            </attributes>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>generate-pdf-docs</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>process-asciidoc</goal>
+                        </goals>
+                        <configuration>
+                            <backend>pdf</backend>
+                            <sourceHighlighter>coderay</sourceHighlighter>
+                            <attributes>
+                                <snippets>${project.build.directory}/generated-snippets</snippets>
+                            </attributes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <!--version>2.7</version-->
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>
+                                ${project.build.outputDirectory}/static/docs
+                            </outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>
+                                        ${project.build.directory}/generated-docs
+                                    </directory>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>att-repository-releases</name>
+            <url>http://mavencentral.it.att.com:8081/nexus/content/repositories/att-repository-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>att-repository-snapshots</name>
+            <url>http://mavencentral.it.att.com:8081/nexus/content/repositories/att-repository-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>
