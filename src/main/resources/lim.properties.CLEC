@@ -1,0 +1,283 @@
+#  $Id: lim.properties.CLEC,v 1.125.2.22 2016/06/07 14:28:13 hm968j Exp $
+#
+#  Name: lim.properties - LIM related properties ( CLEC version ).
+#
+BIS_VERSION=13.60.13
+BIS_NAME=LIM13.60
+STDOUT=false
+#
+#  Location of LIM related properties files.
+#
+#  No longer used since we're loading files from classpath but is still expected to exist
+LOG_POLICY_PATH=
+#
+STATE_TO_COMPANY_MAP_FILE=stateToCompany.properties
+LATA_MAP_FILE=LATA.properties
+LFACS_MAP_FILE=LfacsNpaNxx.properties
+INITIAL_CONTEXT_PROPERTIES_FILE=initialContext.properties
+USPS_EMATCH_CODE_MAP_FILE=OvalsUspsEmatchCode.properties
+STATE_TO_CAS_REGION_FILE=state_to_cas_region.txt
+#
+# Location of PREMIS SAGA data file from Middleware DBA group
+ZIP_TO_SAGA_MAP_FILE=zip2Saga.dat.CLEC
+#
+# LIM Rules Files.
+#
+EXCEPTION_BUILDER_LIM_RULE_FILE=LIM-Rules.csv
+EXCEPTION_BUILDER_ASON_RULE_FILE=LIM-ASON-Rules.csv
+EXCEPTION_BUILDER_BRMS_RULE_FILE=LIM-BRMS-Rules.csv
+EXCEPTION_BUILDER_OVALS_RULE_FILE=LIM-OVALS-Rules.csv
+EXCEPTION_BUILDER_OVALS_NSP_RULE_FILE=LIM-OVALS-NSP-Rules.csv
+EXCEPTION_BUILDER_OVALS_USPS_RULE_FILE=LIM-OVALS-USPS-Rules.csv
+EXCEPTION_BUILDER_PREMIS_RULE_FILE=LIM-PREMIS-Rules.csv
+EXCEPTION_BUILDER_CINGULAR_RULE_FILE=LIM-CINGULAR-Rules.csv
+EXCEPTION_BUILDER_RSAG_RULE_FILE=LIM-RSAG-Rules.csv
+EXCEPTION_BUILDER_BCAM_RULE_FILE=LIM-BCAM-Rules.csv
+#
+#  Host Name and port number.
+#
+hostName=localhost
+portNumber=11000
+#
+# Password Encryption Key - used to decode jdbcPASSWORD and GIS_PSWD below
+#
+OSS_PUBLIC_KEY=srv$california
+#
+# JDBC Parameters. jdbcUSE_CONNECTION_POOL=BOTH, DATASOURCE, or JDBCDRIVER
+#
+jdbcINITIAL_CONTEXT_FACTORY=com.ibm.websphere.naming.WsnInitialContextFactory
+jdbcDRIVER=oracle.jdbc.driver.OracleDriver
+jdbcCONTEXT_PROVIDER_URL=corbaloc::localhost:11000
+jdbcURL=jdbc:oracle:thin:@bisprodora.sbc.com:1537:bis2p
+jdbcDATA_SOURCE_NAME=java:comp/env/jdbc/lim-datasource
+jdbcUSERID=LIMUSER
+jdbcPASSWORD=GFA\u0017V7]\#( & %52OK
+jdbcUSE_CONNECTION_POOL=JDBCDRIVER
+
+# JNDI Name for addressValidation queue 
+ADDRESS_VALIDATION_QUEUE_NAME=java:comp/env/jms/addressValidation
+      
+#
+# DataGate Services APPLDATA
+#
+ASONSERVICE_APPLDATA=asonCert
+PREMISSERVER_APPLDATA=gwsbcTEST
+#
+# DataGate Services info for Remote Service logging
+#
+GWS_ASONSERVICE="C=US,O=AIT,OU=ASON,CN=AsonService,Version=1.0"
+GWS_HOSTLOOKUP="C=US,O=SBC,OU=DGBusSvcs,CN=HostLookup,Version=7.0"
+GWS_PREMISSERVER="C=US,O=PB,OU=OSSGW,CN=PREMISServer,Version=6.1"
+GWS_FACSACCESS="C=US,O=SBC,OU=GWSvcs,CN=FACSAccess,Version=5.0"
+#
+# DataGate Services Time Out settings
+# Value in seconds e.g. 1 = 1 second
+# Vicunia wrapper multiplies value by 1000
+#
+ASONSERVICE_TIMEOUT=150
+HOSTLOOKUP_TIMEOUT=5
+PREMISSERVER_TIMEOUT=15
+FACSACCESS_TIMEOUT=15
+#
+# Multiplexer default settings
+#
+PREMISSERVER_HELPERS=5
+PREMISSERVER_SLICE_TIMEOUT=3
+#
+# VICUNA related info
+#
+VICUNA_XML_FILE=vicunalite.xml.CLEC
+#
+#  No longer used since we're loading files from classpath but is still expected to exist
+VICUNA_SERVICE_CONFIG_DIR=
+#
+# HOST Address List Maximum Default Limits
+#
+ASON_MAX_ADDRESS_LIMIT=99
+ASON_MAX_ZIPCODE_SEARCH_LIMIT=10
+BRMS_LFACS_MAX_ADDRESS_LIMIT=100
+#
+#  OVALS Host related variables.
+#
+OVALS_HOST_URL=http://pstz0580.pedc.sbc.com/website/3119df20b472bade9a2395db1c3e0a2
+OVALS_MAX_ADDRESS_LIMIT=100
+#
+# OVALS Days and Hours of Operation
+#
+OVALS_OPERATION_M_F_S_H=5
+OVALS_OPERATION_M_F_S_M=30
+OVALS_OPERATION_M_F_E_H=22
+OVALS_OPERATION_M_F_E_M=0
+OVALS_OPERATION_SAT_S_H=5
+OVALS_OPERATION_SAT_S_M=30
+OVALS_OPERATION_SAT_E_H=20
+OVALS_OPERATION_SAT_E_M=0
+OVALS_OPERATION_SUN_S_H=0
+OVALS_OPERATION_SUN_S_M=0
+OVALS_OPERATION_SUN_E_H=0
+OVALS_OPERATION_SUN_E_M=0
+#
+#
+GIS_DATA_SOURCE_URL=corbaloc::localhost:11000
+GIS_DATA_SOURCE_NAME=java:comp/env/jdbc/psam-datasource
+GIS_USERID=psam
+GIS_PSWD=GJ@\u0013W;+P\u0013\u000B\:,X8\u001E\n\u0006GQ\u0006Q
+
+#
+# OVALS AVSQUB service properties
+#
+#lms-lgw.it.att.com is whitelisted in Bastion with port 443
+#http connections aren't allowed in Azure so using this URL instead
+#https://ovalsgis-ms.it.att.com/Services/rest/ovalsgis/v2/addressValidationServiceQualificationUnifiedBill
+#OVALS_AVSQUB_HOST=https://ovalsgis-ms.it.att.com
+OVALS_AVSQUB_HOST=https://lms-lgw.it.att.com
+OVALS_AVSQUB_URL=/Services/rest/ovalsgis/v2/addressValidationServiceQualificationUnifiedBill
+OVALS_AVSQUB_VERSION=v2
+OVALS_AVSQUB_USER=limbis
+OVALS_AVSQUB_PSWD=H83981$D2
+
+#
+# OVALS PAV
+#
+#https://ovalsgis-ms.it.att.com/restservices/ovalsgis/v1/postalAddressValidation
+#OVALS_PAV_HOST=http://ilcdtl02vk1961.itservices.sbc.com
+#/restservices/ovalsgis/v1/postalAddressValidation
+#OVALS_PAV_HOST=https://ovalsgis-ms.it.att.com
+OVALS_PAV_HOST=https://lms-lgw.it.att.com
+OVALS_PAV_URL=/restservices/ovalsgis/v1/postalAddressValidation
+OVALS_PAV_VERSION=v1
+OVALS_PAV_USER=m49476@lms.att.com
+OVALS_PAV_PSWD=Middleware$123
+
+#
+# OVALS PLA
+#
+#OVALS_PLA_HOST=http://ilcdtl02vk1961.itservices.sbc.com
+#/restservices/ovalsgis/v1/postalAddressValidation
+#OVALS_PLA_HOST=https://csi-tst-q28.it.att.com:28443
+OVALS_PLA_HOST=https://csi-bau.it.att.com:1443
+OVALS_PLA_URL=/Services/com/cingular/csi/ovalsgis/ProcessLocationAttributes.jws
+#OVALS_PLA_URL=/Services/com/cingular/csi/ovalsgis/ProcessLocationAttributes.jws
+OVALS_PLA_VERSION=v1
+OVALS_PLA_USER=lmsapp
+#OVALS_PLA_PSWD=lmsapp062322
+OVALS_PLA_PSWD=573GHTnmy98vb
+
+#
+# SM Provider URL (Removed) and Home Name
+#
+SM_PROVIDER_URL=
+SM_Home=java:comp/env/ejb/SMHome
+#SM_Home=cell/clusters/SM14.45Cluster/SMMDAPROXYHome-14.45
+#
+# if "OVALSUSPS_CASS_ADDITIONAL_ADDRESS" is true, 
+# OVALSUSPS warning messages will added to 
+# the CASSADDITIONALADDRESSINFO in the
+# GetLocationPropertiesByAddress reply structure
+#
+OVALSUSPS_CASS_ADDITIONAL_ADDRESS=false
+#
+# if "ACCESS_CACHE_ADDRESS_EXCEPT" is defined, address caching is activiated
+#
+ACCESS_CACHE_ADDRESS_EXCEPT=OBF
+#
+#  IMPORTANT:  The file name must begin with / to indicate to the getResource method
+#  of Class that it should not alter the name by prepending the package name of the
+#  Class.
+OVALSUSPS_CLIENT_CONFIG_FILE_NAME=JMSOPS.xml
+OVALSUSPS_ENVIRONMENT_NAME=ovalsusps
+#
+# OVALS NSP EMBUS Configuration
+#
+OVALSNSP_CLIENT_CONFIG_FILE_NAME=JMSOPS.xml
+OVALSNSP_ENVIRONMENT_NAME=ovalsnsp
+#
+ATLAS_CLIENT_CONFIG_FILE_NAME=JMSOPS.xml
+ATLAS_ENVIRONMENT_NAME=ATLAS
+#
+# BRMS JDBC Parameters
+#
+BRMS_DRIVER=COM.ibm.db2.jdbc.app.DB2Driver
+BRMS_DATA_SOURCE_NAME=jdbc/DB24
+BRMS_URL=jdbc:db2:DB24
+BRMS_USERID=M26818
+BRMS_PASSWORD=GDD\u0017U3) \r\!6$$2&BK
+BRMS_USE_CONNECTION_POOL=JDBCDRIVER
+#
+# Catalyst Environment: DEV - Test ; PRD - Production 
+#
+CATALYST_ENVIRONMENT=DEV
+CATALYST_USERID=m99502
+#
+# BCAM
+#
+#BCAM_PROVIDER_URL=corbaloc::zltv5684.vci.att.com:11000
+#updated BCAM url for 1507 release
+BCAM_PROVIDER_URL=corbaloc::zltv5213.vci.att.com:11000
+BCAM_HOME_NAME=cell/clusters/BCAM20Cluster/BCAM-2.0
+#
+#BCAM SOURCE Application Code
+#Format (no space in between, uppercase): BCAM_SOURCE_APPLICATION_CODE=APPLICATION1,VALUE1,APPLICATION2,VALUE2....
+BCAM_SOURCE_APPLICATION_CODE=CCTPDASH,D,EBILL,E,XBILL,E,LIM_BIS,D,LIMBIS,D,MYWORLD,E
+#
+# BIMX Provider URL (Removed) and Home Name
+#
+BIMX_PROVIDER_URL=
+BIMX_Home=java:comp/env/ejb/BIMXHome
+#BIMX_Home=cell/clusters/BIMX10.20Cluster/BIMXMDAPROXYHome-10.20
+#
+#BIMX Note Type
+#Format (no space in between, uppercase): BIMX_NOTETYPE_(SW, W, MW, E)=APPLICATION1,VALUE1,APPLICATION2,VALUE2....
+BIMX_NOTETYPE_SW=CCTPDASH,DASH,LIM_BIS,DASH,MYWORLD,DASH
+BIMX_NOTETYPE_W=CCTPDASH,GeneralReview,LIM_BIS,GeneralReview,MYWORLD,GeneralReview
+
+
+#Added Tags for LIM SELFTEST and PING Enhancements
+PRIMARY_SMTP_SERVER=smtp.sbc.com
+SECONDARY_SMTP_SERVER=pide214.pedc.sbc.com
+SENDER_EMAIL_ADDRESS=limteam@biskid.mo.sbc.com
+
+# LIM Provider URL (Removed) and Home Name
+#
+LIM_PROVIDER_URL=
+LIM_Home=java:comp/env/ejb/LIMHome
+#LIM_Home=cell/clusters/LIM13.60Cluster/LIMMDAPROXYHome-13.60
+#
+
+# Client Authorization 
+AUTHORIZATION_TABLE=LIM_BIS_AUTHORIZATION
+AUTHORIZATION_TIMEOUT=360
+#AUTHORIZATION_INITIAL_LOAD=1
+
+#SELFTEST PROPERTY FILES
+SELFTEST_PROPERTIES_FILE=SelfTest_FileResources.properties
+SELFTEST_SERVICES_FILE=SelfTest_ServicesList.properties
+SELFTEST_DATABASE_FILE=SelfTest_DatabaseResources.xsl
+
+FACS_RC_OPTION=true
+FACS_RC_CLIENT_CONFIG_FILE_NAME=JMSOPS.xml
+FACS_RC_ENVIRONMENT_NAME=FACS_RC
+#FACS_RC_ENVIRONMENT_NAME=FACS_RC_FUSION
+
+#
+#FACSRC embus service wrapper properties
+#
+
+FACS_RC_USERID=m14078d
+
+FACS_RC_GROUPID=LIM
+FACS_RC_CLIENTID=LIM
+
+AMNQ_PASSWORD=Cz3FE6ZUNnGDk+qbzeDsf+9c+Vw9rHiCUkx9UTUR1aftNoF7c8unK241kvueMU7LX3jVldZdAHop8/btTPhdDw==
+AMNQAPPLICATION=AMNQ
+AMNQENDPOINTURL=https://amnqsat1.test.att.com/ATS021/AMNQTransactionService
+AMNQFROMAPPLICATION=SMBIS
+AMNQMAJORVERSION=21
+AMNQMINORVERSION=0
+AMNQUSERNAME=m73468t
+
+#CBS Properties
+CBS_ORDERVALIDATION_WSDL=https://lms-lgw.test.att.com/ws/CbsOrderValidateAddressV7/CbsOrderValidateAddressV7
+CBS_URL_TIMEOUT=30000
+CBS_CLIENT_APPID=LIMBIS1
+CBS_USERID=m99502

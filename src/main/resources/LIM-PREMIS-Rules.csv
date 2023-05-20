@@ -1,0 +1,69 @@
+# $Id: LIM-PREMIS-Rules.csv,v 1.3 2003/03/21 19:24:44 dm2328 Exp $,,,,,,,,,
+#Error Code,Error Text to Match,LIM Error Tag,LIM Output Description,Origin,Severity,BusinessRule,PREMIS Error Text,LIM Error,Exception Type
+30,null,LIM-BusinessViolation-00001,PREMISServer / DBServer down due to regularly scheduled maintenance.,PREMIS,1,0,The system is not available at this time.,ERR_LIM_DOWN_FOR_SYS_MAINTENANCE,Business Violation
+50,null,LIM-ObjectNotFound-00002,Service not found.,PREMIS,1,0,Service not found.,ERR_LIM_SERVICE_NOT_FOUND,Object Not Found
+2001,null,LIM-InvalidData-00475,Invalid Postal Code or require valid 2-4 alpha character SAGA.,PREMIS,1,0,Invalid zip code or SAGA.,ERR_LIM_INVALID_POSTAL_CODE_OR_SAGA,Invalid Data
+2003,null,LIM-InvalidData-00447,Missing Postal Code.,PREMIS,1,0,Required field missing:,ERR_LIM_MISSING_POSTAL_CODE,Invalid Data
+2004,null,LIM-ObjectNotFound-00001,Host System Exception: Information not available. ,PREMIS,1,0,Information Not Available:,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6001,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,PREMIS system problem encountered,ERR_LIM_PREMISSERVER,System Failure
+6002,null,LIM-ObjectNotFound-00001,Host System Exception: Syntax errors in parsing input. ,PREMIS,1,0,Syntax errors encountered in parsing the input.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6003,null,LIM-SystemFailure-00451,Host System Exception: DOE Terminal ID is required input.,PREMIS,1,0,DOE Terminal ID is required input. None was found.,ERR_LIM_MISSING_DOE_TERMINAL_ID,System Failure
+6004,null,LIM-ObjectNotFound-00001,Host System Exception: Request data does not meet the input requirements.,PREMIS,1,0,Request data does not meet the input requirements for an Address validation request.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6005,null,LIM- InvalidData-00447,Missing Postal Code.,PREMIS,1,0,SAGA or Zip Code is required input. None was found.,ERR_LIM_MISSING_POSTAL_CODE,Invalid Data
+6006,null,LIM-ObjectNotFound-00001,Host System Exception: Address data did not include basic address.,PREMIS,1,0,Address data did not include basic address.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6007,null,LIM-ObjectNotFound-00001,Host System Exception: Basic address in Address data was in error.,PREMIS,1,0,Basic address in Address data was in error.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6008,null,LIM-ObjectNotFound-00001,Host System Exception: Supplemental address data was in error. ,PREMIS,1,0,Supplemental address data was in error.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6009,null,LIM-ObjectNotFound-00001,Host System Exception: Neither Address nor TN specified.,PREMIS,1,0,Neither address data nor TN entered. One is required.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6010,null,LIM-InvalidData-00440,Invalid TN format.,PREMIS,1,0,TN has an invalid format.,ERR_LIM_INVALID_TN_FORMAT,Invalid Data
+6013,null,LIM-SystemFailure-00441,Invalid Data: PREMIS Line ID missing or invalid.,PREMIS,1,0,Line ID missing or invalid.,ERR_LIM_PREMIS_INVALID_LINE_ID,System Failure
+6102,null,LIM-InvalidData-00434,Invalid Postal Code.,PREMIS,1,0,Invalid Zip Code entry.,ERR_LIM_INVALID_POSTAL_CODE,Invalid Data
+6104,null,LIM-ObjectNotFound-00002,Service not found.,PREMIS,1,0,TN not found.,ERR_LIM_SERVICE_NOT_FOUND,Object Not Found
+6105,null,LIM-ObjectNotFound-00001,Neither an exact match or a close alternative was found.,PREMIS,1,0,Verify Street Name entry.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6106,null,LIM-ObjectNotFound-00001,Verify Descriptive Address entry.,PREMIS,1,0,Verify Descriptive Address entry.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6110,null,LIM-InvalidData-00437,Invalid Unnumbered Street Name.,PREMIS,1,0,Verify Unnumbered Street Name entry.,ERR_LIM_INVALID_UNNUMBERED_STREET_NAME,Invalid Data
+6115,null,LIM-ObjectNotFound-00001,Neither an exact match or a close alternative was found.,PREMIS,1,0,Could not complete SAG validations.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6116,null,LIM-ObjectNotFound-00001,Neither an exact match or a close alternative was found.,PREMIS,1,0,No exact match on Address entry - more than 50 similar addresses.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6117,null,LIM-InvalidData-00439,Invalid House Number or Assigned House Number – one or more assigned house number ranges exist.,PREMIS,1,0,Verify house # or AHN entry - one or more assigned house # ranges exist.,ERR_LIM_PREMIS_INVALID_HOUSE_NUMBER_OR_ASSIGNED_HOUSE_NUMBER,Invalid Data
+6118,null,LIM-ObjectNotFound-00002,Service not found.,PREMIS,1,0,Invalid NPA NXX. - Does not exist in PREMIS.,ERR_LIM_SERVICE_NOT_FOUND,Object Not Found
+6201,null,LIM-ObjectNotFound-00001,Neither an exact match or a close alternative was found.,PREMIS,1,0,Input address is not SAG valid.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+6202,null,LIM-ObjectNotFound-00001,PREMIS Geographic Segment Group code is missing or invalid.,PREMIS,1,0,Missing or invalid Geographic Segment  Group (GSG) code.,ERR_LIM_PREMIS_INVALID_GSG,Object Not Found
+6203,null,LIM-InvalidData-00438,Invalid City and State –address duplicated.,PREMIS,1,0,Verify Community and State - address duplicated.,ERR_LIM_PREMIS_INVALID_CITY_STATE_COMBO,Invalid Data
+6301,null,LIM-ObjectNotFound-00001,Neither an exact match or a close alternative was found.,PREMIS,1,0,Input address is not SAG valid.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+#6500,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal Error,ERR_LIM_PREMISSERVER,System Failure
+#6501,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal Error,ERR_LIM_PREMISSERVER,System Failure
+#6502,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal Error,ERR_LIM_PREMISSERVER,System Failure
+#6503,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal Error,ERR_LIM_PREMISSERVER,System Failure
+7600,null,LIM-SystemFailure-00765,Host System TOPServer Exception.,PREMIS,1,0,TOPServer Internal Error,ERR_LIM_TOPSERVER,System Failure
+#9000,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,RogueWave Exception:,ERR_LIM_PREMISSERVER,System Failure
+#9001,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Timeout waiting for:,ERR_LIM_PREMISSERVER,System Failure
+#9003,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Data Communications Error to:,ERR_LIM_PREMISSERVER,System Failure
+9004,null,LIM-BusinessViolation-00001,Host DBServer down due to regularly scheduled maintenance.,PREMIS,1,0,The system is not available at this time.,ERR_LIM_DOWN_FOR_SYS_MAINTENANCE,Business Violation
+#9005,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Transaction Aborted,ERR_LIM_PREMISSERVER,System Failure
+#9008,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal Error.,ERR_LIM_PREMISSERVER,System Failure
+#9009,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Service Startup Error:,ERR_LIM_PREMISSERVER,System Failure
+9011,null,LIM-SystemFailure-00095,DB Connection Failed.,PREMIS,1,0,DB Connection Failed.,ERR_LIM_PREMISSERVER,System Failure
+#9012,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal error.,ERR_LIM_PREMISSERVER,System Failure
+#9013,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal error.,ERR_LIM_PREMISSERVER,System Failure
+#9014,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal error.,ERR_LIM_PREMISSERVER,System Failure
+#9015,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal error.,ERR_LIM_PREMISSERVER,System Failure
+#9020,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Missing Environment Variable:,ERR_LIM_PREMISSERVER,System Failure
+#9023,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Invalid Environment variable:,ERR_LIM_PREMISSERVER,System Failure
+#9030,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Listen Exception:,ERR_LIM_PREMISSERVER,System Failure
+#9040,null,LIM-SystemFailure-00095,Host System Exception.,PREMIS,1,0,Internal Error.,ERR_LIM_PREMISSERVER,System Failure
+9100,null,LIM-SystemFailure-00978,Host System DBServer Exception.,PREMIS,1,0,DBServer Internal Error.,ERR_LIM_DBSERVER,System Failure
+9200,null,LIM-BusinessViolation-00001,Host down due to regularly scheduled maintenance.,PREMIS,1,0,The system is not available at this time.,ERR_LIM_DOWN_FOR_SYS_MAINTENANCE,Business Violation
+TIME_OUT,PREMIS time out,LIM-SystemFailure-00001,PREMIS time out,PREMIS,1,0,Host Timed Out,ERR_LIM_TIMEOUT,System Failure
+TIME_OUT,HOSTLOOKUP time out,LIM-SystemFailure-00001,HOSTLOOKUP time out,HOSTLOOKUP,1,0,Host Timed Out,ERR_LIM_TIMEOUT,System Failure
+ADDR_ERR,Request and Response are different,LIM-ObjectNotFound-00001,Neither an exact match or a close alternative was found.,PREMIS,1,0,Neither an exact match or a close alternative was found.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+ADDR_ERR,Outside territory,LIM-BusinessViolation-00003,Address found but not within territory.,PREMIS,1,0,Address found but not within territory.,ERR_LIM_OUTSIDE_TERRITORY,Business Violation
+ADDR_ERR,null,LIM-ObjectNotFound-00001,Neither an exact match or a close alternative was found.,PREMIS,1,0,Neither an exact match or a close alternative was found.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+LIM_ERR,VicunaWrapperMultiplexerException,LIM-SystemFailure-00088,VicunaWrapperMulitplexerException.  Description: <%TAG=MSG%s>.,PREMIS,1,0,VicunaMultiplex Exception.,ERR_LIM_INTERNAL,System Failure
+LIM_ERR,VicunaWrapperMultiplexerData,LIM-SystemFailure-00088,VicunaWrapperMultiplexerData Exception.  Description: Results from PREMIS request is missing for VicunaWrapperMultiplexerData element.,PREMIS,1,0,VicunaMultiplexData Exception.,ERR_LIM_INTERNAL,System Failure
+ORACLE_ERR,Clec_Exco:DBConnection failed,LIM-SystemFailure-01022,SQL Exception in accessing CLEC_EXCO  Table.,Oracle DB,1,0,SQL Exception in accessing CLEC_EXCO  Table.,ERR_LIM_ACCESS_CLEC_EXCO_TABLE,System Failure
+ORACLE_ERR,Clec_Exco:SQLException,LIM-SystemFailure-01022,SQL Exception in accessing CLEC_EXCO  Table.,Oracle DB,1,0,SQL Exception in accessing CLEC_EXCO  Table.,ERR_LIM_ACCESS_CLEC_EXCO_TABLE,System Failure
+ORACLE_ERR,Clec_Exco:,LIM-SystemFailure-01022,SQL Exception in accessing CLEC_EXCO  Table.,Oracle DB,1,0,SQL Exception in accessing CLEC_EXCO  Table.,ERR_LIM_ACCESS_CLEC_EXCO_TABLE,System Failure
+SVC_ERR,SAGA in HostLookup,LIM-ObjectNotFound-00002,Service not found.,PREMIS,1,0,Service not found.,ERR_LIM_SERVICE_NOT_FOUND,Object Not Found
+SVC_ERR,Working Status,LIM-InvalidData-00113,Invalid Data. Reason:  TN is not in working status,PREMIS,1,0,Invalid Data. Reason:  TN is not in working status,ERR_LIM_TN_NOT_WORKING,Invalid Data
+SVC_ERR,null,LIM-ObjectNotFound-00002,Service not found.,PREMIS,1,0,Service not found.,ERR_LIM_SERVICE_NOT_FOUND,Object Not Found
+#Default,,,,,,,,,
+null,null,LIM-SystemFailure-00095,Host System Exception Not Defined in PREMIS Rules File.,PREMIS,1,0,Unexpected error code - Internal error.,ERR_LIM_PREMISSERVER,System Failure

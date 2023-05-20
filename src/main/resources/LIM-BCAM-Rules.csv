@@ -1,0 +1,12 @@
+# $Id: LIM-BCAM-Rules.csv,v 1.4 
+#Error Code,Error Text to match,LIM Error Tag,LIM Description,Origin,Severity,BusinessRule,BCAM Error Text,LIM Error,Exception Type
+LIM_ERR,BCAM Account Not Found,LIM-ObjectNotFound-10437,Account not found in BCAM. BCAM error: <%TAG=MSG%s>,BCAM,1,0,Account not found in BCAM,ERR_LIM_BCAM_ACCT_NOT_FOUND,Object Not Found
+LIM_ERR,BCAM Duplicate Live Accounts,LIM-BusinessViolation-11153,Duplicate Live Accounts in BCAM. BCAM error: <%TAG=MSG%s>,BCAM,1,0,Duplicate live accounts in BCAM,ERR_LIM_BCAM_DUPLICATE_LIVE_ACCOUNTS,Business Violation
+LIM_ERR,BCAM Duplicate Inactive Accounts,LIM-BusinessViolation-11154,Duplicate Inactive Accounts in BCAM. BCAM error: <%TAG=MSG%s>,BCAM,1,0,Duplicate inactive accounts in BCAM,ERR_LIM_BCAM_DUPLICATE_INACTIVE_ACCOUNTS,Business Violation
+LIM_ERR,BCAM Service Unavailable,LIM-SystemFailure-10438,BCAM is not available. BCAM error: <%TAG=MSG%s>,BCAM,1,0,BCAM is not available,ERR_LIM_BCAM_SERVICE_NOT_AVAILABLE,System Failure
+LIM_ERR,BCAM Unknown Error,LIM-SystemFailure-10439,BCAM encountered an unknown error. BCAM error: <%TAG=MSG%s>,BCAM,1,0,BCAM encountered an unknown error,ERR_LIM_BCAM_UNKNOWN_ERROR,System Failure
+LIM_ERR,BCAM Invalid Request,LIM-SystemFailure-10440,BCAM invalid request exception. BCAM error: <%TAG=MSG%s>,BCAM,1,0,BCAM invalid request exception,ERR_LIM_BCAM_INVALID_REQUEST,System Failure
+LIM_ERR,Unexpected BCAM Error Encountered,LIM-SystemFailure-11098,Unexpected BCAM error encountered: <%TAG=MSG%s>,LIM,1,0,Unexpected BCAM error encountered,ERR_LIM_BCAM_SERVICE_ERROR,System Failure
+LIM_ERR,BCAM Data Not Found,LIM-DataNotFound-11100,A BCAM DataNotFound exception was encountered: <%TAG=MSG%s>,LIM,1,0,BCAM DataNotFound,ERR_LIM_BCAM_DATA_NOT_FOUND,Data Not Found
+#Default,,,,,,,,,
+null,null,LIM-SystemFailure-10439,Unexpected error encountered. Exception message: <%TAG=MSG%s>.,BCAM,1,0,Unexpected error code,ERR_LIM_BCAM,System Failure

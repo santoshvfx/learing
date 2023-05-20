@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- =========================================================================
+
+                         AT&T Proprietary (Internal Use Only)
+
+  Not for use or disclosure outside the AT&T companies except under written agreement
+
+  (c) 2007 AT&T Intellectual Property. All rights reserved. AT&T and
+
+        the AT&T logo are trademarks of AT&T Intellectual Property.
+
+======================================================================= -->
+<xs:schema elementFormDefault="qualified" targetNamespace="http://csi.cingular.com/CSI/Namespaces/Container/Public/ProcessLocationAttributesRequest.xsd" version="225.0.00" xmlns="http://csi.cingular.com/CSI/Namespaces/Container/Public/ProcessLocationAttributesRequest.xsd" xmlns:altova="http://www.altova.com/xml-schema-extensions" xmlns:cdm="http://csi.att.com/CSI/Namespaces/OneViewAddressLocationSystem/Types/Public/CommonDataModel.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://csi.att.com/CSI/Namespaces/OneViewAddressLocationSystem/Types/Public/CommonDataModel.xsd" schemaLocation="CommonDataModel.xsd"/>
+  <xs:element name="ProcessLocationAttributesRequest" type="ProcessLocationAttributesRequestInfo">
+    <xs:annotation>
+      <xs:documentation>API request for Process Location Attributes</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="ProcessLocationAttributesRequestInfo">
+    <xs:annotation>
+      <xs:documentation>
+			</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="RequestFunctionType">
+        <xs:annotation>
+          <xs:documentation>Input options and switches.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:choice>
+            <xs:element name="USAOptions">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SAGValidationOptions">
+                    <xs:annotation>
+                      <xs:documentation>SAG: Street Address Guide</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="validationIndicator" type="xs:boolean">
+                          <xs:annotation>
+                            <xs:documentation>Turn on to activate ATT SAG service validation.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="fieldedUnfieldedFlag">
+                          <xs:annotation>
+                            <xs:documentation>U=unfielded input, F=fielded input. Required if validationIndicator=true.</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="1"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="returnSupplementalsIndicator" type="cdm:BooleanTrueInfo">
+                          <xs:annotation>
+                            <xs:documentation>Indicator that the client wants supplementals returned for a basic address match, if the basic address does have supplemental addresses.  TRUE=return, FALSE=suppress, UNDEFINED is same null which will apply the backend default.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="nearbyTypes">
+                          <xs:annotation>
+                            <xs:documentation>Indicator of what kind of nearby addresses that the client application wants.
+Null or N mean No nearbys. B means only basic address nearbys. L means any basic and Supplental nearbys. E means any basic and supplemental address nearbys and the response list starts at request/HOUSENUMBER plus 1 (or starts at request/HOUSENUMBER, suppl data plus 1 when applicable)
+Ex: N, B, L, E</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="1"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="maxAlternativeReturn" type="xs:positiveInteger">
+                          <xs:annotation>
+                            <xs:documentation>Maximum number of descriptive alternative addresses the client application wants returned, when there is a list of similar addresses.  This applies to the DescriptiveAlternates return structure.  The maximum number of alternate addresses that can be provided is 100.  If the client application does not specifiy then the default is 25.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="maxSupplementalReturn" type="xs:positiveInteger">
+                          <xs:annotation>
+                            <xs:documentation>Maximum number of Fielded supplemental addresses the client application wants returned in the response.  For example a supplemental address to 123 Main St is 123 Main St Rm 01-N-00.  The maximum number of supplementals that can be returned is 100.  If the client application does not specify then the default is 25.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="maxRangeReturn" type="xs:positiveInteger">
+                          <xs:annotation>
+                            <xs:documentation>Maximum number of SAGRanged records the client application wants returned in the response.  The maximum number of range records that can be returned is 100.  If the client application does not specify then the default is 25.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="primaryNpannx">
+                          <xs:annotation>
+                            <xs:documentation>For fielded or unfielded in lieu of city/state/zip</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="6"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="networkQualify" type="cdm:BooleanStringInfo">
+                          <xs:annotation>
+                            <xs:documentation>Indicator that the client wants to perform network qualification with this address validation request.  If the client is doing network qualification, then MLDB needs to return the maximum number of nsp_inq_ids, if available.  If the client is not doing network qualification, then MLDB needs to return at most 1 nsp_inq_id, if available.  When NTWK_QUAL_INDICATOR is true, indicates that the client is looking for network qualification.  The default is TRUE.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="maxTNsPerLivingUnit" type="xs:positiveInteger">
+                          <xs:annotation>
+                            <xs:documentation>Maximum number of TNs per address the client applications wants returned in the response. The maximum number of TNs per address that can be returned is 100.  If the client does not specify the MAX_TNS_PER_LU, the default is 10.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="maxCircuitIdsPerLivingUnit" type="xs:positiveInteger">
+                          <xs:annotation>
+                            <xs:documentation>Maximum number of CKTIDs per address the client applications wants returned in the response. The maximum number of CKTIDs per address that can be returned is 100.  If the client does not specify the MAX_CKTIDS_PER_LU, the default is 10.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="maxLivingUnitsPerCircuitId" type="xs:positiveInteger">
+                          <xs:annotation>
+                            <xs:documentation>The maximum number of LUs the client application wants to have returned per CKTID.  The maximum can be 100.  If not specified, the default is 25.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="maxLivingUnitsPerTN" type="xs:positiveInteger">
+                          <xs:annotation>
+                            <xs:documentation>The maximum number of LUs the client application wants to have returned per TN.  The maximum can be 100.  If not specified, the default is 25.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="GISValidationOptions">
+                    <xs:annotation>
+                      <xs:documentation>Options for GIS landbase validation.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="validationIndicator" type="xs:boolean">
+                          <xs:annotation>
+                            <xs:documentation>Turn on to activate 50 state validation.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="noAlternativesIndicator" type="cdm:BooleanTrueInfo">
+                          <xs:annotation>
+                            <xs:documentation>true=do not return alternative addresses.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="fieldedUnfieldedFlag">
+                          <xs:annotation>
+                            <xs:documentation>U=unfielded input, F=fielded input. Required if validationIndicator=true.</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="1"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="ByPassSelection">
+                          <xs:complexType>
+                            <xs:choice>
+                              <xs:element minOccurs="0" name="coreGISOnlyIndicator" type="cdm:BooleanTrueInfo">
+                                <xs:annotation>
+                                  <xs:documentation>Used to prevent GIS backend from querying and returning all possible extra attributes thus saving execution time. Response will only return core GIS location info. If not specified on request, GIS backend will default to returning all possible attributes.</xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
+                              <xs:element minOccurs="0" name="telcoOnlyIndicator" type="cdm:BooleanTrueInfo">
+                                <xs:annotation>
+                                  <xs:documentation>Used to prevent GIS backend from querying and returning all possible extra attributes thus saving execution time. Response will only return telco info. If not specified on request, GIS backend will default to returning all possible attributes.</xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
+                            </xs:choice>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="functionType">
+                          <xs:annotation>
+                            <xs:appinfo>
+                              <altova:exampleValues>
+                                <altova:example value="SW99"/>
+                              </altova:exampleValues>
+                            </xs:appinfo>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="7"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="connectAmericaFundPhase2Indicator" type="cdm:BooleanTrueInfo">
+                          <xs:annotation>
+                            <xs:documentation>use the get CAFII WLL info</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="overrideAddressIndicator" type="cdm:BooleanTrueInfo">
+                          <xs:annotation>
+                            <xs:documentation>override flag, which prompts backend to create a GLID record with user provided address even when we can not validate the address</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="onlyGLIDIndicator" type="cdm:BooleanTrueInfo">
+                          <xs:annotation>
+                            <xs:documentation>Optional indicator to indicate if GIS derived Telco attributes is needed or just GLID creation functionality is what is expected</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="DTVDetails">
+                          <xs:complexType>
+                            <xs:choice>
+                              <xs:element name="ValidationOptions">
+                                <xs:complexType>
+                                  <xs:sequence>
+                                    <xs:element name="dtvIndicator" type="xs:boolean"/>
+                                    <xs:element name="checkServiceIndicator" type="xs:boolean">
+                                      <xs:annotation>
+                                        <xs:documentation>indicates whether or not to verify if the address is in a DTV serviceable area</xs:documentation>
+                                      </xs:annotation>
+                                    </xs:element>
+                                    <xs:element minOccurs="0" name="exactMatchOnlyIndicator" type="cdm:BooleanTrueInfo">
+                                      <xs:annotation>
+                                        <xs:documentation>No address validation.  only get PID; Standardlize address and lookup,Just return find or not find.</xs:documentation>
+                                      </xs:annotation>
+                                    </xs:element>
+                                    <xs:element minOccurs="0" name="d2liteIndicator" type="cdm:BooleanTrueInfo">
+                                      <xs:annotation>
+                                        <xs:documentation>indicates whether or not to retreive and return D2 Advantage Lite Eligibility Attributes</xs:documentation>
+                                      </xs:annotation>
+                                    </xs:element>
+                                    <xs:element minOccurs="0" name="supplementalCheckOverrideIndicator" type="cdm:BooleanTrueInfo">
+                                      <xs:annotation>
+                                        <xs:documentation>indicator the supplemental address need check or not.</xs:documentation>
+                                      </xs:annotation>
+                                    </xs:element>
+                                  </xs:sequence>
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element name="BuildingDetails">
+                                <xs:complexType>
+                                  <xs:sequence>
+                                    <xs:element name="propertyId">
+                                      <xs:annotation>
+                                        <xs:documentation>k</xs:documentation>
+                                      </xs:annotation>
+                                      <xs:simpleType>
+                                        <xs:restriction base="cdm:GlobalLocationIdentifierInfo">
+                                          <xs:maxLength value="30"/>
+                                        </xs:restriction>
+                                      </xs:simpleType>
+                                    </xs:element>
+                                    <xs:element name="PropertySelection">
+                                      <xs:complexType>
+                                        <xs:choice>
+                                          <xs:element name="d2LiteInstallationNotesIndicator" type="cdm:BooleanTrueInfo"/>
+                                          <xs:element name="buildingToPropertyDetailIndicator" type="cdm:BooleanTrueInfo"/>
+                                        </xs:choice>
+                                      </xs:complexType>
+                                    </xs:element>
+                                  </xs:sequence>
+                                </xs:complexType>
+                              </xs:element>
+                            </xs:choice>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="returnSupplementalsIndicator" type="cdm:BooleanTrueInfo">
+                          <xs:annotation>
+                            <xs:documentation>indicator wants  supplemental info return</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="returnAlternatesIndicator" type="cdm:BooleanTrueInfo"/>
+                        <xs:element minOccurs="0" name="AddressTimeZone">
+                          <xs:annotation>
+                            <xs:documentation>use for get timezone info back</xs:documentation>
+                          </xs:annotation>
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element minOccurs="0" name="buildingCLLI" type="cdm:CLLIRoutingInfo">
+                                <xs:annotation>
+                                  <xs:documentation>Clli code for the building.</xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
+                              <xs:element minOccurs="0" name="Coordinates" type="cdm:AddressGeocodeCoordinatesInfo"/>
+                              <xs:element minOccurs="0" name="addressIndicator" type="cdm:BooleanTrueInfo">
+                                <xs:annotation>
+                                  <xs:documentation>Return time zone for this address when set to TRUE. </xs:documentation>
+                                </xs:annotation>
+                              </xs:element>
+                              <xs:element minOccurs="0" name="wireCenter" type="cdm:CLLI8OnlyInfo"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="MSAGValidationOptions">
+                    <xs:annotation>
+                      <xs:documentation>MSAG: Master Street Address Guide.  Used for e911 validation.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="validationIndicator" type="xs:boolean">
+                          <xs:annotation>
+                            <xs:documentation>Set to true to activate MSAG address validation.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="fieldedUnfieldedFlag">
+                          <xs:annotation>
+                            <xs:documentation>U=unfielded input, F=fielded input. Required if validationIndicator=true.</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="1"/>
+                              <xs:enumeration value="U"/>
+                              <xs:enumeration value="F"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="maxRangeReturn">
+                          <xs:annotation>
+                            <xs:documentation>Maximum number of MSAGRanged records the client application wants returned in the repsonse. The maximum number of range records that can be returned is 100.  If no value specified, default is 10.</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:positiveInteger">
+                              <xs:maxInclusive value="100"/>
+                              <xs:minInclusive value="1"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="WLLValidationOptions">
+                    <xs:annotation>
+                      <xs:documentation>WLL: Wireless Local Loop.  Options for wireless local loop validation.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="lookupTnIndicator" type="xs:boolean">
+                          <xs:annotation>
+                            <xs:documentation>Turn on this flag to fetch wireless local loop TN data for an address or a Glid.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="tnType">
+                          <xs:annotation>
+                            <xs:documentation>Specify TN type to narrow datasets searched. If not specified, all datasets will be searched. Should only be used when the input is a TN.</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="TDM_IN_REGION_ONLY"/>
+                              <xs:enumeration value="WLL_ONLY"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="USPSDeliveryPointValidationOptions">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="maximumCASSAddressLineLength">
+                          <xs:annotation>
+                            <xs:documentation>Response limit restricting maximum lengh of Coding Accuracy Support System (CASS) Address lines. Enter 28 or 30 or 40</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="28"/>
+                              <xs:enumeration value="30"/>
+                              <xs:enumeration value="40"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element default="10" minOccurs="0" name="maximumAlternativeAddresses">
+                          <xs:annotation>
+                            <xs:documentation>Response limit restricting maximum number of discrete postal addresses returned if alternatives list returned. If not provided default will be maximum of 10.</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                              <xs:maxInclusive value="10"/>
+                              <xs:minInclusive value="1"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="glidLookup">
+                    <xs:annotation>
+                      <xs:documentation>1=deprecated, please use values 2 or 3, 2=lookup GLID either by ID or address, do not create new ID, 3=lookup GLID by ID or address and if not found, create new GLID. When ID and address are passed in, ID takes precedence.</xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1"/>
+                        <xs:enumeration value="2"/>
+                        <xs:enumeration value="3"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="servingAreaIndicator" type="cdm:BooleanTrueInfo">
+                    <xs:annotation>
+                      <xs:documentation>Return serving area for for this address when set to true.</xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="externalLECIndicator" type="cdm:BooleanTrueInfo">
+                    <xs:annotation>
+                      <xs:documentation>Validate address with external LEC providers.</xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="taxationGeocodeIndicator" type="cdm:BooleanTrueInfo"/>
+                  <xs:element minOccurs="0" name="pageNumber">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:int">
+                        <xs:minInclusive value="1"/>
+                        <xs:maxInclusive value="100"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="InternationalOptions">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element minOccurs="1" name="addressValidationIndicator" type="xs:boolean"/>
+                  <xs:element minOccurs="0" name="addressFormatIndicator" type="cdm:BooleanTrueInfo">
+                    <xs:annotation>
+                      <xs:documentation>TRUE=return address format; FALSE=do not return address format; UNDEFINED is same as null and will apply backend default.</xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="reverseGeocodeIndicator" type="cdm:BooleanTrueInfo">
+                    <xs:annotation>
+                      <xs:documentation>TRUE=do reverse geocode; FALSE=do not reverse geocode; UNDEFINED is same as null and will apply backend default.</xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="glidLookup">
+                    <xs:annotation>
+                      <xs:documentation>1=lookup ID, 2=lookup address (do not create new glid), 3=lookup address (create new glid if needed)</xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1"/>
+                        <xs:enumeration value="1"/>
+                        <xs:enumeration value="2"/>
+                        <xs:enumeration value="3"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="ethernetServiceProviderIndicator" type="cdm:BooleanTrueInfo"/>
+                  <xs:element minOccurs="0" name="overrideAddressIndicator" type="cdm:BooleanTrueInfo">
+                    <xs:annotation>
+                      <xs:documentation>override flag, which prompts backend to create a GLID record with user provided address even when we can not validate the address</xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="AddressTimeZone">
+                    <xs:annotation>
+                      <xs:documentation>use for get timezone info back</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element minOccurs="0" name="buildingCLLI" type="cdm:CLLIRoutingInfo">
+                          <xs:annotation>
+                            <xs:documentation>Clli code for the building.</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="GeoCode">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="country">
+                                <xs:annotation>
+                                  <xs:documentation>iso3,</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:maxLength value="50"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:element>
+                              <xs:element name="Coordinates" type="cdm:AddressGeocodeCoordinatesInfo"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="addressIndicator" type="cdm:BooleanTrueInfo">
+                          <xs:annotation>
+                            <xs:documentation>Return time zone for this address when set to TRUE. </xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="AddressInfoUniversal">
+        <xs:annotation>
+          <xs:documentation>Forward geocoding location info.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:choice>
+            <xs:element name="InternationalAttributes">
+              <xs:complexType>
+                <xs:choice>
+                  <xs:element name="InternationalAddress" type="cdm:InternationalAddressInfo">
+                    <xs:annotation>
+                      <xs:documentation>Worldwide Address Validation</xs:documentation>
+                    </xs:annotation>
+                  </xs:element>
+                  <xs:element name="globalLocationId">
+                    <xs:annotation>
+                      <xs:documentation>aka: GLID</xs:documentation>
+                    </xs:annotation>
+                    <xs:simpleType>
+                      <xs:restriction base="cdm:GlobalLocationIdentifierInfo">
+                        <xs:maxLength value="30"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="USAAttributes">
+              <xs:complexType>
+                <xs:choice>
+                  <xs:element name="AddressIdentifier">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element minOccurs="0" name="Address" type="cdm:USAUniversalAddressInfo">
+                          <xs:annotation>
+                            <xs:documentation>USA addresses</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="globalLocationId">
+                          <xs:annotation>
+                            <xs:documentation>aka: GLID, It will include DTV PID info also.</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="cdm:GlobalLocationIdentifierInfo">
+                              <xs:maxLength value="30"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="GeoCode">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="geocodeFlag">
+                                <xs:annotation>
+                                  <xs:documentation>1:GeoCode; 2: reverse geocode; 3: GeoCode first, if  not valid, reverse geocode. 4: check the LBE suppression availability for the 21 states.</xs:documentation>
+                                </xs:annotation>
+                                <xs:simpleType>
+                                  <xs:restriction base="xs:string">
+                                    <xs:enumeration value="1"/>
+                                    <xs:enumeration value="2"/>
+                                    <xs:enumeration value="3"/>
+                                    <xs:enumeration value="4"/>
+                                  </xs:restriction>
+                                </xs:simpleType>
+                              </xs:element>
+                              <xs:element name="Coordinates" type="cdm:AddressGeocodeCoordinatesInfo"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="buildingClli" type="cdm:CLLI8Info"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element name="ServiceIdentifier">
+                    <xs:complexType>
+                      <xs:choice>
+                        <xs:element name="telephoneNumber" type="cdm:TelephoneNumberInfo">
+                          <xs:annotation>
+                            <xs:documentation>Telephone number.  Format: NNNNNNNNNN</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        <xs:element name="circuitId">
+                          <xs:annotation>
+                            <xs:documentation>Circuit ID.  Ex: A3.HCGS.416055..SC CKL 3</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="62"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                      </xs:choice>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+      <xs:element maxOccurs="1" minOccurs="0" name="InternationalReverseGeocode">
+        <xs:annotation>
+          <xs:documentation>Reverse geocoding.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="country">
+              <xs:annotation>
+                <xs:documentation>iso2, iso3, or country name</xs:documentation>
+              </xs:annotation>
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="50"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element maxOccurs="1" minOccurs="0" name="Coordinates" type="cdm:AddressGeocodeCoordinatesInfo"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

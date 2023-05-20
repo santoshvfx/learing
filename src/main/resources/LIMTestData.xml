@@ -1,0 +1,2436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LIM>
+	<TestCase>
+		<Header>
+			<Description>
+				FieldAddress: 400 S La Sallie San Ramon CA 94583
+			</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg
+				xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+						<item>
+							<tag>Application</tag>
+							<value>LIM_BIS</value>
+						</item>
+						<item>
+							<tag>CustomerName</tag>
+							<value>LIM_BIS</value>
+						</item>
+						<item>
+							<tag>BusinessUnit</tag>
+							<value>SBCDataServices</value>
+						</item>
+					</properties>
+				</context>
+				<unfieldedAddress>
+					<addressLines>
+						<item>400 S La Sallie Apt 3</item>
+					</addressLines>
+					<city>San Ramon</city>
+					<state>NM</state>
+					<postalCode>94583</postalCode>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: 17700 Broadway Av Bedford OH 44146 (OVALS QMS)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>SBCT</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>17700</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<!--  >postalCode>44146</postalCode-->
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>		
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: 2000 Gold Canyon Rd San Antonio TX (OVALS MSAG)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCDataServices</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>19950</houseNumber>
+						<streetName>HUEBNER</streetName>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<city>SAN ANTONIO</city>
+						<state>TX</state>
+						<postalCode>78258</postalCode>
+					</fieldedAddress>
+
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>E911ADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+				<exchangeCode>HRFR</exchangeCode>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: Missing data - 2600 Camino Ramon San Ramon CA 94583 (OVALS USPS Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			        	<item><tag>SagValidationRequest</tag><value>true</value></item>
+			        	<item><tag>MaxCassCharPerLine</tag><value>26</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>2600</houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>San Ramon</city>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: Unfielded Address 2600 Camino Ramon San Ramon CA 94568 (OVALS USPS)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+			    	<unfieldedAddress>
+						<addressLines>
+							<item>Gilbert Gamboa</item>
+							<item>Paeng's Sari Sari Store</item>
+							<item>2600 Camino Ramon</item>
+							<item>Suit 101</item>
+							<item>San Ramon CA 94583</item>
+						</addressLines>
+						<city>San Ramon</city>
+						<state></state>
+						<postalCode></postalCode>
+					</unfieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	
+		<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: Unfielded Address Missing Address (OVALS USPS)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+			    	<unfieldedAddress>
+						<addressLines>
+							
+						</addressLines>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+					</unfieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: W134S6554 Sherwood Cir Muskego WI 53150 (OVALS USPS Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumberPrefix></houseNumberPrefix>
+						<houseNumber>W134S6554</houseNumber>
+						<streetName>Sherwood</streetName>
+						<streetThoroughfare>Cir</streetThoroughfare>
+						<city>Muskego</city>
+						<state>WI</state>
+						<postalCode>53150</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: 2039 Dunbarton Ct W Apt A Indianapolis IN 46260 (ASON Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IN</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>2039</houseNumber>
+						<streetName>Dunbarton</streetName>
+						<streetThoroughfare>Ct</streetThoroughfare>
+						<streetNameSuffix>W</streetNameSuffix>
+						<unitType>APT</unitType>
+						<unitValue>A</unitValue>
+						<city> Indianapolis</city>
+						<state>IN</state>
+						<postalCode>46260</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<!-- providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties-->
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: 1297 Jackson Av APT 44107 OH 44107 (ASON Alternative Addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	 	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	    <item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	    <item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	    <item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1297</houseNumber>
+						<streetName>Jackson</streetName>
+						<city> </city>
+						<streetThoroughfare>Av</streetThoroughfare>
+						<state>OH</state>
+						<postalCode>44107</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>1640</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: 17700 Broadway Av Bedford OH 44146 (ASON Ranged Addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>17700</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: City Hall Chicago IL 60602 (ASON ObjectNotFound)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName>City Hall</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>Chicago</city>
+						<state>IL</state>
+						<postalCode>60602</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: 25800 Carlos Bee Blvd CA 94542 - (PREMIS Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>25800</houseNumber>
+						<streetName>Carlos Bee</streetName>
+						<streetThoroughfare>Blvd</streetThoroughfare>
+						<state>CA</state>
+						<postalCode>94542</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: 10613 @ Osage County OK 74070 (PREMIS Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OK</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>10613</houseNumber>
+						<streetName>@ OSAGE COUNTY</streetName>
+						<route></route>
+						<city>OSAGE COUNTY</city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>OK</state>
+						<postalCode>74070</postalCode>						
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: 12519 Lakewood Ave St Louis MO 63102 (PREMIS Ranged Addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>12519</houseNumber>
+						<streetName>Lakewood</streetName>
+						<city>St Louis</city>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<state>MO</state>
+						<postalCode>63102</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForAddress: 204 Alamo Plaza TX 78205 (PREMIS Alternative Addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>TX</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>204</houseNumber>
+						<streetName>alamo</streetName>
+						<route></route>
+						<city></city>
+						<streetThoroughfare>plaza</streetThoroughfare>
+						<box></box>
+						<state>TX</state>
+						<postalCode>78205</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>308</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - ASON: 2039 Dunbarton Ct W Apt A Indianapolis IN 46260 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value></value></item>
+			        	<item><tag>ServiceCenter</tag><value>IN</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>2039</houseNumber>
+						<streetName>Dunbarton</streetName>
+						<streetThoroughfare>Ct</streetThoroughfare>
+						<streetNameSuffix>W</streetNameSuffix>
+						<unitType>APT</unitType>
+						<unitValue>A</unitValue>
+						<city> Indianapolis</city>
+						<state>IN</state>
+						<postalCode>46260</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+			
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - ASON: 1297 Jackson Av APT 44107 OH 44107 (Alternative Addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>1297</houseNumber>
+						<streetName>Jackson</streetName>
+						<city></city>
+						<streetThoroughfare>Av</streetThoroughfare>
+						<state>OH</state>
+						<postalCode>44107</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>1640</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>		
+		
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - ASON: 17700 Broadway Av Bedford OH 44146 (Ranged Addresses) </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>17700</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>		
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - ASON: City Hall Chicago IL 60602 (ObjectNotFound)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>IL</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName>City Hall</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>Chicago</city>
+						<state>IL</state>
+						<postalCode>60602</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>		
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - PREMIS: 25800 Carlos Bee Blvd CA 94542 (Exact Match) </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>25800</houseNumber>
+						<streetName>Carlos Bee</streetName>
+						<streetThoroughfare>Blvd</streetThoroughfare>
+						<city></city>
+						<state>CA</state>
+						<postalCode>94542</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - PREMIS: 10613 @ Osage County OK 74070 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OK</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSouthwest</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>10613</houseNumber>
+						<streetName>@ OSAGE COUNTY</streetName>
+						<route></route>
+						<city>OSAGE COUNTY</city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>OK</state>
+						<postalCode>74070</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - PREMIS: 12519 Lakewood Ave St Louis MO 63102 (Ranged Addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSouthwest</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>12519</houseNumber>
+						<streetName>Lakewood</streetName>
+						<city>St Louis</city>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<state>MO</state>
+						<postalCode>63102</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - PREMIS: 204 Alamo Plaza TX 78205 (Alternative Addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>TX</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSouthwest</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>204</houseNumber>
+						<streetName>alamo</streetName>
+						<route></route>
+						<city></city>
+						<streetThoroughfare>plaza</streetThoroughfare>
+						<box></box>
+						<state>TX</state>
+						<postalCode>78205</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>308</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 271 ALFORD RD KENTWOOD LA 70444 (Exact Match - 0000 Completed Successfully)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value></value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>271</houseNumber>
+						<streetName>Alford</streetName>
+						<streetThoroughfare>Rd</streetThoroughfare>
+						<route></route>
+						<city>KENTWOOD</city>
+						<box></box>
+						<state>LA</state>
+						<postalCode>70444</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+				<crossBoundaryState>MS</crossBoundaryState>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 380 EAST LAKE BLVD SE APT 416, ATLANTA, GA 30317 (Exact Match - 0000 Completed Successfully)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>380</houseNumber>
+						<streetDirection>EAST</streetDirection>
+						<streetName>LAKE</streetName>
+						<streetThoroughfare>BLVD</streetThoroughfare>
+						<streetNameSuffix>SE</streetNameSuffix>
+						<box></box>
+						<route></route>
+						<city>ATLANTA</city>		
+						<state>GA</state>
+						<postalCode>30317</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>416</unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+						<structureType></structureType>
+						<structureValue></structureValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>50</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>50</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 513 E BROADWAY MAYFIELD, KY 42066 (Exact Match - W907 This Address Also Has Living Units W/ Supp Addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value></value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			        	<!-- >item><tag>UseRsagProductionEnvironment</tag><value>true</value></item-->
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>513</houseNumber>
+						<streetDirection>E</streetDirection>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<route></route>
+						<city>Mayfield</city>
+						<box></box>
+						<state>KY</state>
+						<postalCode>42066</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+				<crossBoundaryState></crossBoundaryState>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+		
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 100 Zepplin St Atlanta GA (Ranged Adresses - E902 No Exact Match On Street)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value></value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>100</houseNumber>
+						<streetName>Zepplin</streetName>
+						<streetThoroughfare>St</streetThoroughfare>
+						<route></route>
+						<city>Atlanta</city>
+						<box></box>
+						<state>GA</state>
+						<postalCode>30303</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+				<crossBoundaryState></crossBoundaryState>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 3950 BARBERRY CT, CUMMING, GA , UNIT MAIN, FLR MAIN, BLDG MAIN (Exact Match - W903 THIS ADDRESS HAS A LIVING UNIT AT THE BASIC ADDRESS ONLY</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>3950</houseNumber>
+						<streetName>BARBERRY</streetName>
+						<streetThoroughfare>CT</streetThoroughfare>
+						<box></box>
+						<route></route>
+						<city>CUMMING</city>		
+						<state>GA</state>
+						<postalCode>30041</postalCode>
+						<unitType>UNIT</unitType>
+						<unitValue>MAIN</unitValue>
+						<levelType>FLR</levelType>
+						<levelValue>MAIN</levelValue>
+						<structureType>BLDG</structureType>
+						<structureValue>MAIN</structureValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 2204 Walden Brook Dr Lithonia GA 30058 (Exact Match - W929 STREET NAME FOUND IN DIFFERENT ZIP)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>2204</houseNumber>
+						<streetName>Walden Brook</streetName>
+						<route></route>
+						<city>Lithonia</city>
+						<streetThoroughfare>Dr</streetThoroughfare>
+						<box></box>
+						<state>GA</state>
+						<postalCode>30058</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>2204</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 380 E LAKE BLVD SE APT 416, ATLANTA, GA 30317 (Ranged Address - E902 NO EXACT MATCH ON STREET NAME)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>380</houseNumber>
+						<streetDirection>E</streetDirection>
+						<streetName>LAKE</streetName>
+						<streetThoroughfare>BLVD</streetThoroughfare>
+						<streetNameSuffix>SE</streetNameSuffix>
+						<box></box>
+						<route></route>
+						<city>ATLANTA</city>		
+						<state>GA</state>
+						<postalCode>30317</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>416</unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+						<structureType></structureType>
+						<structureValue></structureValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>50</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>50</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+		
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 99 ZAYRE ST, WARNER ROBINS, GA 31088 (Ranged Addresses - Contract H - E905 NO MATCH ON HOUSE NUMBER OR AHN >> Warning: HIGH/LOW Number on first address only!!! )</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value></value></item>
+			        	<!--item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item-->
+			        	<item><tag>UseRsagProductionEnvironment</tag><value>true</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>99</houseNumber>
+						<streetName>Zayre</streetName>
+						<streetThoroughfare>St</streetThoroughfare>
+						<route></route>
+						<city>Warner Robins</city>
+						<box></box>
+						<state>GA</state>
+						<postalCode>31088</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+				<crossBoundaryState></crossBoundaryState>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 1 ZAYRE ST, WARNER ROBINS, GA 31088 (Ranged Addresses - Contract H - E952 STREET FOUND IN DIFFERENT COMM/ZIP - NO MATCH ON HSE OR AHN >> Warning: HIGH/LOW Number on first address only!!!</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>1</houseNumber>
+						<streetName>ZAYRE</streetName>
+						<streetThoroughfare>ST</streetThoroughfare>
+						<box></box>
+						<route></route>
+						<city>WARNER ROBINS</city>		
+						<state>GA</state>
+						<postalCode>31088</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+						<structureType></structureType>
+						<structureValue></structureValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 6986 MAIN ST, LITHONIA, GA 30058 (Exact Match - 0000 Completed Successfully)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>6986</houseNumber>
+						<streetName>MAIN</streetName>
+						<streetThoroughfare>ST</streetThoroughfare>
+						<box></box>
+						<route></route>
+						<city>LITHONIA</city>		
+						<state>GA</state>
+						<postalCode>30058</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+		
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 2671 Highway 124, Snailveal, GA 30078 (RSAG Alternative Match - Contract E - E931 NO MATCH ON EXACT STREET NAME AND COMMUNITY/STATE)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			        	<!-- item><tag>UseRsagProductionEnvironment</tag><value>true</value></item-->
+			    	</properties>
+				</context>
+				<address>
+					<unfieldedAddress>
+						<addressLines>
+							<item>2671 Highway 124</item>
+						</addressLines>
+						<city>Snailveal</city>
+						<state>GA</state>
+						<postalCode>30078</postalCode>
+					</unfieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: 1401-G Donald Lee Hollowell Pkwy NW, Apt G-10 Atlanta GA 30319 (Alternative Addresses - Contract L - E949 ADDRESS VALID, NO LIVING UNITS EXIST. SIMILAR HOUSE NUMBERS'S DISPLAYED)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>1401-G</houseNumber>
+						<streetName>Donald Lee Hollowell</streetName>
+						<streetThoroughfare>Pkwy</streetThoroughfare>
+						<streetNameSuffix>NW</streetNameSuffix>
+						<unitType>Apt</unitType>
+						<unitValue>G-10</unitValue>
+						<city>Atlanta</city>
+						<state>GA</state>
+						<postalCode>30319</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - RSAG: Desc Address = 4355 Cascade Rd SW Apt Z, Atlanta, GA 30319 (LIM-InvalidData-10436 - E910 REVIEW LOCATION STANDARDS)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<unfieldedAddress>
+						<addressLines>
+							<item>4355 Cascade Rd SW</item>
+							<item>APT Z</item>
+						</addressLines>
+						<city>Atlanta</city>
+						<state>GA</state>
+						<postalCode>30319</postalCode>
+					</unfieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress: Desc Address = Cobbles, Duluth, GA 30078 (RSAG Alternative Match - Contract G)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<unfieldedAddress>
+						<additionalInfo>Cobbles</additionalInfo>
+						<city>Duluth</city>
+						<state>GA</state>
+						<postalCode>30078</postalCode>
+					</unfieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress: 5430 Jimmy Carter Blvd NW Suit 220, Norcross, GA 30092 (RSAG Alternative Match - Contract O - W908 This address also has living units with supplemental addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>GA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSoutheast</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>5430</houseNumber>
+						<streetName>Jimmy Carter</streetName>
+						<streetThoroughfare>Blvd</streetThoroughfare>
+						<streetNameSuffix>NW</streetNameSuffix>
+						<unitType>Suit</unitType>
+						<unitValue>220</unitValue>
+						<city>Norcross</city>
+						<state>GA</state>
+						<postalCode>30092</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for SouthWest - 2102220080242 - WANDA GREENWALD 1116 AUSTIN ROSENBERG TX 77471-3612</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>RACFID</tag><value>M14078</value></item>
+			        	<item><tag>RACFPassword</tag><value>j3a#l1m$</value></item>
+			        	<item><tag>BOSSTypistId</tag><value>GCLM</value></item>
+			        	<item><tag>BOSSNoteText</tag><value>DON'T worry BE happy</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>true</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<!--value>9258750458123</value-->
+							<value>7136745363324</value>
+							<!--value>2813415322548</value>value-->
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>11111</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber>1116</houseNumber>
+						<streetName>AUSTIN</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>ROSENBERG</city>
+						<state>TX</state>
+						<postalCode>77471</postalCode>
+						<postalCodePlus4>3612</postalCodePlus4>
+						<country></country>
+						<cassAddressLines>
+							<item>WANDA GREENWALD</item>
+							<item>1116 AUSTIN</item>
+							<item>ROSENBERG TX 77471-3612</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>WANDA GREENWALD</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode></deliveryPointValidationCode>
+				<contactName>Donald Lee</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - BCAM - 2032262888495 - TRIPOINT CAPITAL LLC ONE GORMAN BLVD WESPORT CT  06880</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>true</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<!-- item><value>2032262888495</value><kind>BTN</kind></item-->
+						<!-- item><value>5734710028217</value><kind>BTN</kind></item-->
+						<item><value>5734710028217</value><kind>BTN</kind></item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>11111</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+						<cassAddressLines>
+							<item>LIM Test Company</item>
+							<item></item>
+							<item>2600 CAMINO RAMON</item>
+							<item>San Ramon CA 94583</item>
+						</cassAddressLines>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<postalCodePlus4></postalCodePlus4>
+						<country></country>
+						<cassAddressLines>
+							<item>TRIPOINT CAPITAL LLC</item>
+							<item>ONE GORMAN BLVD</item>
+							<item>WESPORT, CT  06880</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>TRIPOINT CAPITAL LLC</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>For Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - BCAM - 2032268787492 - MICHAEL BOLOTIN 27 KINGS HWY-N WESPORT CT  06880</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>true</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item><value>2032268787492</value><kind></kind></item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>11111</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+						<cassAddressLines>
+							<item>LIM Test Company</item>
+							<item></item>
+							<item>2600 CAMINO RAMON</item>
+							<item>San Ramon CA 94583</item>
+						</cassAddressLines>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>MICHAEL BOLOTIN</item>
+							<item>ATTN VIRGINIA FERNANDO</item>
+							<item>27 KINGS HWY-N</item>
+							<item>WESTPORT CT  06880</item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>MICHAEL BOLOTIN</item>
+							<item>ATTN VIRGINIA FERNANDO</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>For Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - BCAM - 2032269101575 - MICHAEL BOLOTIN 27 KINGS HWY-N WESPORT CT  06880</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>true</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item><value>2032269101575</value><kind></kind></item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>11111</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+						<cassAddressLines>
+							<item>LIM Test Company</item>
+							<item></item>
+							<item>2600 CAMINO RAMON</item>
+							<item>San Ramon CA 94583</item>
+						</cassAddressLines>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>MICHAEL BOLOTIN</item>
+							<item>ATTN VIRGINIA FERNANDO</item>
+							<item>27 KINGS HWY-N</item>
+							<item>WESTPORT CT  06880</item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>MICHAEL BOLOTIN</item>
+							<item>ATTN VIRGINIA FERNANDO</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>For Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForService - PREMIS: TN=4158243205 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>415</npa>
+					<nxx>824</nxx>
+					<line>3205</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>				
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForService - PREMIS: TN=3143552124 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        </properties>
+			    </context>
+				<telephoneNumber>
+					<npa>314</npa>
+					<nxx>355</nxx>
+					<line>2124</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>				
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForService - ASON: TN=7153421226 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>715</npa>
+					<nxx>342</nxx>
+					<line>1226</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>				
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForService - BRMS: TN=7656423272 (Error, need to setup DB2!!!)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCDataServices</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>765</npa>
+					<nxx>642</nxx>
+					<line>3272</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>				
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForTelephoneNumber - PREMIS: TN=4158243205 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>415</npa>
+					<nxx>824</nxx>
+					<line>3205</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>			
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForTelephoneNumber - ASON: TN=7153421226 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>715</npa>
+					<nxx>342</nxx>
+					<line>1226</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>			
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForTelephoneNumber - ASON: TN=2162216161 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value></value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>216</npa>
+					<nxx>221</nxx>
+					<line>6161</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>			
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg>
+		</VAXB>
+	</TestCase>
+		
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForTelephoneNumber - RSAG: TN=9855485936 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>LA</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>985</npa>
+					<nxx>548</nxx>
+					<line>5936</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>			
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForTelephoneNumber - RSAG: TN=9855485936 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>LA</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>270</npa>
+					<nxx>247</nxx>
+					<line>6180</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>			
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForTelephoneNumber - RSAG: TN=9852292985 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>LA</value></item>
+			        	<item><tag>UseRsagProductionEnvironment</tag><value>true</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>985</npa>
+					<nxx>229</nxx>
+					<line>2985</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>			
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForTelephoneNumber - RSAG: TN=2702476491 (Exact Match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value></value></item>
+			        	<item><tag>UseRsagProductionEnvironment</tag><value>true</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>270</npa>
+					<nxx>247</nxx>
+					<line>6491</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>			
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg>
+		</VAXB>
+	</TestCase>
+			
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForTelephoneNumber - RSAG: TN=7704826378 (LIM-ObjectNotFound-10433)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<!-- item><tag>ServiceCenter</tag><value>LA</value></item-->
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>770</npa>
+					<nxx>482</nxx>
+					<line>6378</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>			
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForTelephoneNumberRequestBISMsg>
+		</VAXB>
+	</TestCase>
+				
+	<TestCase>
+		<Header>
+			<Description>retrieveServiceAreaByPostalCode: PostalCode=94583, CingularSalesChannel=LIGHTSPEED</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveServiceAreaByPostalCodeRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			    	</properties>
+			    </context>
+			    <cingularSalesChannel>LIGHTSPEED</cingularSalesChannel>
+			    <postalCode>94583</postalCode>
+			    <requestServiceAreaIndicator>true</requestServiceAreaIndicator>
+			    <requestMarketInformationIndicator>true</requestMarketInformationIndicator>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveServiceAreaByPostalCodeRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveServiceAreaByPostalCode: PostalCode=63101, CingularSalesChannel=LIGHTSPEED</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveServiceAreaByPostalCodeRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			    	</properties>
+			    </context>
+			    <cingularSalesChannel>LIGHTSPEED</cingularSalesChannel>
+			    <postalCode>63101</postalCode>
+			    <requestServiceAreaIndicator>true</requestServiceAreaIndicator>
+			    <requestMarketInformationIndicator>false</requestMarketInformationIndicator>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveServiceAreaByPostalCodeRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveServiceAreaByPostalCode: PostalCode=75081, CingularSalesChannel=WOW</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveServiceAreaByPostalCodeRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			    	</properties>
+			    </context>
+			    <cingularSalesChannel>WOW</cingularSalesChannel>
+			    <postalCode>94532</postalCode>
+			    <requestServiceAreaIndicator>false</requestServiceAreaIndicator>
+			    <requestMarketInformationIndicator>true</requestMarketInformationIndicator>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveServiceAreaByPostalCodeRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveServiceAreaByPostalCode: PostalCode=28326, CingularSalesChannel=LIGHTSPEED</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveServiceAreaByPostalCodeRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			    	</properties>
+			    </context>
+			    <cingularSalesChannel>LIGHTSPEED</cingularSalesChannel>
+			    <postalCode>28326</postalCode>
+			    <requestServiceAreaIndicator>true</requestServiceAreaIndicator>
+			    <requestMarketInformationIndicator>true</requestMarketInformationIndicator>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveServiceAreaByPostalCodeRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForE911Address: 501 S GRAND AV HARTFORD WI 53027 (Not Implemented)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForE911AddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCDataServices</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>501</houseNumber>
+						<streetDirection>S</streetDirection>
+						<streetName>GRAND</streetName>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<city>HARTFORD</city>
+						<state>WI</state>
+						<postalCode>53027</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForE911AddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForPostalAddress: 2600 Camino Ramon San Ramon CA 94583</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>2600</houseNumber>
+						<streetName>Camino Ramon</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>San Ramon</city>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForPostalAddress: unfielded - alternatives</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<unfieldedAddress>
+						<addressLines>
+							<item>370 3rd</item>
+							<item>suite 5E</item>
+						</addressLines>
+						<city>San Francisco</city>
+						<state>CA</state>
+						<postalCode></postalCode>
+					</unfieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg>
+		</VAXB>
+		
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForPostalAddress: SagvalidationRequest=true MaxCassCharPerLine=26 2600 Camino Ramon San Ramon CA 94583</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			        	<item><tag>SagValidationRequest</tag><value>true</value></item>
+			        	<item><tag>MaxCassCharPerLine</tag><value>26</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>2600</houseNumber>
+						<streetName>Camino Ramon</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>San Ramon</city>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+		
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForPostalAddress: Missing PostalCode</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>2600</houseNumber>
+						<streetName>Camino Ramon</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>San Ramon</city>
+						<state>CA</state>
+						<postalCode></postalCode>
+					</fieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForPostalAddress: missing input</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>2600</houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForPostalAddress: unfielded - Business violation</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<unfieldedAddress>
+						<addressLines>
+							<item>Gilbert Gamboa</item>
+							<item>Paeng's Sari Sari Store</item>
+							<item>2600 Camino Ramon</item>
+							<item>Suit 101</item>
+							<item>San Ramon CA 94583</item>
+						</addressLines>
+						<city>San Ramon</city>
+						<state></state>
+						<postalCode></postalCode>
+					</unfieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+		
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForPostalAddress: unfielded - missing input</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<unfieldedAddress>
+						<addressLines>
+							
+						</addressLines>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+					</unfieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>		
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForGeoAddress: 17700 Broadway Av Bedford OH 44146 (Not Implemented)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForGeoAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>SBCT</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>17700</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForGeoAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>Ping</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._pingRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<bisContext>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCDataServices</value></item>
+			    	</properties>
+			    </bisContext>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._pingRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>SelfTest</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._selfTestRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<bisContext>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCDataServices</value></item>
+			        	<item><tag>EMAIL_RECIPIENT_LIMSELFTEST</tag><value>limteam@biskid.mo.sbc.com</value></item>
+			    	</properties>
+			    </bisContext>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._selfTestRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForPostalAddress2: 2600 Camino Ramon San Ramon CA 94583</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddress2RequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>2600</houseNumber>
+						<streetName>Camino Ramon</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>San Ramon</city>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxAddressAlternatives>12</maxAddressAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForPostalAddress2RequestBISMsg>
+		</VAXB>
+	</TestCase>										
+</LIM>

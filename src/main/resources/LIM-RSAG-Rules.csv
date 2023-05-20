@@ -1,0 +1,37 @@
+# $Id: LIM-RSAG-Rules.csv,v 1.0 2007/10/10 19:24:44 jd3462 Exp $,,,,,,,,,
+#Error Code,Error Text to Match,LIM Error Tag,LIM Output Description,Origin,Severity,BusinessRule,RSAG Error Text,LIM Error,Exception Type
+I913,ADDRESS,LIM-ObjectNotFound-10433,Code: <%TAG=CODE%s>  Description: <%TAG=MSG%s>,RSAG,1,0,RSAG No Address Verified,ERR_LIM_CBS_NO_ADDRESS_VERIFED,Object Not Found
+W913,ADDRESS,LIM-ObjectNotFound-10433,Code: <%TAG=CODE%s>  Description: <%TAG=MSG%s>,RSAG,1,0,RSAG No Address Verified,ERR_LIM_CBS_NO_ADDRESS_VERIFED,Object Not Found
+W939,ADDRESS,LIM-ObjectNotFound-10433,Code: <%TAG=CODE%s>  Description: <%TAG=MSG%s>,RSAG,1,0,RSAG No Address Verified,ERR_LIM_CBS_NO_ADDRESS_VERIFED,Object Not Found
+E904,ADDRESS,LIM-ObjectNotFound-10433,Code: <%TAG=CODE%s>  Description: <%TAG=MSG%s>,RSAG,1,0,RSAG No Address Verified,ERR_LIM_CBS_NO_ADDRESS_VERIFED,Object Not Found
+E909,ADDRESS,LIM-ObjectNotFound-10433,Code: <%TAG=CODE%s>  Description: <%TAG=MSG%s>,RSAG,1,0,RSAG No Address Verified,ERR_LIM_CBS_NO_ADDRESS_VERIFED,Object Not Found
+E928,ADDRESS,LIM-ObjectNotFound-10433,Code: <%TAG=CODE%s>  Description: <%TAG=MSG%s>,RSAG,1,0,RSAG No Address Verified,ERR_LIM_CBS_NO_ADDRESS_VERIFED,Object Not Found
+E932,ADDRESS,LIM-ObjectNotFound-10433,Code: <%TAG=CODE%s>  Description: <%TAG=MSG%s>,RSAG,1,0,RSAG No Address Verified,ERR_LIM_CBS_NO_ADDRESS_VERIFED,Object Not Found
+E912,ADDRESS,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E914,ADDRESS,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E915,ADDRESS,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E916,ADDRESS,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E923,ADDRESS,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E924,ADDRESS,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E943,ADDRESS,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E909,TN,LIM-ObjectNotFound-10433,Code: <%TAG=CODE%s>  Description: <%TAG=MSG%s>,RSAG,1,0,RSAG No Address Verified,ERR_LIM_CBS_NO_ADDRESS_VERIFED,Object Not Found
+I913,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+W913,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+W939,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E904,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E928,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E932,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E912,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E914,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E915,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E916,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E923,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E924,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E943,TN,LIM-InvalidData-10435,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Data,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+E910,null,LIM-InvalidData-10436,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Supplemental Data,ERR_LIM_CBS_RSAG_INVALID_SUPPLEMENTAL_ADDRESS_DATA,Invalid Data
+E941,null,LIM-InvalidData-10436,Invalid Data Reason: Code: <%TAG=CODE%s> Description: <%TAG=MSG%s>,RSAG,1,0,RSAG Invalid Supplemental Data,ERR_LIM_CBS_RSAG_INVALID_SUPPLEMENTAL_ADDRESS_DATA,Invalid Data
+SVC_ERR,Invalid TN,LIM-InvalidData-00113,Invalid Data. Reason:  TN is not in working status,RSAG,1,0,Invalid Data. Reason: TN is not in working status,ERR_LIM_TN_NOT_WORKING,Invalid Data
+LIM_ERR,Catalyst Error,LIM-SystemFailure-10434,<%TAG=MSG%s>,RSAG,1,0,CBS Connect Failed,ERR_LIM_CBS_RSAG_ERROR,System Failure
+null,CBS Edit,LIM-InvalidData-10435,Invalid Data Reason: <%TAG=CODE%s> <%TAG=MSG%s>,RSAG,1,0,CBS Invalid Status Code.,ERR_LIM_CBS_RSAG_INVALID_DATA,Invalid Data
+#Default,,,,,,,,,
+null,null,LIM-SystemFailure-10820,Unexpected RSAG error encountered: <%TAG=MSG%s>,RSAG,1,0,Unexpected RSAG Error,ERR_LIM_CBS_RSAG,System Failure

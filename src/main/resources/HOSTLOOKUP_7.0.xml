@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<vicuna>
+	<propertyList>
+		<HOSTLOOKUP>
+			<directory>
+				<search>
+					<service TYPE="STRING">C=US,O=SBC,OU=DGBusSvcs,CN=HostLookup</service>
+					<version TYPE="STRING">7.0</version>
+				</search>
+				<selection>
+					<cacheDuration TYPE="USHORT">600</cacheDuration>
+				</selection>
+			</directory>
+		</HOSTLOOKUP>
+		<EventList>
+			<commHandle>
+				<protocol>
+					<profile>
+						<events>
+							<HL_LOOKUP_FULL>
+								<__id TYPE="LONG">50</__id>
+								<HL_LOOKUP_FULL>
+									<__id TYPE="LONG">50</__id>
+								</HL_LOOKUP_FULL>
+								<HL_LOOKUP_FULL_FICTITIOUS>
+									<__id TYPE="LONG">200</__id>
+								</HL_LOOKUP_FULL_FICTITIOUS>
+								<HL_OSS_LOOKUP_ERROR>
+									<__id TYPE="LONG">110</__id>
+								</HL_OSS_LOOKUP_ERROR>
+							</HL_LOOKUP_FULL>
+							<HL_LOOKUP_STATE>
+								<__id TYPE="LONG">300</__id>
+								<HL_LOOKUP_STATE_R>
+									<__id TYPE="LONG">310</__id>
+								</HL_LOOKUP_STATE_R>
+								<HL_OSS_LOOKUP_ERROR>
+									<__id TYPE="LONG">110</__id>
+								</HL_OSS_LOOKUP_ERROR>
+							</HL_LOOKUP_STATE>
+							<HL_LOOKUP_WC>
+								<__id TYPE="LONG">20</__id>
+								<HL_LOOKUP_R>
+									<__id TYPE="LONG">30</__id>
+								</HL_LOOKUP_R>
+								<HL_LOOKUP_ERROR>
+									<__id TYPE="LONG">100</__id>
+								</HL_LOOKUP_ERROR>
+							</HL_LOOKUP_WC>
+							<HL_LOOKUP_DIV>
+								<__id TYPE="LONG">80</__id>
+								<HL_LOOKUP_R>
+									<__id TYPE="LONG">30</__id>
+								</HL_LOOKUP_R>
+								<HL_LOOKUP_ERROR>
+									<__id TYPE="LONG">100</__id>
+								</HL_LOOKUP_ERROR>
+							</HL_LOOKUP_DIV>
+						</events>
+					</profile>
+				</protocol>
+			</commHandle>
+		</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach TYPE="STRING"></Attach>
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</accept>
+		<listen>
+			<transport TYPE="STRING">MTCPAcceptor</transport>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+						<Family TYPE="LONG">2</Family>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>

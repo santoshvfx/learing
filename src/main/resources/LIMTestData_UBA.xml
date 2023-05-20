@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LIM>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for SouthWest - 2102220080242 - WANDA GREENWALD 1116 AUSTIN ROSENBERG TX 77471-3612</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>RACFID</tag><value>M14078</value></item>
+			        	<item><tag>RACFPassword</tag><value>j3a#l1m$</value></item>
+			        	<item><tag>BOSSTypistId</tag><value>GCLM</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value></value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>2102220080242</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>11111</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber>1116</houseNumber>
+						<streetName>AUSTIN</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>ROSENBERG</city>
+						<state>TX</state>
+						<postalCode>77471</postalCode>
+						<postalCodePlus4>3612</postalCodePlus4>
+						<country></country>
+						<cassAddressLines>
+							<item>WANDA GREENWALD</item>
+							<item>1116 AUSTIN</item>
+							<item>ROSENBERG TX 77471-3612</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>WANDA GREENWALD</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>LIM Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for SouthWest - 2102220084390 - WANDA GREENWALD 1116 AUSTIN ROSENBERG TX 77471-3612</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>RACFID</tag><value>M14078</value></item>
+			        	<item><tag>RACFPassword</tag><value>j3a#l1m$</value></item>
+			        	<item><tag>BOSSTypistId</tag><value>GCLM</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value></value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>2102220084390</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>11111</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber>1116</houseNumber>
+						<streetName>AUSTIN</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>ROSENBERG</city>
+						<state>TX</state>
+						<postalCode>77471</postalCode>
+						<postalCodePlus4>3612</postalCodePlus4>
+						<country></country>
+						<cassAddressLines>
+							<item>WANDA GREENWALD</item>
+							<item>1116 AUSTIN</item>
+							<item>ROSENBERG TX 77471-3612</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>WANDA GREENWALD</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>LIM Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for SouthWest - 2102220107274 - DENNIS A CICHOWICZ1027 E CHIPPEWA AV SOUTH BEND IN 46614-2011</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>RACFID</tag><value>M14078</value></item>
+			        	<item><tag>RACFPassword</tag><value>j3a#l1m$</value></item>
+			        	<item><tag>BOSSTypistId</tag><value>GCLM</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value></value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>2102220107274</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>222</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<postalCodePlus4></postalCodePlus4>
+						<country></country>
+						<cassAddressLines>
+							<item>DENNIS A CICHOWICZ</item>
+							<item>1027 E CHIPPEWA AV</item>
+							<item>APT A</item>
+							<item>SOUTH BEND IN 46614-2011</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>DENNIS A CICHOWICZ</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>LIM Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for SouthWest - 2102220217632 - SARAH  GULLEY 927 MIDDLE RUN DUNCANVILLE TX  75137</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>RACFID</tag><value>M14078</value></item>
+			        	<item><tag>RACFPassword</tag><value>j3a#l1m$</value></item>
+			        	<item><tag>BOSSTypistId</tag><value>GCLM</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value></value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>2102220217632</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>333</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<postalCodePlus4></postalCodePlus4>
+						<country></country>
+						<cassAddressLines>
+							<item>SARAH  GULLEY</item>
+							<item>927 MIDDLE RUN</item>
+							<item>DUNCANVILLE TX  75137</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>SARAH  GULLEY</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>LIM Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for SouthWest - 2102220819307 - CVS RX #S06165 144 N BEVERWYCK RD PMB 321 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>RACFID</tag><value>M14078</value></item>
+			        	<item><tag>RACFPassword</tag><value>j3a#l1m$</value></item>
+			        	<item><tag>BOSSTypistId</tag><value>GCLM</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value></value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>2102220819307</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>444</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<postalCodePlus4></postalCodePlus4>
+						<country></country>
+						<cassAddressLines>
+							<item>CVS RX #S06165</item>
+							<item>144 N BEVERWYCK RD PMB 321</item>
+							<item>LAKE HIAWATHA NJ  07034-1909</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>CVS RX #S06165</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>LIM Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for W - 3233448893693 - SANG BONG LEE 3330 VERDUGO RD LOS ANGELES CA  90065-2845</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>false</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>3233448893693</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>2600</houseNumber>
+						<streetName>Camino Ramon</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>San Ramon</city>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>SANG BONG LEE</item>
+							<item>VERDUGO PLAZA LNDRMAT</item>
+							<item>3330 VERDUGO RD</item>
+							<item>LOS ANGELES CA  90065-2845</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>SANG BONG LEE</item>
+							<item>VERDUGO PLAZA LNDRMAT</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>LIM Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for W - 3235631074990 - ERNESTINE JEFFERSON 12412 WADSWORTH AVE APT F BLDG 10 LOS ANGELES CA  90059-3125</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>false</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>3235631074990</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<unfieldedAddress>
+						<addressLines>
+							<item>456 MAIN ST</item>
+							<item>APT 666</item>
+						</addressLines>
+						<city>SAN RAMON</city>
+						<state>CA </state>
+						<postalCode>94583</postalCode>
+					</unfieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>ERNESTINE JEFFERSON </item>
+							<item>12412 WADSWORTH AVE</item>
+							<item>APT F BLDG 10</item>
+							<item>LOS ANGELES CA  90059-3125 </item>
+							<item></item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>ERNESTINE JEFFERSON </item>
+							<item></item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>ERNESTINE</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for W - 6192223059235 - JOHN R FEWEL 3661 LIGGETT DR 2ND SVC SAN DIEGO CA  92106-2167</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>false</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>6192223059235</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<unfieldedAddress>
+						<addressLines>
+							<item>456 ATT ST</item>
+							<item>APT 111</item>
+						</addressLines>
+						<city>SAN RAMON</city>
+						<state>CA </state>
+						<postalCode>94583</postalCode>
+					</unfieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>JOHN R FEWEL</item>
+							<item>3661 LIGGETT DR 2ND SVC </item>
+							<item>SAN DIEGO CA  92106-2167</item>
+							<item></item>
+							<item></item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>JOHN R FEWEL</item>
+							<item></item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>JOHN R FEWEL</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BCAM Data for W - 6192600027666 - SARAH KOHMESCHER 3793 PARK BLVD APT 1 1-2 SAN DIEGO CA  92103-3648</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>false</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>6192600027666</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<unfieldedAddress>
+						<addressLines>
+							<item>456 ATT ST</item>
+							<item>APT 111</item>
+							<item></item>
+						</addressLines>
+						<city>SAN RAMON</city>
+						<state>CA </state>
+						<postalCode>94583</postalCode>
+					</unfieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>SARAH KOHMESCHER </item>
+							<item>3793 PARK BLVD</item>
+							<item>APT 1 1-2</item>
+							<item>SAN DIEGO CA  92103-3648</item>
+							<item></item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>SARAH KOHMESCHER </item>
+							<item></item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>SARAH KOHMESCHER</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BIMX for AIT - 5742434946753 - STAHL ROBERT G 1609 S LAKE GEORGE DR MISHAWAKA IN  46545-4069</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>false</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>5742434946753</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<unfieldedAddress>
+						<addressLines>
+							<item>1234 ATT ST</item>
+							<item>APT 888</item>
+						</addressLines>
+						<city>SAN RAMON</city>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+					</unfieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>STAHL ROBERT G</item>
+							<item>1609 S LAKE GEORGE DR</item>
+							<item>MISHAWAKA IN  46545-4069</item>
+							<item></item>
+							<item></item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>STAHL ROBERT G</item>
+							<item></item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>STAHL</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BIMX for AIT - 5742821649444 - JOYCE ANN ANAGNOWSTOU 318 E FAIRVIEW AV SOUTH BEND IN 46614-1134</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ATTServices</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>false</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>5742821649444</value>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<unfieldedAddress>
+						<addressLines>
+							<item>1234 ATT ST</item>
+							<item>APT 888</item>
+						</addressLines>
+						<city>SAN RAMON</city>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+					</unfieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>JOYCE ANN ANAGNOWSTOU </item>
+							<item>318 E FAIRVIEW AV</item>
+							<item>SOUTH BEND IN 46614-1134</item>
+							<item></item>
+							<item></item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>JOYCE ANN ANAGNOWSTOU </item>
+							<item></item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>JOYCE</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BIMX for SNET - 2032262888495 - TRIPOINT CAPITAL LLC ONE GORMAN BLVD WESPORT CT  06880</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>true</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>2032262888495</value><kind></kind>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>11111</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+						<cassAddressLines>
+							<item>LIM Test Company</item>
+							<item></item>
+							<item>2600 CAMINO RAMON</item>
+							<item>San Ramon CA 94583</item>
+						</cassAddressLines>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>TRIPOINT CAPITAL LLC</item>
+							<item>ONE GORMAN BLVD</item>
+							<item>WESPORT CT  06880</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>TRIPOINT CAPITAL LLC</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>For Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Update Billing Address - Test BIMX for SNET - 2032262888495 - FAIRFIELD COUNTY LENDING WESPORT CT  06880</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIMBIS</value></item>
+			        	<item><tag>BypassBossNotesPosting</tag><value>true</value></item>
+			    	</properties>
+				</context>
+				<billingAccountKey>
+					<keys>
+						<item>
+							<value>2032262888495</value><kind></kind>
+							<kind>com.sbc.eia.bis.BillingTelephoneNumber</kind>
+						</item>
+					</keys>
+				</billingAccountKey>
+				<oldAddress>
+					<fieldedAddress>
+						<houseNumber>11111</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+						<cassAddressLines>
+							<item>LIM Test Company</item>
+							<item></item>
+							<item>2600 CAMINO RAMON</item>
+							<item>San Ramon CA 94583</item>
+						</cassAddressLines>
+					</fieldedAddress>
+				</oldAddress>
+				<newAddress>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode></postalCode>
+						<country></country>
+						<cassAddressLines>
+							<item>FAIRFIELD COUNTY LENDING</item>
+							<item>1 GORHAM ISL</item>
+							<item>WESPORT CT  06880</item>
+							<item></item>
+						</cassAddressLines>
+						<auxiliaryAddressLines>
+							<item>FAIRFIELD COUNTY LENDING</item>
+						</auxiliaryAddressLines>
+						<cassAdditionalInfo>3S01</cassAdditionalInfo>
+					</fieldedAddress>
+				</newAddress>
+				<deliveryPointValidationCode>Y</deliveryPointValidationCode>
+				<contactName>For Test</contactName>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._updateBillingAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+</LIM>

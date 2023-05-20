@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<vicuna>
+	<propertyList>
+		<SAG01F>
+			<directory>
+				<search>
+					<service TYPE="STRING">C=US,O=SNET,OU=CIWSvcs,CN=SAG01F</service>
+					<version TYPE="STRING">1.0</version>
+				</search>
+				<selection>
+					<cacheDuration TYPE="USHORT">600</cacheDuration>
+				</selection>
+			</directory>
+		</SAG01F>
+		<EventList>
+			<commHandle>
+				<protocol>
+					<profile>
+						<events>
+							<SAG_REQUEST>
+								<__id TYPE="LONG">100</__id>
+								<SAG_RESPONSE>
+									<__id TYPE="LONG">1100</__id>
+								</SAG_RESPONSE>
+							</SAG_REQUEST>
+						</events>
+					</profile>
+				</protocol>
+			</commHandle>
+		</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach TYPE="STRING"></Attach>
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</accept>
+		<listen>
+			<transport TYPE="STRING">MTCPAcceptor</transport>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+						<Family TYPE="LONG">2</Family>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>

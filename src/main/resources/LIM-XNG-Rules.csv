@@ -1,0 +1,7 @@
+# $Id$
+#Error Code,Error Text to Match,LIM Error Tag,LIM Output Description,Origin,Severity,BusinessRule,BRMS Error Text,LIM Error,Exception Type
+7011,null,LIM-NotImplemented-08481,Not Implemented: Granite/XngRC Description:,Granite-XngRC,1,0,Invalid Message Property of type embusMessageTag value,ERR_LIM_GRANITE_XNGRC_DESCRIPTION,Not Implemented
+7012,null,LIM-InvalidData-08483,Invalid Data: Granite/XngRC Description: ,Granite-XngRC,1,0,XML failed validation due to invalid data,ERR_LIM_GRANITE_XNGRC_DESCRIPTION_INVALID_DATA,Invalid Data
+7013,null,LIM-BusinessViolation-08499,Granite/XngRC Description: ,Granite-XngRC,1,0,Failure to find an existing path,ERR_LIM_GRANITE_XNGRC_DESCRIPTION_BUSINESS_VIOLATION,Business Violation
+#Default, , , , , , , , ,
+null,null,LIM-SystemFailure-08485,Granite/XngRC Description: ,Granite-XngRC,1,0,Unknown Granite Error,ERR_LIM_GRANITE/XNGRC_DESCRIPTION_SYSTEM_FAILURE,System Failure

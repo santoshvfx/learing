@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIM>
+<!-- Test cases for PREMIS SouthWest region -->
+
+	<TestCase>
+		<Header>
+			<Description>RLFS: PREMIS Southwest - TN=9729069112 (NON-SBC Territory: GTE - Works in production only!) </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>TX</value></item>
+			        </properties>
+			    </context>
+				<telephoneNumber>
+					<npa>972</npa>
+					<nxx>906</nxx>
+					<line>9112</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>				
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS - One Bell Center MO 63101</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName>One Bell Center</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<state>MO</state>
+						<postalCode>63101</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -100 Olive St Charles MO 63101</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>100</houseNumber>
+						<streetName>OLIVE</streetName>
+						<city>ST CHARLES</city>
+						<streetThoroughfare></streetThoroughfare>
+						<state>MO</state>
+						<postalCode>63101</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Larkwood Ct St Louis MO 63101</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>12519</houseNumber>
+						<streetName>Larkwood</streetName>
+						<city>St Louis</city>
+						<streetThoroughfare>Ct</streetThoroughfare>
+						<state>MO</state>
+						<postalCode>63101</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -10613 @ Osage County OK 74070</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        <item><tag>ServiceCenter</tag><value>OK</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>10613</houseNumber>
+						<streetName>@ OSAGE COUNTY</streetName>
+						<route></route>
+						<city>OSAGE COUNTY</city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>OK</state>
+						<postalCode>74070</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Highway H MO 63071</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>5000</houseNumber>
+						<streetName>Highway H</streetName>
+						<route></route>
+						<city></city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>MO</state>
+						<postalCode>63071</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Cedar San Antonio TX 78210</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>TX</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>320</houseNumber>
+						<streetName>Cedar</streetName>
+						<route></route>
+						<city>SAN ANTONIO</city>
+						<streetThoroughfare>St</streetThoroughfare>
+						<box></box>
+						<state>Tx</state>
+						<postalCode>78210</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -96611 @ Jefferson County 63020</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>96611</houseNumber>
+						<streetName>@ Jefferson County</streetName>
+						<route></route>
+						<city></city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state></state>
+						<postalCode>63020</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Alamo Plaza TX 78205</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>TX</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>204</houseNumber>
+						<streetName>alamo</streetName>
+						<route></route>
+						<city></city>
+						<streetThoroughfare>plaza</streetThoroughfare>
+						<box></box>
+						<state>TX</state>
+						<postalCode>78205</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>308</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Pine E Tulsa OK 74116</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OK</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Southwest</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>11440</houseNumber>
+						<streetName>PINE</streetName>
+						<streetDirection>E</streetDirection>
+						<route></route>
+						<city>TULSA</city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>OK</state>
+						<postalCode>74116</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<!-- testcases for PREMIS West-->
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Stanford University CA 94305</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName>Stanford University</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94305</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -BLDG CERAS 12 Stanford University CA 94305</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>12</houseNumber>
+						<streetName>Stanford University</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94305</postalCode>
+						<unitType>RMs</unitType>
+						<unitValue>507</unitValue>
+						<structType>BLDG</structType>
+						<structValue>CERAS</structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -CANYON WOODS CA 94583</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>246</houseNumber>
+						<streetName>CANYON WOODS</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS - 1010 Harness CA 94583</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1010</houseNumber>
+						<streetName>Harness</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Avenue A Treas Is CA 94130</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>15</houseNumber>
+						<streetName>Avenue A</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city>TREAS IS</city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94130</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Kiely Bl S Clasa CA 95051</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>900</houseNumber>
+						<streetName>Kiely</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city>S Clasa</city>
+						<streetThoroughfare>Bl</streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>95051</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -@ Quick Xanadu CA 91214</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1002</houseNumber>
+						<streetName>@ Quick</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city>XANADU</city>
+						<streetThoroughfare>Ln</streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>91214</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Willows Rd CA 94506</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>170</houseNumber>
+						<streetName>Willows</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare>Rd</streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94506</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Broadway Av SF CA 94133</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>671</houseNumber>
+						<streetName>BROADWAY</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city>SF</city>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94133</postalCode>
+						<unitType></unitType>
+						<houseNumberSuffix>1-2</houseNumberSuffix>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -2600 camino ramon San Ramon CA 94583</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>2600</houseNumber>
+						<streetName>camino ramon </streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city>san ramon</city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+						<unitType></unitType>
+						
+						<houseNumberSuffix></houseNumberSuffix>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Bell San Ramon NV 89503</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>935</houseNumber>
+						<streetName>Bell </streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city>san ramon</city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>NV</state>
+						<postalCode>89503</postalCode>
+						<unitType>APT</unitType>
+						
+						<houseNumberSuffix></houseNumberSuffix>
+						<unitValue>2</unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Telegraph Av CA 94704 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>2300</houseNumber>
+						<streetName>TELEGRAPH </streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94704</postalCode>
+						<unitType></unitType>
+						
+						<houseNumberSuffix></houseNumberSuffix>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS -Market Av CA 94102</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1540</houseNumber>
+						<streetName>market </streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94102</postalCode>
+						<unitType></unitType>
+						
+						<houseNumberSuffix></houseNumberSuffix>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS - Willows Rd CA 94506</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>170</houseNumber>
+						<streetName>Willows</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94506</postalCode>
+						<unitType></unitType>
+						
+						<houseNumberSuffix></houseNumberSuffix>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS - Willow Creek Dr CA 95124</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+				        <houseNumberSuffix>N142</houseNumberSuffix>
+						<houseNumber>1700</houseNumber>
+						<streetName>WILLOW CREEK</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city>SJ</city>
+						<streetThoroughfare>DR</streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>95124</postalCode>
+						<unitType></unitType>
+						
+						<houseNumberSuffix></houseNumberSuffix>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS - DEER RIDGE PL CA 94506</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+				        
+						<houseNumber>100</houseNumber>
+						<streetName>DEER RIDGE</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare>PL</streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94506</postalCode>
+						<unitType></unitType>
+						
+						<houseNumberSuffix></houseNumberSuffix>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS - 1700 WILLOWS 95124</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+				        
+						<houseNumber>1700</houseNumber>
+						<streetName>WILLOWS</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state></state>
+						<postalCode>95124</postalCode>
+						<unitType></unitType>
+						
+						<houseNumberSuffix></houseNumberSuffix>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS PREMIS - 545 canyon woods CA 94583</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			        	
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+				        
+						<houseNumber>545</houseNumber>
+						<streetName>canyon woods</streetName>
+						<streetDirection></streetDirection>
+						<route></route>
+						<city></city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>CA</state>
+						<postalCode>94583</postalCode>
+						<unitType></unitType>
+						
+						<houseNumberSuffix></houseNumberSuffix>
+						<unitValue></unitValue>
+						<structType></structType>
+						<structValue></structValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<!-- test cases for RLFS for PREMIS -->
+	
+	
+	
+	<TestCase>
+		<Header>
+			<Description>RLFS: PREMIS TN=4153621000</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>415</npa>
+					<nxx>362</nxx>
+					<line>1000</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>				
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFS: PREMIS TN=4158243205</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>415</npa>
+					<nxx>824</nxx>
+					<line>3205</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>				
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFS: PREMIS TN=7753244198</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	 	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>NV</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>775</npa>
+					<nxx>324</nxx>
+					<line>4198</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>				
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<!-- Test cases for Unfielded address-->
+	<TestCase>
+		<Header>
+			<Description>FieldAddress: GLICK ENTERPRISES 370 3rd SUITE 5E San Francisco CA   </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			    	</properties>
+			    </context>    				
+				<unfieldedAddress>
+					<addressLines>
+						<item>GLICK ENTERPRISES 370 3rd SUITE 5E SF CA 94595</item>
+					</addressLines>
+					<city>San Fransico</city>
+					<state>CA</state>
+					<postalCode>94595</postalCode>
+					<postalCodePlus4></postalCodePlus4>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>FieldAddress: p. o. box 50548 PaloAlto CA 94303  </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			    	</properties>
+			    </context>    				
+				<unfieldedAddress>
+					<addressLines>
+						<item>p. o. box 50548 </item>
+					</addressLines>
+					<city>PALO ALTO</city>
+					<state>CA</state>
+					<postalCode>94303</postalCode>
+					<postalCodePlus4></postalCodePlus4>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>FieldAddress: p. o. box 1170  Santa Clara CA 95052 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCDataServices</value></item>
+			    	</properties>
+			    </context>    				
+				<unfieldedAddress>
+					<addressLines>
+						<item>PO BOX 1170 </item>
+					</addressLines>
+					<city>SANTA CLARA</city>
+					<state>CA</state>
+					<postalCode>95052</postalCode>
+					<postalCodePlus4></postalCodePlus4>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>FieldAddress: PO BOX 361034 Milpitas CA 95036 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			    	</properties>
+			    </context>    				
+				<unfieldedAddress>
+					<addressLines>
+						<item>PO BOX 361034</item>
+					</addressLines>
+					<city>MILPITAS </city>
+					<state>CA</state>
+					<postalCode>95036</postalCode>
+					<postalCodePlus4></postalCodePlus4>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>FieldAddress: P O BOX 1148 Pleasanton CA 94566      </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CA</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC west</value></item>
+			    	</properties>
+			    </context>    				
+				<unfieldedAddress>
+					<addressLines>
+						<item>P O BOX 1148</item>
+					</addressLines>
+					<city>PLEASANTON</city>
+					<state>CA</state>
+					<postalCode>94566</postalCode>
+					<postalCodePlus4></postalCodePlus4>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - PREMIS: 12519 Lakewood Ave St Louis MO 63102 (Exact match)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSouthwest</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>100</houseNumber>
+						<streetName>OLIVE</streetName>
+						<city>ST CHARLES</city>
+						<streetThoroughfare></streetThoroughfare>
+						<state>MO</state>
+						<postalCode>63101</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>			
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - PREMIS: 10613 @ Osage County OK 74070 (Alternative Premis RTCD=301-1)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OK</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSouthwest</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>10613</houseNumber>
+						<streetName>@ OSAGE COUNTY</streetName>
+						<route></route>
+						<city>OSAGE COUNTY</city>
+						<streetThoroughfare></streetThoroughfare>
+						<box></box>
+						<state>OK</state>
+						<postalCode>74070</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>	
+	<TestCase>
+		<Header>
+			<Description>retrieveLocationForServiceAddress - PREMIS: 12519 Lakewood Ave St Louis MO 63102 (Ranged Addresses)</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MO</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCSouthwest</value></item>
+			    	</properties>
+				</context>
+				<address>
+					<fieldedAddress>
+						<houseNumber>12519</houseNumber>
+						<streetName>Lakewood</streetName>
+						<city>St Louis</city>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<state>MO</state>
+						<postalCode>63102</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<locationPropertiesToGet>
+					<item>ALL</item>
+				</locationPropertiesToGet>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>			
+</LIM>

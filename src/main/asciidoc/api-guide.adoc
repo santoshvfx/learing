@@ -1,0 +1,305 @@
+= LIM API Documentation
+:toc: left
+
+=== ping
+
+==== EJB Method: ping()
+
+.ping http request
+include::{snippets}/ping/http-request.adoc[]
+
+.ping curl request
+include::{snippets}/ping/curl-request.adoc[]
+
+.ping httpie request
+include::{snippets}/ping/httpie-request.adoc[]
+
+.ping http response (Response POJO: PingReturn.java)
+include::{snippets}/ping/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/ping/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/ping/response-fields.adoc[]
+
+=== selfTest
+
+==== EJB Method: selfTest()
+
+.selfTest http request
+include::{snippets}/selfTest/http-request.adoc[]
+
+.selfTest curl request
+include::{snippets}/selfTest/curl-request.adoc[]
+
+.selfTest httpie request
+include::{snippets}/selfTest/httpie-request.adoc[]
+
+.selfTest http response (Response POJO: SelfTestReturn.java)
+include::{snippets}/selfTest/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/selfTest/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/selfTest/response-fields.adoc[]
+
+=== retrieveLocationForServiceAddress
+
+==== EJB Method: retrieveLocationForServiceAddress()
+
+===== Note: below is dummy request/response data not to be used for testing
+
+.retrieveLocationForServiceAddress http request
+include::{snippets}/retrieveLocationForServiceAddress/http-request.adoc[]
+
+.retrieveLocationForServiceAddress curl request
+include::{snippets}/retrieveLocationForServiceAddress/curl-request.adoc[]
+
+.retrieveLocationForServiceAddress httpie request
+include::{snippets}/retrieveLocationForServiceAddress/httpie-request.adoc[]
+
+.retrieveLocationForServiceAddress http response (Response POJO: RetrieveLocationForServiceAddressReturn.java)
+include::{snippets}/retrieveLocationForServiceAddress/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/retrieveLocationForServiceAddress/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/retrieveLocationForServiceAddress/response-fields.adoc[]
+
+=== retrieveLocationForAddress
+
+==== EJB Method: retrieveLocationForAddress()
+
+===== Note: below is dummy request/response data not to be used for testing
+
+.retrieveLocationForAddress http request
+include::{snippets}/retrieveLocationForAddress/http-request.adoc[]
+
+.retrieveLocationForAddress curl request
+include::{snippets}/retrieveLocationForAddress/curl-request.adoc[]
+
+.retrieveLocationForAddress httpie request
+include::{snippets}/retrieveLocationForAddress/httpie-request.adoc[]
+
+.retrieveLocationForAddress http response (Response POJO: RetrieveLocationForAddressReturn.java)
+include::{snippets}/retrieveLocationForAddress/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/retrieveLocationForAddress/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/retrieveLocationForAddress/response-fields.adoc[]
+
+=== retrieveLocationForService
+
+==== EJB Method: retrieveLocationForService()
+
+===== Note: below is dummy request/response data not to be used for testing
+
+.retrieveLocationForService http request
+include::{snippets}/retrieveLocationForService/http-request.adoc[]
+
+.retrieveLocationForService curl request
+include::{snippets}/retrieveLocationForService/curl-request.adoc[]
+
+.retrieveLocationForService httpie request
+include::{snippets}/retrieveLocationForService/httpie-request.adoc[]
+
+.retrieveLocationForService http response (Response POJO: RetrieveLocationForServiceReturn.java)
+include::{snippets}/retrieveLocationForService/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/retrieveLocationForService/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/retrieveLocationForService/response-fields.adoc[]
+
+=== retrieveLocationForPostalAddress
+
+==== EJB Method: retrieveLocationForPostalAddress()
+
+===== Note: below is dummy request/response data not to be used for testing
+
+.retrieveLocationForPostalAddress http request
+include::{snippets}/retrieveLocationForPostalAddress/http-request.adoc[]
+
+.retrieveLocationForPostalAddress curl request
+include::{snippets}/retrieveLocationForPostalAddress/curl-request.adoc[]
+
+.retrieveLocationForPostalAddress httpie request
+include::{snippets}/retrieveLocationForPostalAddress/httpie-request.adoc[]
+
+.retrieveLocationForPostalAddress http response (Response POJO: RetrieveLocationForPostalAddressReturn.java)
+include::{snippets}/retrieveLocationForPostalAddress/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/retrieveLocationForPostalAddress/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/retrieveLocationForPostalAddress/response-fields.adoc[]
+
+=== fieldAddress
+
+==== EJB Method: fieldAddress()
+
+.fieldAddress http request
+include::{snippets}/fieldAddress/http-request.adoc[]
+
+.fieldAddress curl request
+include::{snippets}/fieldAddress/curl-request.adoc[]
+
+.fieldAddress httpie request
+include::{snippets}/fieldAddress/httpie-request.adoc[]
+
+.fieldAddress http response (Response POJO: FieldAddressReturn.java)
+include::{snippets}/fieldAddress/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/fieldAddress/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/fieldAddress/response-fields.adoc[]
+
+=== updateBillingAddress
+
+==== EJB Method: updateBillingAddress()
+
+===== Note: below is dummy request/response data not to be used for testing
+
+.updateBillingAddress http request
+include::{snippets}/updateBillingAddress/http-request.adoc[]
+
+.updateBillingAddress curl request
+include::{snippets}/updateBillingAddress/curl-request.adoc[]
+
+.updateBillingAddress httpie request
+include::{snippets}/updateBillingAddress/httpie-request.adoc[]
+
+.updateBillingAddress http response (Response POJO: UpdateBillingAddressReturn.java)
+include::{snippets}/updateBillingAddress/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/updateBillingAddress/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/updateBillingAddress/response-fields.adoc[]
+
+
+=== retrieveLocationForTelephoneNumber
+
+===== Note: below is dummy request/response data not to be used for testing
+
+==== EJB Method: retrieveLocationForTelephoneNumber()
+
+.retrieveLocationForTelephoneNumber http request
+include::{snippets}/retrieveLocationForTelephoneNumber/http-request.adoc[]
+
+.retrieveLocationForTelephoneNumber curl request
+include::{snippets}/retrieveLocationForTelephoneNumber/curl-request.adoc[]
+
+.retrieveLocationForTelephoneNumber httpie request
+include::{snippets}/retrieveLocationForTelephoneNumber/httpie-request.adoc[]
+
+.retrieveLocationForTelephoneNumber http response (Response POJO: RetrieveLocationForTelephoneNumberReturn.java)
+include::{snippets}/retrieveLocationForTelephoneNumber/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/retrieveLocationForTelephoneNumber/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/retrieveLocationForTelephoneNumber/response-fields.adoc[]
+
+
+=== retrieveLocationForE911Address
+
+==== EJB Method: retrieveLocationForE911Address()
+
+.retrieveLocationForE911Address http request
+include::{snippets}/retrieveLocationForE911Address/http-request.adoc[]
+
+.retrieveLocationForE911Address curl request
+include::{snippets}/retrieveLocationForE911Address/curl-request.adoc[]
+
+.retrieveLocationForE911Address httpie request
+include::{snippets}/retrieveLocationForE911Address/httpie-request.adoc[]
+
+.retrieveLocationForE911Address http response (Response POJO: RetrieveLocationForE911AddressReturn.java)
+include::{snippets}/retrieveLocationForE911Address/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/retrieveLocationForE911Address/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/retrieveLocationForE911Address/response-fields.adoc[]
+
+
+=== retrieveLocationForGeoAddress
+
+==== EJB Method: retrieveLocationForGeoAddress()
+
+.retrieveLocationForGeoAddress http request
+include::{snippets}/retrieveLocationForGeoAddress/http-request.adoc[]
+
+.retrieveLocationForGeoAddress curl request
+include::{snippets}/retrieveLocationForGeoAddress/curl-request.adoc[]
+
+.retrieveLocationForGeoAddress httpie request
+include::{snippets}/retrieveLocationForGeoAddress/httpie-request.adoc[]
+
+.retrieveLocationForGeoAddress http response (Response POJO: RetrieveLocationForGeoAddressReturn.java)
+include::{snippets}/retrieveLocationForGeoAddress/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/retrieveLocationForGeoAddress/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/retrieveLocationForGeoAddress/response-fields.adoc[]
+
+
+=== retrieveLocationForPostalAddress2
+
+==== EJB Method: retrieveLocationForPostalAddress2()
+
+.retrieveLocationForPostalAddress2 http request
+include::{snippets}/retrieveLocationForPostalAddress2/http-request.adoc[]
+
+.retrieveLocationForPostalAddress2 curl request
+include::{snippets}/retrieveLocationForPostalAddress2/curl-request.adoc[]
+
+.retrieveLocationForPostalAddress2 httpie request
+include::{snippets}/retrieveLocationForPostalAddress2/httpie-request.adoc[]
+
+.retrieveLocationForPostalAddress2 http response (Response POJO: RetrieveLocationForPostalAddress2Return.java)
+include::{snippets}/retrieveLocationForPostalAddress2/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/retrieveLocationForPostalAddress2/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/retrieveLocationForPostalAddress2/response-fields.adoc[]
+
+
+=== retrieveServiceAreaByPostalCode
+
+==== EJB Method: retrieveServiceAreaByPostalCode()
+
+.retrieveServiceAreaByPostalCode http request
+include::{snippets}/retrieveServiceAreaByPostalCode/http-request.adoc[]
+
+.retrieveServiceAreaByPostalCode curl request
+include::{snippets}/retrieveServiceAreaByPostalCode/curl-request.adoc[]
+
+.retrieveServiceAreaByPostalCode httpie request
+include::{snippets}/retrieveServiceAreaByPostalCode/httpie-request.adoc[]
+
+.retrieveServiceAreaByPostalCode http response (Response POJO: RetrieveServiceAreaByPostalCodeReturn.java)
+include::{snippets}/retrieveServiceAreaByPostalCode/http-response.adoc[]
+
+.Request fields description
+include::{snippets}/retrieveServiceAreaByPostalCode/request-fields.adoc[]
+
+.Response fields description
+include::{snippets}/retrieveServiceAreaByPostalCode/response-fields.adoc[]

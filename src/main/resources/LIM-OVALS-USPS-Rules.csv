@@ -1,0 +1,13 @@
+# $Id: LIM-OVALS-USPS-Rules.csv,v 1.4 2005/06/25 00:54:23 rz7367 Exp $,,,,,,,,
+#Error Code,Error Text to match,LIM Error Tag,LIM Description,Origin,Severity,BusinessRule,OVALS-USPS Error Text,LIM Error,Exception Type
+ADDR_ERR,XML Parsing Exception,LIM-SystemFailure-01680,XML parsing exception (JAXB). Description: <%TAG=MSG%s>,LIM,1,0,XML parsing exception,ERR_LIM_XML_PARSING_EXCEPTION,System Failure
+ADDR_ERR,null,LIM-ObjectNotFound-00001,Neither an exact match or a close alternative was found.,OVALS,1,0,Neither an exact match or a close alternative was found.,ERR_LIM_ADDRESS_NOT_FOUND,Object Not Found
+ADDR_PARSER,Address format,LIM-SystemFailure-01681,AddressHandler Exception: Unrecognized address format - OVALSUSPS. Description: <%TAG=ERR%s>,OVALS,1,0,AddressHandler Exception: Unrecognized address format - OVALSUSPS.,ERR_LIM_OVALSUSPS_UNRECOGNIZED_ADDRESS_FORMAT,System Failure
+EDIT_ERR,Missing Required Data.,LIM-INVALIDDATA-03176,Missing Data: City and State and Postal Code must be provided in the request.,LIM,1,0,Missing Data: City and State and Postal Code must be provided in the request.,ERR_LIM_MISSING_CSZ,Invalid Data
+LIM_ERR,EMBus Exception,LIM-SystemFailure-01718,Host System EMBus Exception. Description: <%TAG=MSG%s>,EMBUS,1,0,Host System EMBus Exception,ERR_LIM_EMBUS_EXCEPTION,System Failure
+LIM_ERR,JMS Exception,LIM-SystemFailure-01682,JMS exception. Description: <%TAG=MSG%s>,LIM,1,0,JMS exception,ERR_LIM_JMS_EXCEPTION,System Failure
+LIM_ERR,Proxy Exception,LIM-SystemFailure-01683,Proxy exception description: <%TAG=MSG%s>,LIM,1,0,Proxy exception,ERR_LIM_PROXY_EXCEPTION,System Failure
+LIM_ERR,null,LIM-SystemFailure-00088,LIM Internal Error,LIM,1,0,LIM Internal Error,ERR_LIM_INTERNAL,System Failure
+OVALS_ERR,Ovals Fatal Error,LIM-SystemFailure-01540,USPS Fatal Error: Description: <%TAG=MSG%s>,OVALS,1,0,Host System Fatal Error,ERR_LIM_OVALS_FATAL,System Failure
+#Default,,,,,,,,,
+null,null,LIM-SystemFailure-01541,Host System Exception Not Defined in OVALS-USPS Rules File.,OVALS,1,0,Unexpected error code - Internal error.,ERR_LIM_OVALS-USPS,System Failure

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="selfTestDB.xsl"?>
+
+<database>
+	<databaseResources>
+         <DATASOURCE>
+            <DB_DESCRIPTION>Oracle JDBC Connection</DB_DESCRIPTION>
+           	<DB_PROPERTY_FILE>lim.properties</DB_PROPERTY_FILE>
+            <TABLE_LIST>
+            	<TABLE_NAME>LIM_ADDRESS_CACHE</TABLE_NAME>
+            	<TABLE_NAME>ZC</TABLE_NAME>
+            	<TABLE_NAME>ZIP_COMMUNITY</TABLE_NAME>
+            	<TABLE_NAME>CLEC_EXCO</TABLE_NAME>
+            	<TABLE_NAME>LFACS_SAG_LU_STATUS</TABLE_NAME>
+            	<TABLE_NAME>LIM_BIS_AUTHORIZATION</TABLE_NAME>
+            	<TABLE_NAME>SAG_LFACS_WIRECENTER</TABLE_NAME>
+            </TABLE_LIST>           
+         </DATASOURCE>
+     </databaseResources>
+</database>
+
+

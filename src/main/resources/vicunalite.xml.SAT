@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<vicuna>
+	<directories>
+		<test1>
+			<host TYPE="string">vltest01.sbc.com</host>
+			<port TYPE="long">7806</port>
+			<xcoord TYPE="float">-88.309099</xcoord>
+        		<ycoord TYPE="float">42.998067</ycoord>
+			<login TYPE="string">CN=UPDATE, C=US</login>
+			<password TYPE="string">vicuna</password>
+			<authType TYPE="string">SIMPLE</authType >
+		</test1>
+		<test2>
+			<host TYPE="string">vltest02.sbc.com</host>
+			<port TYPE="long">7806</port>
+			<xcoord TYPE="float">-90.192246</xcoord>
+        		<ycoord TYPE="float">38.631358</ycoord>
+			<login TYPE="string">CN=UPDATE, C=US</login>
+			<password TYPE="string">vicuna</password>
+			<authType TYPE="string">SIMPLE</authType >
+		</test2>
+	</directories>
+	<user>
+		<xcoord TYPE="float">-90.192246</xcoord>
+		<ycoord TYPE="float">38.631358</ycoord>
+	</user>
+	<MNotify>
+		<service TYPE="string">C=US,O=SBC,CN=errorsvc</service>
+		<version TYPE="string">1</version>
+	</MNotify>
+</vicuna>

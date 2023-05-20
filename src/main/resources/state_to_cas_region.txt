@@ -1,0 +1,18 @@
+CA,*=WCRED
+NV,*=WCRED
+CT,*=ECRED
+IL,*=CCRED
+MI,*=CCRED
+OH,*=CCRED
+WI,*=CCRED
+IN,*=CCRED
+AR,*=PCRED
+KS,*=PCRED
+MO,*=PCRED
+OK,*=PCRED
+TX,*=PCRED
+
+# When IN and BillingMarket is 22 or 66 return INDY,
+# other BillingMarkets return CCRED
+IN,22=INDY
+IN,66=INDY

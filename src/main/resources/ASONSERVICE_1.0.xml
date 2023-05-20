@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<vicuna>
+	<propertyList>
+		<ASONSERVICE>
+			<directory>
+				<search>
+					<service TYPE="STRING">C=US,O=AIT,OU=ASON,CN=AsonService</service>
+					<version TYPE="STRING">1.0</version>
+				</search>
+				<selection>
+					<cacheDuration TYPE="USHORT">600</cacheDuration>
+				</selection>
+			</directory>
+		</ASONSERVICE>
+		<EventList>
+			<commHandle>
+				<protocol>
+					<profile>
+						<events>
+							<ASON_DUE_DATE_REQ>
+								<__id TYPE="LONG">1010</__id>
+								<ASON_DUE_DATE_RESP>
+									<__id TYPE="LONG">1011</__id>
+								</ASON_DUE_DATE_RESP>
+								<ASON_DUE_DATE_ERR>
+									<__id TYPE="LONG">1012</__id>
+								</ASON_DUE_DATE_ERR>
+								<DG_TANDEM_ERR>
+									<__id TYPE="LONG">100</__id>
+								</DG_TANDEM_ERR>
+							</ASON_DUE_DATE_REQ>
+							<ASON_SAG_VALID_REQ>
+								<__id TYPE="LONG">1120</__id>
+								<ASON_SAG_VALID_RESP>
+									<__id TYPE="LONG">1121</__id>
+								</ASON_SAG_VALID_RESP>
+								<ASON_SAG_VALID_ERR>
+									<__id TYPE="LONG">1122</__id>
+								</ASON_SAG_VALID_ERR>
+								<ASON_SAG_VALID_DESC_ERR>
+									<__id TYPE="LONG">1123</__id>
+								</ASON_SAG_VALID_DESC_ERR>
+								<ASON_SAG_VALID_APP_ERR>
+									<__id TYPE="LONG">1124</__id>
+								</ASON_SAG_VALID_APP_ERR>
+								<ASON_SAG_VALID_INVREQ_ERR>
+									<__id TYPE="LONG">1125</__id>
+								</ASON_SAG_VALID_INVREQ_ERR>
+								<DG_TANDEM_ERR>
+									<__id TYPE="LONG">100</__id>
+								</DG_TANDEM_ERR>
+							</ASON_SAG_VALID_REQ>
+							<ASON_SAG_VALIDATION_REQ>
+								<__id TYPE="LONG">1020</__id>
+								<ASON_SAG_VALIDATION_RESP>
+									<__id TYPE="LONG">1021</__id>
+								</ASON_SAG_VALIDATION_RESP>
+								<ASON_SAG_VALIDATION_ERR>
+									<__id TYPE="LONG">1022</__id>
+								</ASON_SAG_VALIDATION_ERR>
+								<DG_TANDEM_ERR>
+									<__id TYPE="LONG">100</__id>
+								</DG_TANDEM_ERR>
+							</ASON_SAG_VALIDATION_REQ>
+							<ASON_SAG_INQUIRY_REQ>
+								<__id TYPE="LONG">1030</__id>
+								<ASON_SAG_INQUIRY_RESP>
+									<__id TYPE="LONG">1031</__id>
+								</ASON_SAG_INQUIRY_RESP>
+								<ASON_SAG_INQUIRY_ERR>
+									<__id TYPE="LONG">1032</__id>
+								</ASON_SAG_INQUIRY_ERR>
+								<DG_TANDEM_ERR>
+									<__id TYPE="LONG">100</__id>
+								</DG_TANDEM_ERR>
+							</ASON_SAG_INQUIRY_REQ>
+							<ASON_LU_VALIDATION_REQ>
+								<__id TYPE="LONG">1040</__id>
+								<ASON_LU_VALIDATION_RESP>
+									<__id TYPE="LONG">1041</__id>
+								</ASON_LU_VALIDATION_RESP>
+								<ASON_LU_VALIDATION_ERR>
+									<__id TYPE="LONG">1042</__id>
+								</ASON_LU_VALIDATION_ERR>
+								<DG_TANDEM_ERR>
+									<__id TYPE="LONG">100</__id>
+								</DG_TANDEM_ERR>
+							</ASON_LU_VALIDATION_REQ>
+							<ASON_LU_INQUIRY_REQ>
+								<__id TYPE="LONG">1050</__id>
+								<ASON_LU_INQUIRY_RESP>
+									<__id TYPE="LONG">1051</__id>
+								</ASON_LU_INQUIRY_RESP>
+								<ASON_LU_INQUIRY_ERR>
+									<__id TYPE="LONG">1052</__id>
+								</ASON_LU_INQUIRY_ERR>
+								<DG_TANDEM_ERR>
+									<__id TYPE="LONG">100</__id>
+								</DG_TANDEM_ERR>
+							</ASON_LU_INQUIRY_REQ>
+						</events>
+					</profile>
+				</protocol>
+			</commHandle>
+		</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach TYPE="STRING"></Attach>
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</accept>
+		<listen>
+			<transport TYPE="STRING">MTCPAcceptor</transport>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+						<Family TYPE="LONG">2</Family>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>

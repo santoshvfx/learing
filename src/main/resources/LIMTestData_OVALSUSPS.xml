@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIM>
+<TestCase>
+		<Header>
+			<Description>RLFA: POSTALADDRESS OVALS-USPS - 17700 Broadway Av Bedford OH 44146 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCT</value></item>
+    				    <item><tag>ServiceCenter</tag><value>OH</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>17700</houseNumber>
+						<streetName>Broadway</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city>Bedford</city>
+						<state>OH</state>
+						<postalCode>44146</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: POSTALADDRESS OVALS-USPS - 1401 BELT AVE 63112 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCT</value></item>
+    				    <item><tag>ServiceCenter</tag><value></value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1401</houseNumber>
+						<streetName>Belt</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode>63112</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: POSTALADDRESS OVALS-USPS - 6228 CRESTON AVE 63121 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCT</value></item>
+    				    <item><tag>ServiceCenter</tag><value>MO</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>6228</houseNumber>
+						<streetName>CRESTON</streetName>
+						<streetThoroughfare>Ave</streetThoroughfare>
+						<city></city>
+						<state></state>
+						<postalCode>63121</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: POSTALADDRESS OVALS-USPS - 111 main st newark NJ 07105</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCT</value></item>
+    				    <item><tag>ServiceCenter</tag><value>NJ</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>111</houseNumber>
+						<streetName>main</streetName>
+						<streetThoroughfare>st</streetThoroughfare>
+						<city>newark</city>
+						<state>NJ</state>
+						<postalCode>07105</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: POSTALADDRESS OVALS-USPS - 1005 hidden hollow ln PA 19380</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCT</value></item>
+    				    <item><tag>ServiceCenter</tag><value>PA</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1005</houseNumber>
+						<streetName>Hidden Hollow</streetName>
+						<streetThoroughfare>LN</streetThoroughfare>
+						<city></city>
+						<state>PA</state>
+						<postalCode>19380</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: POSTALADDRESS OVALS-USPS - 2 curve ST MA 01880</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCT</value></item>
+    				    <item><tag>ServiceCenter</tag><value>MA</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>2</houseNumber>
+						<streetName>Curve</streetName>
+						<streetThoroughfare>ST</streetThoroughfare>
+						<city></city>
+						<state>MA</state>
+						<postalCode>01880</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: POSTALADDRESS OVALS-USPS - 1010 pine st cambridge MA 63101</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCT</value></item>
+    				    <item><tag>ServiceCenter</tag><value>MA</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1010</houseNumber>
+						<streetName>pine st</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>cambridge</city>
+						<state>MA</state>
+						<postalCode>63101</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: POSTALADDRESS OVALS-USPS - 5001 42nd st omaha NE 68111</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCT</value></item>
+    				    <item><tag>ServiceCenter</tag><value>NE</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>5001</houseNumber>
+						<streetName>42nd st</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>omaha</city>
+						<state>NE</state>
+						<postalCode>68111</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>POSTALADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+
+	</LIM>

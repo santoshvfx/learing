@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<vicuna>
+    <directories>
+        <prod1>
+            <host TYPE="string">vlprod01.sbc.com</host>
+            <port TYPE="long">7806</port>
+            <xcoord TYPE="float">-90.192246</xcoord>
+            <ycoord TYPE="float">38.631358</ycoord>
+            <login TYPE="string">CN=UPDATE, C=US</login>
+            <password TYPE="string">vicuna</password>
+            <authType TYPE="string">SIMPLE</authType >
+        </prod1>
+        <prod2>
+            <host TYPE="string">vlprod02.sbc.com</host>
+            <port TYPE="long">7806</port>
+            <xcoord TYPE="float">-96.803557</xcoord>
+            <ycoord TYPE="float">32.778293</ycoord>
+            <login TYPE="string">CN=UPDATE, C=US</login>
+            <password TYPE="string">vicuna</password>
+            <authType TYPE="string">SIMPLE</authType >
+        </prod2>
+        <prod3>
+            <host TYPE="string">vlprod03.sbc.com</host>
+            <port TYPE="long">7806</port>
+            <xcoord TYPE="float">-122.023742</xcoord>
+            <ycoord TYPE="float">38.286673</ycoord>
+            <login TYPE="string">CN=UPDATE, C=US</login>
+            <password TYPE="string">vicuna</password>
+            <authType TYPE="string">SIMPLE</authType >
+        </prod3>
+        <prod4>
+            <host TYPE="string">vlprod04.sbc.com</host>
+            <port TYPE="long">7806</port>
+            <xcoord TYPE="float">-117.199321</xcoord>
+            <ycoord TYPE="float">32.898967</ycoord>
+            <login TYPE="string">CN=UPDATE, C=US</login>
+            <password TYPE="string">vicuna</password>
+            <authType TYPE="string">SIMPLE</authType >
+        </prod4>
+    </directories>
+    <user>
+        <xcoord TYPE="float">-86.81628000</xcoord>
+        <ycoord TYPE="float">33.35894100</ycoord>
+    </user>
+    <MNotify>
+        <service TYPE="string">C=US,O=SBC,CN=errorsvc</service>
+        <version TYPE="string">1</version>
+    </MNotify>
+</vicuna>

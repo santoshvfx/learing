@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<vicuna>
+    <propertyList>
+	<FACSAccess>
+          <acceptor>
+             <commHandle>
+                 <protocol>
+		   <profile>
+                      <svcData>              
+                          <responseTimeToWait
+                             TYPE="LONG">8000</responseTimeToWait> 
+                       </svcData> 
+                    </profile>   
+                  </protocol>       
+             </commHandle>      
+           </acceptor>  
+           <directory>
+		<search>
+		  <service TYPE="STRING">C=US,O=SBC,OU=GWSvcs,CN=FACSAccess</service>
+                  <serviceID TYPE="LONG">6634</serviceID>
+		  <version TYPE="STRING">5.0</version>
+		</search>
+		<selection>
+			<cacheDuration TYPE="USHORT">3600</cacheDuration>
+		</selection>
+	    </directory>
+	</FACSAccess>
+<EventList>
+	<commHandle>
+       		<protocol>
+			<profile>
+			<events>
+		        <INQ_FASG_REQ>
+			        <__id TYPE="LONG">5120</__id> 
+					<INQ_FASG_DATA_RESP>
+			    		<__id TYPE="LONG">5121</__id>
+					</INQ_FASG_DATA_RESP>
+					<FACS_ERROR>
+			    		<__id TYPE="LONG">9999</__id>
+					</FACS_ERROR>
+               </INQ_FASG_REQ>
+			</events>
+			</profile>
+		</protocol>
+	</commHandle>
+</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach TYPE="STRING"/>
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</accept>
+		<listen>
+			<transport TYPE="STRING">MTCPAcceptor</transport>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+						<Family TYPE="LONG">2</Family>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>

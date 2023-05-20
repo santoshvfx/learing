@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIM>
+<!-- Test cases for BRMS-->
+<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS - Main St CT 06423</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName>Main</streetName>
+						<streetThoroughfare>St</streetThoroughfare>
+						<state>CT</state>
+						<postalCode>06423</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS - 116 Route 148 06419</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>116</houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<state></state>
+						<route>148</route>
+						<postalCode>06419</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS - 2247 Route 80 MADS 06419</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>2247</houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<state></state>
+						<city>MADS</city>
+						<route>80</route>
+						<postalCode>06419</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS - 197 Rd  06281 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>197</houseNumber>
+						<streetName></streetName>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<state></state>
+						<city></city>
+						<route>197</route>
+						<postalCode>06281</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -@ Justin Dr CT 06029</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1</houseNumber>
+						<streetName>@ JUSTIN</streetName>
+						<streetThoroughfare>DR</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06029</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -@ LANES POND CT 06437</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<assignedHouseNumber>*</assignedHouseNumber>
+						<streetName>@ LANES POND</streetName>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06437</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -SU Dr CT 06450</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>108</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>SU</streetName>
+						<streetThoroughfare>DR</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06450</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -Elm Ridge Dr CT 06067</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>9</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>ELM RIDGE</streetName>
+						<streetThoroughfare>DR</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06067</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -Alma Rock Rd CT 06903</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>5</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>ALMA ROCK</streetName>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06903</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -50 MAIN St S CT 06492</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>50</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>MAIN</streetName>
+						<streetDirection>S</streetDirection>
+						<streetThoroughfare>ST</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06492</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -Highland Av CT 06604</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>48</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>HIGHLAND</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06604</postalCode>
+						<unitType>UNIT</unitType>
+						<unitValue>448</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -Hebron Av CT 06033</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>730</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>HEBRON</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06033</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -Plainville Av CT 06032</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>554</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>PLAINVILLE</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06032</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -2990 MAIN St CT 06606</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>2990</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>MAIN</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>ST</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06606</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -VARGA Rd CT 06278</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>95</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>VARGA</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06278</postalCode>
+						<unitType>UNIT</unitType>
+						<unitValue>200</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -Lantern Hill Rd MYST CT 06355</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>221</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>LANTERN HILL</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<state>CT</state>
+						<city>MYST</city>
+						<route></route>
+						<postalCode>06355</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+		<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -VISCOUNT Dr CT 06460</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>85</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>VISCOUNT</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>DR</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06460</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -  1995 MAIN St CT 06604</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>1995</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>MAIN</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>ST</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06604</postalCode>
+						<unitType>FLR</unitType>
+						<unitValue>2</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS -  Buckingham Dr CT 06902</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>58</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>buckingham</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>dr</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06902</postalCode>
+						<unitType>FLR</unitType>
+						<unitValue>BSMT</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS - WHITNEY Av CT 06518</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>2558</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>WHITNEY</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06518</postalCode>
+						<unitType>FLR</unitType>
+						<unitValue>2</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS BRMS - Marshall St CT 06854</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>CT</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC East</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+					    <houseNumber>13</houseNumber>
+						<assignedHouseNumber></assignedHouseNumber>
+						<streetName>MARSHALL</streetName>
+						<streetDirection></streetDirection>
+						<streetThoroughfare>ST</streetThoroughfare>
+						<state>CT</state>
+						<city></city>
+						<route></route>
+						<postalCode>06854</postalCode>
+						<unitType>FLR</unitType>
+						<unitValue>2</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+				
+	</LIM>

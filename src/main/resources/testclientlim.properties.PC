@@ -1,0 +1,114 @@
+# $Id: testclientlim.properties.PC,v 1.83 2010/02/18 18:58:31 dc860q Exp $
+#
+#  Name: testclientLIM.Properties - (PC version) LIM client related properties.
+#
+TEST_FILE=LIMTestData.xml,LIMTestData_ASON.xml,LIMTestData_BRMS.xml,LIMTestData_OVALSUSPS.xml,LIMTestData_PREMIS.xml
+AUTO_RUN=false
+CLIENT_LOGFILE=TestLimDeployment.log
+
+#----------------------------------------------------------------------------
+# Use the following settings when testing against your local test environment
+#----------------------------------------------------------------------------
+#BIS_HOME=java:comp/env/pc/ejb/LIMHome
+BIS_HOME=LIMHome-13.60
+java.naming.provider.url=corbaloc::localhost
+#
+#-----------------------------------------------------------------------------------
+# Use the following settings when testing on or against another deployed environment
+#-----------------------------------------------------------------------------------
+#
+#BIS_HOME=cell/clusters/LIM13.60Cluster/LIMHome-13.60
+#java.naming.provider.url=corbaloc::localhost:11000
+#
+#-------------
+# DEV (biskid)
+#-------------
+#java.naming.provider.url=corbaloc::biskid.mo.sbc.com:11000
+#java.naming.provider.url=corbaloc::pidf601.pedc.sbc.com:11000
+#
+#-------------------
+# Staging (cidb2001)
+#-------------------
+#java.naming.provider.url=corbaloc::pide214.pedc.sbc.com:11000
+#
+#-----------------------
+# QC (pide108, cidc202)
+#-----------------------
+#java.naming.provider.url=corbaloc::bisqc1.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisqc2.sbc.com:11000
+#
+#-----------------------
+# MDAPERF (WST550ORADB1)
+#-----------------------
+#java.naming.provider.url=corbaloc::wst550oradb1.cingularlab.com:11000
+#
+#-------------------------------
+# NON271SAT (cidc1608, hidc901) 
+#-------------------------------
+#java.naming.provider.url=corbaloc::bisnon271sat1.sldc.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisnon271sat2.sldc.sbc.com:11000
+#
+#-------------------------------------------------------------------
+# NON271PROD (cipg303, tipc301, fipd201, fipd206, mipc701, mipe118
+#-------------------------------------------------------------------
+#java.naming.provider.url=corbaloc::bisnon271prod3.sldc.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisnon271prod3.dadc.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisnon271prod2.ffdc.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisnon271prod3.ffdc.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisnon271prod2.sfdc.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisnon271prod1.sfdc.sbc.com:11000
+#
+#-----------------------------
+# SAT Test (cidb2701, cidc203)
+#-----------------------------
+#java.naming.provider.url=corbaloc::bissat1.sbc.com:11000
+#java.naming.provider.url=corbaloc::bissat2.sbc.com:11000
+#
+#--------------------
+# SAT Prod (cidb2901)
+#--------------------
+#java.naming.provider.url=corbaloc::bissatprod1.sbc.com:11000
+#
+#----------------
+# CLEC (cipa1307)
+#----------------
+#java.naming.provider.url=corbaloc::bisclec1.sbc.com:11000
+#
+#----------------------------------------------------------------
+# PROD (tipb2001, tipb2101, cipc3804, cipc202, cipc3802, tipc302)
+#----------------------------------------------------------------
+#java.naming.provider.url=corbaloc::bisprod3.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisprod4.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisprod3.sldc.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisprod8.sldc.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisprod9.sbc.com:11000
+#java.naming.provider.url=corbaloc::bisprod5.dadc.com:11000
+#
+#-------------------------
+# ETS (pida3701, pida3703)
+#-------------------------
+#java.naming.provider.url=corbaloc::pida3701.pedc.sbc.com:11000
+#java.naming.provider.url=corbaloc::pida3703.pedc.sbc.com:11000
+#
+#-------------------------
+# LS_PSE (pide133)
+#-------------------------
+#java.naming.provider.url=corbaloc::pide133.pedc.sbc.com:11000
+#
+#-------------------------
+# LS_SAT (pidf501)
+#-------------------------
+#java.naming.provider.url=corbaloc::bislssat1.test.att.com:11000
+#
+#-------------------------
+# LS_PROD (fipc701)
+#-------------------------
+#java.naming.provider.url=corbaloc::fipc701.ffdc.sbc.com:11000
+#
+#
+
+
+
+
+
+

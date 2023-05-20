@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<!ELEMENT app
+   (elogging,metric,refreshtime,subsystem)
+>
+<!--
+   <annotation>
+      <appinfo source='com.ibm.DDbEv2.Models.AbstractXModel.POSSIBLE'>
+         <restriction base='string'/>
+      </appinfo>
+   </annotation>
+-->
+
+<!ATTLIST app
+name CDATA #IMPLIED
+>
+<!ELEMENT applications
+   (app)
+>
+<!ELEMENT connection
+   (naminghost,namingport)
+>
+<!--
+   <annotation>
+      <appinfo source='com.ibm.DDbEv2.Models.AbstractXModel.POSSIBLE'>
+         <restriction base='string'/>
+      </appinfo>
+   </annotation>
+-->
+
+<!ATTLIST connection
+type CDATA #IMPLIED
+>
+<!ELEMENT destination
+   (directory,filename,storetype)
+>
+<!--
+   <annotation>
+      <appinfo source='com.ibm.DDbEv2.Models.AbstractXModel.POSSIBLE'>
+         <restriction base='string'/>
+      </appinfo>
+   </annotation>
+-->
+
+<!ATTLIST destination
+host CDATA #IMPLIED
+>
+<!ELEMENT directory
+   (#PCDATA)
+>
+<!ELEMENT elogging
+   (logagentlevel,logagentfile)
+>
+<!ELEMENT filename
+   (#PCDATA)
+>
+<!ELEMENT logagentfile
+   (#PCDATA)
+>
+<!ELEMENT logagentlevel
+   (#PCDATA)
+>
+<!ELEMENT logapifile
+   (#PCDATA)
+>
+<!ELEMENT logapilevel
+   (#PCDATA)
+>
+<!ELEMENT loggable
+   (#PCDATA)
+>
+<!ELEMENT loglevel
+   (#PCDATA)
+>
+<!ELEMENT message
+   (loggable,messagelevel,destination)
+>
+<!--
+   <annotation>
+      <appinfo source='com.ibm.DDbEv2.Models.AbstractXModel.POSSIBLE'>
+         <restriction base='string'/>
+      </appinfo>
+   </annotation>
+-->
+
+<!ATTLIST message
+type CDATA #IMPLIED
+>
+<!ELEMENT messagelevel
+   (#PCDATA)
+>
+<!ELEMENT metric
+   (connection)
+>
+<!ELEMENT naminghost
+   (#PCDATA)
+>
+<!ELEMENT namingport
+   (#PCDATA)
+>
+<!ELEMENT refreshtime
+   (#PCDATA)
+>
+<!ELEMENT status
+   (#PCDATA)
+>
+<!ELEMENT storetype
+   (#PCDATA)
+>
+<!ELEMENT subsystem
+   (logapilevel,logapifile,connection+,status,loglevel,message+)
+>
+<!--
+   <annotation>
+      <appinfo source='com.ibm.DDbEv2.Models.AbstractXModel.POSSIBLE'>
+         <restriction base='string'/>
+      </appinfo>
+   </annotation>
+-->
+
+<!ATTLIST subsystem
+name CDATA #IMPLIED
+>

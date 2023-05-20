@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIM>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON (NCoS Test Case - returns ranged response) - 530 MC CARTY 46142 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>530</houseNumber>
+						<streetName>MC CARTY</streetName>
+						<postalCode>46142</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON (NCoS Test Case - returns ranged response) - 5331 LECLAIR Anderson IN 46013</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>5331</houseNumber>
+						<streetName>LECLAIR</streetName>
+						<city>Anderson</city>
+						<state>IN</state>						
+						<postalCode>46013</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON (NCoS Test Case - returns ranged response) - 3204 SKY VIEW CT Columbus IN 46013</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>3204</houseNumber>
+						<streetName>SKY VIEW</streetName>
+						<streetThoroughfare>CT</streetThoroughfare>
+						<city>Columbus</city>
+						<state>IN</state>						
+						<postalCode>46013</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>			
+<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON - City Hall Chicago IL 60602</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>ASI</value></item>
+			    	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName>City Hall</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>Chicago</city>
+						<state>IL</state>
+						<postalCode>60602</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON - S R 158 Bedford IN 47421</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	 	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IN</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName>S R 158</streetName>
+						<streetThoroughfare></streetThoroughfare>
+						<city>Bedford</city>
+						<state>IN</state>
+						<postalCode>47421</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+</TestCase>
+<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON - MC*SHANE DR MUSKEGO WI 53150</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	 	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>WI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>W14098</houseNumber>
+						<streetName>MC*SHANE</streetName>
+						<streetThoroughfare>DR</streetThoroughfare>
+						<city>MUSKEGO</city>
+						<state>WI</state>
+						<postalCode>53150</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -WOVEN HEARTS NURSING HOME WI 54751</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	 	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>WI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName>WOVEN HEARTS NURSING HOME</streetName>
+						<city></city>
+						<state>WI</state>
+						<postalCode>54751</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -ANDERSON PARK NEW ALBANY IN postalcode='S'</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	 	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IN</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber></houseNumber>
+						<streetName>ANDERSON PARK</streetName>
+						<city>NEW ALBANY</city>
+						<state>IN</state>
+						<postalCode>S</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Jackson Av OH 44107</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	 	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	    <item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	    <item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	    <item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1297</houseNumber>
+						<streetName>Jackson</streetName>
+						<city> </city>
+						<streetThoroughfare>Av</streetThoroughfare>
+						<state>OH</state>
+						<postalCode>44107</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>1640</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -1225 Jackson Av, OH 44107</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	 	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1225</houseNumber>
+						<streetName>Jackson</streetName>
+						<city> </city>
+						<streetThoroughfare>Av</streetThoroughfare>
+						<state>OH</state>
+						<postalCode>44107</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Lake Av OH 44107</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			         	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>12700</houseNumber>
+						<streetName>Lake</streetName>
+						<city> </city>
+						<streetThoroughfare>Av</streetThoroughfare>
+						<state>OH</state>
+						<postalCode>44107</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>1703</unitValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Dunbarton Indianapolis IN 46260</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IN</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>2039</houseNumber>
+						<streetName>Dunbarton</streetName>
+						<city> Indianapolis</city>
+						<streetThoroughfare>Ct</streetThoroughfare>
+						<streetNameSuffix>w</streetNameSuffix>
+						<state>IN</state>
+						<postalCode>46260</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Fenton Ln IL 60185</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IL</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>394</houseNumber>
+						<streetName>Fenton</streetName>
+						<city></city>
+						<streetThoroughfare>LN</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>IL</state>
+						<postalCode>60185</postalCode>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Test SAG Database-Maple Chicago IL 60610</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           <item><tag>ServiceCenter</tag><value>IL</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>16</houseNumber>
+						<streetDirection>W</streetDirection>
+						<streetName>Maple</streetName>
+						<city>Chgo</city>
+						<streetThoroughfare></streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>IL</state>
+						<postalCode>60610</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>8888</unitValue>
+						<levelType>FLR</levelType>
+						<levelValue>3</levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -34th ave IL 60165</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IL</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1828</houseNumber>
+						<streetDirection>N</streetDirection>
+						<streetName>34th</streetName>
+						<city></city>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>IL</state>
+						<postalCode>60165</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -@ Westwood PK For IL 60466</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IL</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>139</houseNumber>
+						<streetDirection></streetDirection>
+						<streetName>@ Westwood</streetName>
+						<city>PK For</city>
+						<streetThoroughfare></streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>IL</state>
+						<postalCode>60466</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Shiawassee Av MI 48034</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           <item><tag>ServiceCenter</tag><value>MI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>25592</houseNumber>
+						<streetDirection></streetDirection>
+						<streetName>Shiawassee</streetName>
+						<city></city>
+						<streetThoroughfare>Av</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>MI</state>
+						<postalCode>48034</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>923</unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -86th Av IN 46268</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IN</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>4040</houseNumber>
+						<streetDirection>W</streetDirection>
+						<streetName>86th</streetName>
+						<city></city>
+						<streetThoroughfare>Av</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>IN</state>
+						<postalCode>46268</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType>FLR</levelType>
+						<levelValue>1</levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -DIVISION Av MI 49548</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           <item><tag>ServiceCenter</tag><value>MI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>3884</houseNumber>
+						<streetDirection>S</streetDirection>
+						<streetName>DIVISION</streetName>
+						<city></city>
+						<streetThoroughfare>Av</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>MI</state>
+						<postalCode>49548</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -LAKE SHORE DRIVE WEST CHGO IL 60657</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IL</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>2800</houseNumber>
+						<streetDirection>N</streetDirection>
+						<streetName>LAKE SHORE DRIVE WEST</streetName>
+						<city>CHGO</city>
+						<streetThoroughfare>Av</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>IL</state>
+						<postalCode>60657</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>1013</unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Cascade Cascade TWP MI 49546</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>MI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>7450</houseNumber>
+						<streetDirection></streetDirection>
+						<streetName>CASCADE</streetName>
+						<city>CASCADE TWP</city>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<streetNameSuffix>SE</streetNameSuffix>
+						<state>MI</state>
+						<postalCode>49546</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Detroit RD SE OH 44145 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>26016</houseNumber>
+						<streetDirection></streetDirection>
+						<streetName>DETROIT</streetName>
+						<city></city>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<streetNameSuffix>SE</streetNameSuffix>
+						<state>OH</state>
+						<postalCode>44145</postalCode>
+						<unitType>UNIT</unitType>
+						<unitValue>7</unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Neale Av Massillon OH 44647</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           <item><tag>ServiceCenter</tag><value>OH</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>506</houseNumber>
+						<streetDirection></streetDirection>
+						<streetName>NEALE</streetName>
+						<city>MASSILLON</city>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<streetNameSuffix>SW</streetNameSuffix>
+						<state>OH</state>
+						<postalCode>44647</postalCode>
+						<unitType>APT</unitType>
+						<unitValue>3</unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -19 S Manitowoc WI 54220</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>WI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>2828</houseNumber>
+						<streetDirection>S</streetDirection>
+						<streetName>19</streetName>
+						<city>MANITOWOC</city>
+						<streetThoroughfare></streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>WI</state>
+						<postalCode>54220</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Inkster Rd Livonia MI 48152</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>MI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>20027</houseNumber>
+						<streetDirection></streetDirection>
+						<streetName>INKSTER</streetName>
+						<city>LIVONIA</city>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>MI</state>
+						<postalCode>48152</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Toll Gate Rd ELGN IL 60123</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IL</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCMidwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>860</houseNumber>
+						<streetDirection></streetDirection>
+						<streetName>TOLL GATE</streetName>
+						<city>ELGN</city>
+						<streetThoroughfare>RD</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>IL</state>
+						<postalCode>60123</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType>FLR</levelType>
+						<levelValue>1</levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Kent Av QNCY IL 62301</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>IL</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>1700</houseNumber>
+						<streetDirection></streetDirection>
+						<streetName>KENT</streetName>
+						<city>QNCY</city>
+						<streetThoroughfare>AV</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>IL</state>
+						<postalCode>62301</postalCode>
+						<unitType></unitType>
+						<unitValue></unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>RLFA: SERVICEADDRESS ASON -Northwestern Hwy MI 48334</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>MI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			       	</properties>
+			    </context>
+			    <address>
+					<fieldedAddress>
+						<houseNumber>32255</houseNumber>
+						<streetDirection></streetDirection>
+						<streetName>Northwestern</streetName>
+						<city></city>
+						<streetThoroughfare>HWY</streetThoroughfare>
+						<streetNameSuffix></streetNameSuffix>
+						<state>MI</state>
+						<postalCode>48334</postalCode>
+						<unitType>SUIT</unitType>
+						<unitValue>143</unitValue>
+						<levelType></levelType>
+						<levelValue></levelValue>
+					</fieldedAddress>
+				</address>
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<!-- test cases for RLFS for ASON -->
+	<TestCase>
+		<Header>
+			<Description>RLFS: ASON TN=7153421226</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			           	<item><tag>ServiceCenter</tag><value>WI</value></item>
+			        	
+			    	</properties>
+			    </context>
+				<telephoneNumber>
+					<npa>715</npa>
+					<nxx>342</nxx>
+					<line>1226</line>
+					<extension></extension> 
+				</telephoneNumber>
+				<providerLocationProperties>
+					<item>
+						<providerName>DataServices</providerName>
+						<locationPropertiesToGet>
+							<item>SERVICEADDRESS</item>
+							<item>ALL</item>
+						</locationPropertiesToGet>
+					</item>
+				</providerLocationProperties>				
+				<maxBasicAddressAlternatives>12</maxBasicAddressAlternatives>
+				<maxLivingUnitAlternatives>12</maxLivingUnitAlternatives>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._retrieveLocationForServiceRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	<!-- Unfielded address-->
+	<TestCase>
+		<Header>
+			<Description>FieldAddress: SYDNEY RICKERT 1800 SHEPHERD CT APT 218 WI 53186  </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>WI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			    	</properties>
+			    </context>    				
+				<unfieldedAddress>
+					<addressLines>
+						<item>SYDNEY RICKERT 1800 SHEPHERD CT APT 218</item>
+					</addressLines>
+					<city>WAUKESHA</city>
+					<state>WI</state>
+					<postalCode>53186</postalCode>
+					<postalCodePlus4>1421</postalCodePlus4>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>UnfieldAddress: BAKER MARINE SERVICE  3085 MEMORIAL DR NORTH MUSKEGON  MI 49445 </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			    	</properties>
+			    </context>    				
+				<unfieldedAddress>
+					<addressLines>
+						<item>3085 MEMORIAL DR </item>
+					</addressLines>
+					<city>NORTH MUSKEGON</city>
+					<state>MI</state>
+					<postalCode>49445</postalCode>
+					<postalCodePlus4>2123</postalCodePlus4>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>UnfieldAddress: 2520 MAC ARTHUR South Bend IN 46615 ('*' or ' ' in StreetName) </Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>ServiceCenter</tag><value>MI</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBC Midwest</value></item>
+			    	</properties>
+			    </context>    				
+				<unfieldedAddress>
+					<addressLines>
+						<item>2520 MAC ARTHUR</item>
+					</addressLines>
+					<city>South Bend</city>
+					<state>IN</state>
+					<postalCode>46615</postalCode>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	
+	</LIM>

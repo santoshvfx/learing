@@ -1,0 +1,16 @@
+# $Id: SelfTest_ServicesList.properties,v 1.1 2008/05/21 nl9267
+#EMBUS
+#EMBUS_Atlas=com.sbc.eia.bis.embus.service.atlas.access.AtlasHelper
+#EMBUS_FacsRC=com.sbc.eia.bis.embus.service.facsrc.FACSRCHelper
+#OVALS
+OVALS_Pla=com.sbc.eia.bis.BusinessInterface.ovalsnsp.OvalsNspServiceHelper
+OVALS_Pavs=com.sbc.eia.bis.BusinessInterface.PostalAddress.ovalsusps.OvalsUspsServiceHelper
+#Vicuna
+#VICUNA_PREMISSERVER=com.sbc.gwsvcs.service.premisserver.PREMISServerHelper
+VICUNA_ASON=com.sbc.gwsvcs.service.asonservice.ASONServiceHelper
+VICUNA_HOSTLOOKUP=com.sbc.gwsvcs.service.hostlookup.HOSTLOOKUPHelper
+VICUNA_FACSAccess=com.sbc.gwsvcs.service.facsaccess.FACSAccessHelper
+#BIS to BIS invocations
+BIS_SM=True
+BIS_BIMX=True
+BIS_BCAM=False

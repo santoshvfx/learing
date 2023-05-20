@@ -1,0 +1,31 @@
+##############################################################
+## Sample AFT Discovery Client Configuration
+## aft.properties
+##############################################################
+com.att.aft.discovery.client.environment=AFTUAT
+com.att.aft.discovery.client.latitude=38.628
+com.att.aft.discovery.client.longitude=-90.194
+com.att.aft.discovery.client.traceEnabled=false
+com.att.aft.discovery.client.traceFile=
+com.att.aft.discovery.client.traceLevel=info
+## traceLevel options are SEVERE, WARNING, INFO, CONFIG, FINE, FINER, and FINEST
+
+com.att.aft.discovery.AFTUAT.client.endpointCacheSize=24
+com.att.aft.discovery.AFTUAT.client.staleCacheSize=96
+com.att.aft.discovery.AFTUAT.client.receiveTimeoutMillis=2000
+com.att.aft.discovery.AFTUAT.client.orderingStrategy=Random
+## orderingStrategy options are Distance, Fixed, and Random
+
+##################################################################
+# If the com.att.aft.keyStore property is defined, SSL connections 
+# to Fusion Bus will be made using these com.att.aft.* properties 
+# rather than the default keystore.  This will allow applications 
+# which already have a private key in the default keystore to 
+# function as is in regard to existing 2-way SSL interactions 
+# since fusion bus connections can use a separate keystore.
+#################################################################
+com.att.aft.keyStore=C:/ProgramData/mvscast.sbc.com.jks
+com.att.aft.keyStorePassword=Qwertyuiop@2020
+com.att.aft.trustStore=C:/ProgramData/cacerts
+com.att.aft.trustStorePassword=changeit
+#com.att.aft.alias=bismda_fusion

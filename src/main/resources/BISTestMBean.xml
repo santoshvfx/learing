@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MBean SYSTEM "MbeanDescriptor.dtd">
+<MBean type="BISTestMBean"
+ version="5.0"
+ platform="dynamicproxy"
+ description="BISTestMBean">
+ <operation name="ping" role="operation" type="java.lang.Object"
+   targetObjectType="objectReference" 
+   impact="ACTION" proxyInvokeType="multicall">
+  <signature>
+   <parameter name="HomeJndi" description="HomeJndi"
+     type="java.lang.String"/>
+   <parameter name="BISContext" description="BISContext"
+     type="java.util.Properties"/>
+  </signature>
+ </operation>
+ <operation name="selfTest" role="operation" type="java.lang.Object" 
+   targetObjectType="objectReference" 
+   impact="ACTION" proxyInvokeType="multicall">
+  <signature>
+   <parameter name="HomeJndi" description="HomeJndi"
+     type="java.lang.String"/>
+   <parameter name="BISContext" description="BISContext"
+     type="java.util.Properties"/>
+  </signature>
+ </operation>
+</MBean>

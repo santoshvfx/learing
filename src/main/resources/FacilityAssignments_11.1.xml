@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<vicuna>
+    <propertyList>
+	<FacilityAssignments>
+          <acceptor>
+             <commHandle>
+                 <protocol>
+		   <profile>
+                      <svcData>              
+                          <responseTimeToWait
+                             TYPE="LONG">8000</responseTimeToWait> 
+                       </svcData> 
+                    </profile>   
+                  </protocol>       
+             </commHandle>      
+           </acceptor>  
+           <directory>
+		<search>
+		  <service TYPE="STRING">C=US,O=SBC,OU=GWSvcs,CN=FacilityAssignments</service>
+                  <serviceID TYPE="LONG">6393</serviceID>
+		  <version TYPE="STRING">11.1</version>
+		</search>
+		<selection>
+			<cacheDuration TYPE="USHORT">3600</cacheDuration>
+		</selection>
+	    </directory>
+	</FacilityAssignments>
+<EventList>
+	<commHandle>
+       		<protocol>
+			<profile>
+			<events>
+		        <INQ_FASG_BY_CIRCUITID_REQ>
+			        <__id TYPE="LONG">112</__id> 
+				<FACS_SCREEN_RESP>
+			    		<__id TYPE="LONG">113</__id>
+				</FACS_SCREEN_RESP>
+				<FACS_ERROR>
+			    		<__id TYPE="LONG">101</__id>
+				</FACS_ERROR>
+                       		<GENERAL_SERVICE_ERROR>
+			     		<__id TYPE="LONG">120</__id>
+				</GENERAL_SERVICE_ERROR>
+			</INQ_FASG_BY_CIRCUITID_REQ>
+                        <DISPATCH_REQ>
+			        <__id TYPE="LONG">130</__id> 
+				<DISPATCH_DATA_RESP>
+			     		<__id TYPE="LONG">131</__id>
+				</DISPATCH_DATA_RESP>
+				<FACS_ERROR>
+			     		<__id TYPE="LONG">101</__id>
+				</FACS_ERROR>
+                        	<GENERAL_SERVICE_ERROR>
+			     		<__id TYPE="LONG">120</__id>
+				</GENERAL_SERVICE_ERROR>
+			</DISPATCH_REQ>
+		        <INQ_FASG_BY_ADDRESS_REQ>
+			        <__id TYPE="LONG">126</__id> 
+				<INQ_FASG_DATA_RESP>
+			    		<__id TYPE="LONG">127</__id>
+				</INQ_FASG_DATA_RESP>
+				<FACS_ERROR>
+			    		<__id TYPE="LONG">101</__id>
+				</FACS_ERROR>
+                       		<GENERAL_SERVICE_ERROR>
+			     		<__id TYPE="LONG">120</__id>
+				</GENERAL_SERVICE_ERROR>
+			</INQ_FASG_BY_ADDRESS_REQ>
+
+			</events>
+			</profile>
+		</protocol>
+	</commHandle>
+</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach TYPE="STRING"/>
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</accept>
+		<listen>
+			<transport TYPE="STRING">MTCPAcceptor</transport>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+						<Family TYPE="LONG">2</Family>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>

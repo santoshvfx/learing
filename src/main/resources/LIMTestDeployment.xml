@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LIM>
+	<TestCase>
+		<Header>
+			<Description>FieldAddress: 400 S La Sallie San Ramon CA 94583</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<context>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCDataServices</value></item>
+			    	</properties>
+			    </context>    				
+				<unfieldedAddress>
+					<addressLines>
+						<item>400 S La Sallie</item>
+					</addressLines>
+					<city>San Ramon</city>
+					<state>CA</state>
+					<postalCode>94583</postalCode>
+				</unfieldedAddress>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._fieldAddressRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>Ping</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._pingRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<bisContext>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCDataServices</value></item>
+			    	</properties>
+			    </bisContext>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._pingRequestBISMsg>
+		</VAXB>
+	</TestCase>
+	<TestCase>
+		<Header>
+			<Description>SelfTest</Description>
+		</Header>
+		<VAXB version="1.0.0">
+			<vaxb:com.sbc.eia.idl.lim.LimFacadePackage._selfTestRequestBISMsg xmlns:vaxb="urn:LimFacadePackage.lim.idl.eia.sbc.com">
+				<bisContext>
+					<properties>
+			        	<item><tag>Application</tag><value>LIM_BIS</value></item>
+			        	<item><tag>CustomerName</tag><value>LIM_BIS</value></item>
+			        	<item><tag>BusinessUnit</tag><value>SBCDataServices</value></item>
+			    		<item><tag>EMAIL_RECIPIENT_LIMSELFTEST</tag><value>limteam@biskid.mo.sbc.com</value></item>
+			    	</properties>
+			    </bisContext>
+			</vaxb:com.sbc.eia.idl.lim.LimFacadePackage._selfTestRequestBISMsg>
+		</VAXB>
+	</TestCase>											
+</LIM>

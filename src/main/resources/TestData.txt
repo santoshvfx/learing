@@ -1,0 +1,1364 @@
+/********************************************************************
+			 *  PB/NB regions test cases.
+			 */
+			/***
+			fa.aAdditionalAddressInformation.theValue("Stanford University");;
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94305");
+			/***/
+			/***
+			fa.aAssignedHouseNumber.theValue("11"); // PREMIS error with this
+			fa.aAdditionalAddressInformation.theValue("Stanford University");;
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94305");
+			/***/
+			/****
+			fa.aAssignedHouseNumber.theValue("11"); // PREMIS list with this
+			fa.aStreetName.theValue("Stanford University");;
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94305");
+			/***/
+			/****
+			fa.aAssignedHouseNumber.theValue("12"); // PREMIS list with this
+			fa.aStreetName.theValue("Stanford University");;
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94305");
+			fa.aStructType   = IDLUtil.toOpt("BLDG");       
+			fa.aStructValue  = IDLUtil.toOpt("CERAS");
+			//fa.aUnitType   = IDLUtil.toOpt("RMs");        
+			//fa.aUnitValue  = IDLUtil.toOpt("507");
+			/***/
+    
+			/***
+			fa.aAssignedHouseNumber.theValue("72"); // PREMIS list with this
+			fa.aStreetName.theValue("Ocean");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("93923");
+			fa.aUnitType   = IDLUtil.toOpt("APT");      
+			fa.aUnitValue  = IDLUtil.toOpt("abc");
+			/***/
+    
+			// set values for fielded address
+			/****
+			fa.aHouseNumber.theValue("246");
+			fa.aStreetName.theValue("CANYON WOODS");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94583");
+			//fa.aAdditionalAddressInformation.theValue("AAI");   
+			//fa.aAssignedHouseNumber.theValue("AHN");
+			/***/
+			/****
+			fa.aHouseNumber.theValue("1010");
+			fa.aStreetName.theValue("Harness");
+			fa.aPostalCode.theValue("94583");
+			/***/
+			/****
+			fa.aAssignedHouseNumber.theValue("15");
+			fa.aStreetName.theValue("Avenue A");
+			fa.aCity.theValue("TREAS IS");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94130");
+			/***/
+			/***
+			fa.aHouseNumber.theValue("900");
+			fa.aStreetName.theValue("Kiely");
+			fa.aStreetThoroughfare.theValue("Bl");
+			fa.aCity.theValue("S Clasa");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("95051");
+			/***/
+			/****
+			fa.aStreetName.theValue("@ Quick");
+			fa.aStreetThoroughfare.theValue("Ln");
+			fa.aCity.theValue("XANADU");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("91214");
+			//fa.aPostalCode.theValue("EBY"); 
+			fa.aAssignedHouseNumber.theValue("1002");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("170");
+			fa.aStreetName.theValue("Willows");
+			fa.aStreetThoroughfare.theValue("Rd");
+			fa.aState.theValue("ca");
+			//fa.aPostalCode.theValue("95124");
+			fa.aPostalCode.theValue("94506");
+			/***/
+			/****
+			fa.aHouseNumber.theValue("51");
+			fa.aStreetName.theValue("BELMEAD");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aPostalCode.theValue("BLMD");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("671");
+			fa.aHouseNumberSuffix.theValue("1-2");
+			fa.aStreetName.theValue("BROADWAY");
+			fa.aCity.theValue("SF");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94133");
+			/***/
+			/****
+			fa.aBox.theValue("89A");    
+			fa.aRoute.theValue("1");    
+			fa.aStreetName.theValue("@COUNTY RD 710 ");
+			fa.aPostalCode.theValue("99999"); 
+			/***/
+			/****
+			fa.aBox.theValue("360748");         
+			fa.aStreetName.theValue("  po box   ");
+			fa.aCity.theValue("MILPITAS");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("95036"); 
+			/***/
+			/****/ 
+			fa.aHouseNumber.theValue("2600");
+			fa.aStreetName.theValue("camino ramon");
+			//fa.aCity.theValue("san ramon");
+			fa.aState.theValue("ca");
+			fa.aPostalCode.theValue("94583");
+			/***/
+			/****
+			fa.aHouseNumber.theValue("935");
+			fa.aStreetName.theValue("Bell");
+			fa.aState.theValue("NV");
+			fa.aPostalCode.theValue("89503");
+			fa.aUnitType   = IDLUtil.toOpt("APT");      
+			fa.aUnitValue  = IDLUtil.toOpt("2");
+			/***/
+			/****
+			fa.aHouseNumber.theValue("2300-2699");
+			fa.aStreetName.theValue("TELEGRAPH");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94704");
+			/***/
+			/****
+			fa.aHouseNumber.theValue("1540");
+			fa.aStreetName.theValue("market");
+			//fa.aStreetThoroughfare.theValue("AV");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94102");
+			/***/
+			/****
+			fa.aStreetName.theValue("@ Avanue H");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94130");
+			fa.aAssignedHouseNumber.theValue("10");
+			/***/
+			/****
+			fa.aStreetName.theValue("@ , Blackhawk");
+			fa.aCity.theValue("Blackhawk");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94526");
+			fa.aAssignedHouseNumber.theValue("199"); 
+			/***/
+			/****
+			fa.aAssignedHouseNumber.theValue("aac254");
+			fa.aStreetName.theValue(", Stage Coach");
+			fa.aState.theValue("NV");
+			fa.aPostalCode.theValue("NEV");
+			//fa.aAssignedHouseNumber.theValue("96611");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("170");
+			fa.aStreetName.theValue("Willows");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94506");
+			/***/
+    
+			/****
+	//      fa.aHouseNumberPrefix.theValue("N142");
+			fa.aHouseNumber.theValue("1700");
+			fa.aStreetName.theValue("WILLOW CREEK");
+			fa.aStreetThoroughfare.theValue("DR");
+			fa.aCity.theValue("SJ");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("95124");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("100");
+			fa.aStreetName.theValue("DEER RIDGE");
+			fa.aStreetThoroughfare.theValue("PL");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94506");
+			/***/
+    
+			/**** /
+			fa.aHouseNumber.theValue("1700");
+			fa.aStreetName.theValue("WILLOWS");
+			fa.aPostalCode.theValue("95124");
+			/***/
+            
+			/**** /
+			fa.aHouseNumber.theValue("1020");
+			fa.aStreetDirection.theValue("W"); 
+			fa.aStreetName.theValue("AVENUE S");
+			//fa.aStreetThoroughfare.theValue("PL");
+			fa.aCity.theValue("PLM");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("93551");
+			/***/
+            
+			/********************************************************************
+			 *  SWBT regions test cases.
+			 */
+            
+			/**** /
+			fa.aHouseNumber.theValue("100");
+			fa.aStreetName.theValue("OLIVE");
+			fa.aCity.theValue("ST CHARLES");
+			fa.aState.theValue("MO");
+			fa.aPostalCode.theValue("63101");
+			/***/
+			/****
+			fa.aHouseNumber.theValue("531");
+			fa.aStreetName.theValue("Abbotsford");
+			fa.aStreetThoroughfare.theValue("Ct");
+			fa.aCity.theValue("Dallas");
+			fa.aState.theValue("Tx");
+			fa.aPostalCode.theValue("73003");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("12519");
+			fa.aStreetName.theValue("Larkwood");
+			fa.aCity.theValue("St Louis");
+			fa.aState.theValue("MO");
+			fa.aPostalCode.theValue("63101");
+			/***/
+			/**** /
+			fa.aStreetName.theValue("@ DRY FORK");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aRoute.theValue("3");
+			fa.aBox.theValue("268C");
+			fa.aCity.theValue("STE GENEVIEVE COUNTY");
+			fa.aState.theValue("MO");
+			fa.aPostalCode.theValue("63028");
+			//fa.aPostalCode.theValue("EBY"); 
+			fa.aAssignedHouseNumber.theValue("6");
+			/***/
+			/****
+			fa.aAdditionalAddressInformation.theValue("BROWN TRAILER Pks");
+			fa.aPostalCode.theValue("63130");
+			/****/
+			/****
+			fa.aAdditionalAddressInformation.theValue("BUSH STADIUM");
+			fa.aPostalCode.theValue("63101");
+			/****/
+			/****
+			fa.aAdditionalAddressInformation.theValue("One Bell Center");
+			fa.aPostalCode.theValue("63101"); 
+			/***/
+			/****
+			fa.aAdditionalAddressInformation.theValue("ONE MCKNIGHT Pl"); // exact match
+			fa.aPostalCode.theValue("63101"); 
+			/***/
+    
+			/****
+			fa.aAssignedHouseNumber.theValue("10613"); // PREMIS list with this
+			fa.aStreetName.theValue("@ , OSAGE COUNTY");
+			fa.aCity.theValue("OSAGE COUNTY");;
+			fa.aState.theValue("OK");
+			fa.aPostalCode.theValue("74070");
+			/***/
+			/**** /
+			// fa.aAssignedHouseNumber.theValue("5000"); // PREMIS list with this
+			fa.aStreetName.theValue("Highway H");
+			fa.aHouseNumber.theValue("5000");
+			// fa.aAdditionalInfo.theValue("Highway H");
+			//fa.aCity.theValue("OSAGE COUNTY");;
+			fa.aState.theValue("MO");
+			fa.aPostalCode.theValue("63071");
+			/***/
+			/**** /
+			// fa.aAssignedHouseNumber.theValue("5000"); // PREMIS list with this
+			fa.aStreetName.theValue("canyon woods");
+			fa.aHouseNumber.theValue("545");
+			// fa.aAdditionalInfo.theValue("Highway H");
+			//fa.aCity.theValue("OSAGE COUNTY");;
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94583");
+			/***/
+			/****
+			fa.aAssignedHouseNumber.theValue("18901"); // PREMIS error with this
+			fa.aStreetName.theValue("@ , Franklin County ABC");;
+			fa.aCity.theValue("Franklin County");
+			fa.aPostalCode.theValue("SUBA");
+			/***/
+			/****
+			fa.aHouseNumber.theValue("320");
+			fa.aStreetName.theValue("Cedar");
+			fa.aStreetThoroughfare.theValue("St");
+			fa.aCity.theValue("SAN ANTONIO");
+			fa.aState.theValue("Tx");
+			fa.aPostalCode.theValue("78210");
+			/***/
+			/****
+			fa.aRoute.theValue("11");
+			fa.aBox.theValue("600");
+			fa.aStreetName.theValue("@ airport");
+			fa.aStreetThoroughfare.theValue("DR");
+			fa.aCity.theValue("harlingen");
+			//fa.aState.theValue("Tx");
+			fa.aPostalCode.theValue("78550");
+			/***/
+			/****
+			fa.aStreetName.theValue("@ , Jefferson County");
+			//fa.aState.theValue("MO");
+			fa.aPostalCode.theValue("63020");
+			fa.aAssignedHouseNumber.theValue("96611");
+			/***/
+			/****
+			fa.aAssignedHouseNumber.theValue("204");
+			fa.aStreetName.theValue("alamo");
+			fa.aStreetThoroughfare.theValue("plaza");
+			fa.aState.theValue("TX");
+			fa.aPostalCode.theValue("78205");
+			fa.aPostalCode.theValue("SA");
+			//fa.aUnitType   = IDLUtil.toOpt("APT");        
+			//fa.aUnitValue  = IDLUtil.toOpt("308");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("11440");
+			fa.aStreetDirection.theValue("E");
+			fa.aStreetName.theValue("PINE");
+			fa.aCity.theValue("TULSA");
+			fa.aState.theValue("OK");
+			fa.aPostalCode.theValue("74116");
+			/***/
+    
+			/********************************************************************
+			 *  AIT regions test cases.
+			 */
+			 /****
+			fa.aHouseNumber.theValue("W14098");
+			fa.aHouseNumberPrefix.theValue("S0076");        // strip leading zeros
+			fa.aStreetName.theValue("MC*SHANE");
+			fa.aStreetThoroughfare.theValue("DR");
+			fa.aCity.theValue("MUSKEGO");
+			fa.aState.theValue("WI");
+			fa.aPostalCode.theValue("53150");
+			//fa.aPostalCode.theValue("99999");
+			/***/
+			 /**** /
+			fa.aStreetName.theValue("S R 158");
+			fa.aCity.theValue("Bedford");
+			fa.aState.theValue("IN");
+			fa.aPostalCode.theValue("47421"); 
+			/***/
+			/**** / 
+			fa.aAdditionalAddressInformation.theValue("ROLLING MEADOWS TRAILER COURT");
+			fa.aCity.theValue("SPFD");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("D"); 
+			/***/       
+			/**** / 
+			fa.aAdditionalAddressInformation.theValue("WOVEN HEARTS NURSING HOME");
+			fa.aState.theValue("WI");
+			fa.aPostalCode.theValue("54751"); 
+			/***/       
+			/****
+			fa.aAdditionalAddressInformation.theValue("ANDERSON PARK");
+			fa.aCity.theValue("NEW ALBANY");
+			fa.aState.theValue("IN");
+	//      fa.aPostalCode.theValue("47150");
+			fa.aPostalCode.theValue("S"); 
+			/***/
+			/***
+			fa.aAdditionalAddressInformation.theValue("COURT HOUSE");
+			fa.aState.theValue("IN");
+			fa.aPostalCode.theValue("47601"); 
+			/****/
+            
+			/***
+			fa.aHouseNumber.theValue("7632");
+			fa.aStreetName.theValue("SNOWFLAKE");
+			fa.aState.theValue("IN");
+			fa.aPostalCode.theValue("46227");
+			//fa.aPostalCode.theValue("60638"); // bad zip
+			//fa.aAdditionalAddressInformation.theValue("AAI");   
+			//fa.aAssignedHouseNumber.theValue("AHN");
+			/***/
+			/***
+			fa.aHouseNumber.theValue("1297");
+			fa.aStreetName.theValue("Jackson");
+			fa.aStreetThoroughfare.theValue("Av");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("44107");
+			fa.aUnitType   = IDLUtil.toOpt("APT");      
+			fa.aUnitValue  = IDLUtil.toOpt("1640");
+			/***/
+			/***
+			fa.aHouseNumber.theValue("1225");
+			fa.aStreetName.theValue("Jackson");
+			fa.aStreetThoroughfare.theValue("Av");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("44107");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("12700");
+			fa.aStreetName.theValue("Lake");
+			fa.aStreetThoroughfare.theValue("Av");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("44107");
+			fa.aUnitType   = IDLUtil.toOpt("APT");      
+			fa.aUnitValue  = IDLUtil.toOpt("1703");
+			/***/
+			/****
+			fa.aHouseNumber.theValue("2039");
+			fa.aStreetName.theValue("Dunbarton");
+			fa.aStreetThoroughfare.theValue("Ct");
+			fa.aStreetNameSuffix .theValue( "W");
+			fa.aCity.theValue("Indianapolis");
+			fa.aState.theValue("IN");
+			fa.aPostalCode.theValue("46260");
+			/***/
+			/****
+			fa.aHouseNumber.theValue("394");
+			fa.aStreetName.theValue("Fenton");
+			fa.aStreetThoroughfare.theValue("LN");;
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("60185");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("16");
+			fa.aStreetDirection.theValue("W");
+			fa.aStreetName.theValue("Maple");
+			fa.aCity.theValue("Chgo");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("60610");
+			fa.aLevelType  = IDLUtil.toOpt("FLR");      
+			fa.aLevelValue = IDLUtil.toOpt("3");        
+			fa.aUnitType   = IDLUtil.toOpt("APT");      
+			fa.aUnitValue  = IDLUtil.toOpt("8888");     // TEST SAG database
+			/****/
+			/**** /
+			fa.aHouseNumber.theValue("1828");
+			fa.aStreetDirection.theValue("N");
+			fa.aStreetName.theValue("34th");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("95124");
+			//fa.aPostalCode.theValue("60165");
+			/***/
+			/****
+			fa.aStreetName.theValue("@ Westwood");
+			fa.aCity.theValue("PK For");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("60466");
+			fa.aAssignedHouseNumber.theValue("139");
+			/***/
+			/***
+			fa.aHouseNumber.theValue("25592");
+			fa.aStreetName.theValue("Shiawassee");
+			//fa.aStreetThoroughfare.theValue("Av");
+			fa.aState.theValue("MI");
+			fa.aPostalCode.theValue("48034");
+			fa.aUnitType   = IDLUtil.toOpt("APT");      
+			fa.aUnitValue  = IDLUtil.toOpt("923");
+			/***/
+			/***
+			fa.aHouseNumber.theValue("4040");
+			fa.aStreetDirection.theValue("W");
+			fa.aStreetName.theValue("86th");
+			//fa.aStreetThoroughfare.theValue("Av");
+			fa.aState.theValue("IN");
+			fa.aPostalCode.theValue("46268");
+			fa.aLevelType  = IDLUtil.toOpt("FLR");      
+			fa.aLevelValue = IDLUtil.toOpt("1");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("3884");
+			fa.aStreetDirection.theValue("S");
+			fa.aStreetName.theValue("DIVISION");
+			//fa.aStreetThoroughfare.theValue("Av");
+			fa.aState.theValue("MI");
+			fa.aPostalCode.theValue("49548");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("2800");
+			fa.aStreetDirection.theValue("N");
+			fa.aStreetName.theValue("LAKE SHORE DRIVE WEST");
+			//fa.aStreetThoroughfare.theValue("Av");
+			fa.aCity.theValue("CHGO");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("60657");
+			fa.aUnitType   = IDLUtil.toOpt("APT");      
+			fa.aUnitValue  = IDLUtil.toOpt("1013");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("7450");
+			fa.aStreetName.theValue("CASCADE");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aStreetNameSuffix .theValue( "SE");
+			fa.aCity.theValue("CASCADE TWP");
+			fa.aState.theValue("MI");
+			fa.aPostalCode.theValue("49546");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("26016");
+			fa.aStreetName.theValue("DETROIT");
+			fa.aStreetThoroughfare.theValue("RD");
+	//      fa.aCity.theValue("CASCADE TWP");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("44145");
+			fa.aUnitType   = IDLUtil.toOpt("UNIT");     
+			fa.aUnitValue  = IDLUtil.toOpt("7");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("506");
+			fa.aStreetName.theValue("NEALE");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aStreetNameSuffix .theValue( "SW");
+			fa.aCity.theValue("MASSILLON");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("44647");
+			fa.aUnitType   = IDLUtil.toOpt("APT");      
+			fa.aUnitValue  = IDLUtil.toOpt("3");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("2828");
+			fa.aStreetDirection.theValue("S");
+			fa.aStreetName.theValue("19");
+			fa.aCity.theValue("MANITOWOC");
+			fa.aState.theValue("WI");
+			fa.aPostalCode.theValue("54220");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("20027");
+			fa.aStreetName.theValue("INKSTER");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aCity.theValue("LIVONIA");
+			fa.aState.theValue("MI");
+			fa.aPostalCode.theValue("48152");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("860");
+			fa.aStreetName.theValue("TOLL GATE");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aCity.theValue("ELGN");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("60123");
+			fa.aLevelType  = IDLUtil.toOpt("FLR");
+			fa.aLevelValue = IDLUtil.toOpt("1");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("1700");
+			fa.aStreetName.theValue("KENT");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aCity.theValue("QNCY");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("62301");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("32255");
+			fa.aStreetName.theValue("Northwestern");
+			fa.aStreetThoroughfare.theValue("HWY");
+	//      fa.aCity.theValue("QNCY");
+			fa.aState.theValue("MI");
+			fa.aPostalCode.theValue("48334");
+			fa.aUnitType   = IDLUtil.toOpt("SUIT");     
+			fa.aUnitValue  = IDLUtil.toOpt("143");
+			/***/
+			/*** /
+			fa.aHouseNumber.theValue("10416");
+			fa.aStreetName.theValue("Santa Cruz");
+			fa.aStreetThoroughfare.theValue("LN");
+			fa.aCity.theValue("ORLAND PK");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("60467");
+			/***/
+			 /*** /
+			fa.aHouseNumber.theValue("8000");
+			fa.aStreetName.theValue("Norvell");
+//			  fa.aStreetThoroughfare.theValue("LN");
+			fa.aCity.theValue("XANADU WEST");
+			fa.aState.theValue("WI");
+			fa.aPostalCode.theValue("60467");
+			/***/
+   
+            
+			/********************************************************************
+			 *  SNET regions test cases.
+			 */
+			/**** /
+			fa.aHouseNumber.theValue("116");
+			fa.aRoute.theValue("148");  
+			fa.aPostalCode.theValue("06419"); 
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("2247");
+			fa.aRoute.theValue("80");
+			fa.aCity.theValue("MADS");  
+			fa.aPostalCode.theValue("06419"); 
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("18");
+			fa.aRoute.theValue("79");
+			fa.aPostalCode.theValue("06419"); 
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("18");
+			fa.aRoute.theValue("79");
+			fa.aStreetName.theValue("SERVICE");
+	//      fa.aStreetThoroughfare.theValue("RD");
+			fa.aPostalCode.theValue("06419"); 
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("197");
+			fa.aRoute.theValue("197");  
+			fa.aPostalCode.theValue("06281"); 
+			/***/
+			/**** /
+			fa.aAssignedHouseNumber.theValue("*");
+	//      fa.aHouseNumber.theValue("1");
+			fa.aStreetName.theValue("@ JUSTIN");
+			fa.aStreetThoroughfare.theValue("DR");
+	//      fa.aCity.theValue("E HADDAM");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06029");
+			/***/
+    
+			/****
+	//      fa.aAssignedHouseNumber.theValue("*");
+			fa.aStreetName.theValue("@ LANES POND");
+			fa.aStreetThoroughfare.theValue("RD");
+	//      fa.aCity.theValue("E HADDAM");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06437");
+			/***/
+			/****
+			fa.aAssignedHouseNumber.theValue("304");  
+			fa.aStreetName.theValue("MANZANA");
+			fa.aStreetThoroughfare.theValue("CT");
+			fa.aStreetNameSuffix .theValue( "NW");
+			fa.aState.theValue("MI");
+			fa.aPostalCode.theValue("49544");
+			//fa.aLevelType  = IDLUtil.toOpt("FLR");       
+			//fa.aLevelValue = IDLUtil.toOpt("3");
+			//fa.aUnitType   = IDLUtil.toOpt("APT");        
+			//fa.aUnitValue  = IDLUtil.toOpt("C3");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("108");  
+			fa.aStreetName.theValue("SU");
+			fa.aStreetThoroughfare.theValue("DR");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06450");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("9");  
+			fa.aStreetName.theValue("ELM RIDGE");
+			fa.aStreetThoroughfare.theValue("DR");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06067");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("5");  
+			fa.aStreetName.theValue("ALMA ROCK");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06903");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("50");
+			fa.aStreetDirection.theValue("S"); 
+			fa.aStreetName.theValue("MAIN");
+			fa.aStreetThoroughfare.theValue("ST");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06492");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("48");
+			fa.aStreetName.theValue("HIGHLAND");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06604");
+			fa.aUnitType   = IDLUtil.toOpt("UNIT");     
+			fa.aUnitValue  = IDLUtil.toOpt("448");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("730");
+			fa.aStreetName.theValue("HEBRON");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06033");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("554");
+			fa.aStreetName.theValue("PLAINVILLE");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06032");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("2990");
+			fa.aStreetName.theValue("MAIN");
+			fa.aStreetThoroughfare.theValue("ST");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06606");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("126");
+			fa.aStreetName.theValue("GALLUP HILL");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06339");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("95");
+			fa.aStreetName.theValue("VARGA");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06278");
+			fa.aUnitType   = IDLUtil.toOpt("UNIT");     
+			fa.aUnitValue  = IDLUtil.toOpt("200");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("221");
+			fa.aStreetName.theValue("LANTERN HILL");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aCity.theValue ("MYST");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06355");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("120");
+			fa.aStreetName.theValue("CHURCH");
+			fa.aStreetThoroughfare.theValue("ST");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06492");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("85");
+			fa.aStreetName.theValue("VISCOUNT");
+			fa.aStreetThoroughfare.theValue("DR");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06460");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("328");
+			fa.aStreetDirection.theValue("W");
+			fa.aStreetName.theValue("MAIN");
+			fa.aStreetThoroughfare.theValue("ST");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06360");
+			fa.aUnitType   = IDLUtil.toOpt("UNIT");     
+			fa.aUnitValue  = IDLUtil.toOpt("2");
+			/***/
+
+			/**** /
+
+			fa.aHouseNumber.theValue("1995");
+			fa.aStreetName.theValue("MAIN");
+			fa.aStreetThoroughfare.theValue("ST");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06604");
+			fa.aLevelType  = IDLUtil.toOpt("FLR");
+			fa.aLevelValue = IDLUtil.toOpt("2");
+			/***/
+			/**** /
+	//      fa.aHouseNumber.theValue("58");
+			fa.aHouseNumber.theValue("90");
+			fa.aStreetName.theValue("buckingham");
+			fa.aStreetThoroughfare.theValue("dr");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06902");
+			fa.aLevelType  = IDLUtil.toOpt("FLR");
+			fa.aLevelValue = IDLUtil.toOpt("BSMT");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("2558");
+			fa.aStreetName.theValue("WHITNEY");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06518");
+			fa.aLevelType  = IDLUtil.toOpt("FLR");
+			fa.aLevelValue = IDLUtil.toOpt("2");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("13");
+			fa.aStreetName.theValue("MARSHALL");
+			fa.aStreetThoroughfare.theValue("ST");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06854");
+			fa.aLevelType  = IDLUtil.toOpt("FLR");
+			fa.aLevelValue = IDLUtil.toOpt("2");
+			/***/
+            
+			/********************************************************************
+			 *  SBCT - OVALS regions test cases.
+			 */
+			/*** /          // OVALS test case
+			fa.aHouseNumber.theValue("5001");
+			// rz fa.aStreetName.theValue ("e 42nd st");
+			fa.aStreetName.theValue ("Reset OVALS Connection !!!");
+			fa.aCity.theValue("omaha");
+			fa.aState.theValue("NE");
+			// fa.aPostalCode.theValue("68111");
+			/***/
+			/*** / 			// OVALS test case - SBCT Outside of MSA
+			fa.aHouseNumber.theValue("5001");
+			fa.aStreetName.theValue ("n 42nd st");
+			fa.aCity.theValue("omaha");
+			fa.aState.theValue("NE");
+			fa.aPostalCode.theValue("68111");
+			/***/
+			/*** /          // OVALS test case
+			fa.aHouseNumber.theValue("80");
+			fa.aStreetName.theValue ("hancock");
+			fa.aCity.theValue("cambridge");
+			fa.aState.theValue("MA");
+			fa.aPostalCode.theValue("02139");   
+			/***/
+			/**** /			// OVALS test case - In Region Out of Franchise
+			fa.aHouseNumber.theValue("1");
+			fa.aStreetName.theValue("Memorial");
+			fa.aState.theValue("MO");
+			fa.aPostalCode.theValue("63664");
+			/***/
+			/*** /			// OVALS test case - In Region
+			fa.aHouseNumber.theValue("1010");
+			fa.aStreetName.theValue ("pine st");
+			// fa.aCity.theValue("cambridge");
+			// fa.aState.theValue("MA");
+			fa.aPostalCode.theValue("63101");   
+			/***/
+			/*** /        // OVALS test case
+			fa.aHouseNumber.theValue("1600");           // ErrorCode E024
+			fa.aStreetName.theValue("holly drive");
+			fa.aPostalCode.theValue("98204");
+			/***/   
+			/*** /            // OVALS test case - ATM ZONE A
+			fa.aHouseNumber.theValue("7311");               // ErrorCode T7D
+			fa.aStreetName.theValue("148 Ave");
+			fa.aPostalCode.theValue("98073");
+			/***/
+			/**** /       // OVALS test case
+			fa.aBox.theValue("6575");           
+			fa.aStreetName.theValue("po box");
+			fa.aPostalCode.theValue("88901-6575");
+			/***/
+			/**** /       // OVALS test case
+			fa.aBox.theValue ("123");           
+			fa.aStreetName.theValue ("  po box   ");
+			// fa.aCity.theValue ("boston");
+			// fa.aState.theValue ("MA");
+			fa.aPostalCode.theValue("02101"); // -0123"); 
+			/***/
+			/*** /			// OVALS test case - SBCT Collocated
+			fa.aHouseNumber.theValue("1500");
+			fa.aStreetName.theValue("2nd");
+			// fa.aStreetThoroughfare.theValue("ST");
+			fa.aState.theValue("ut");
+			fa.aPostalCode.theValue("84115");
+			// fa.aLevelType  = IDLUtil.toOpt("FLR");
+			// fa.aLevelValue = IDLUtil.toOpt("2");
+			/***/
+			/*** /          
+			fa.aHouseNumber.theValue("111");
+			fa.aStreetName.theValue ("main st");
+			fa.aCity.theValue("newark");
+			fa.aState.theValue("NJ");
+			fa.aPostalCode.theValue("07105");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("1005");
+			fa.aStreetName.theValue("hidden hollow");
+			fa.aStreetThoroughfare.theValue("ln");
+			fa.aState.theValue("pa");
+			fa.aPostalCode.theValue("19380");
+			// fa.aLevelType  = IDLUtil.toOpt("FLR");
+			// fa.aLevelValue = IDLUtil.toOpt("2");
+			/***/
+			 /**** /		// OVALS test case - SBCT non-collocated
+			fa.aHouseNumber.theValue("2");
+			fa.aStreetName.theValue("curve");
+			fa.aStreetThoroughfare.theValue("ST");
+			fa.aState.theValue("ma");
+			fa.aPostalCode.theValue("01880");
+			// fa.aLevelType  = IDLUtil.toOpt("FLR");
+			// fa.aLevelValue = IDLUtil.toOpt("2");
+			/***/
+
+    
+			/********************************************************************
+			 *  Specail test cases.
+			 */
+    
+			/*** /      
+			// set values for unfielded address
+			/****
+			String aAddressLineArray[] = new String [] { "  p. o. box 50548  " } ;
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+            
+			//ufa.aAddressLine.theValue("  p. o. box 50548  ");         
+			ufa.aCity.theValue("PALO ALTO");
+			ufa.aState.theValue("CA");
+			ufa.aPostalCode.theValue("94303"); 
+    
+    
+	/*      More Test Cases
+		PO BOX 1170                SANTA CLARA      CA  95052
+		PO BOX 361034              MILPITAS         CA  95036
+		PO BOX 4                   SARATOGA         CA  95071
+		PO BOX 151                 SAN JOSE         CA  95103
+		PO BOX 360748              MILPITAS         CA  95036
+		PO BOX 60476               SUNNYVALE        CA  94088
+		PO BOX 360390              MILPITAS         CA  95036
+		PO BOX 401                 ROSS             CA  94957                   
+		PO BOX 727                 KENTFIELD        CA  94914
+		PO BOX 250                 SAUSALITO        CA  94966                       
+		P O BOX 1148               PLEASANTON       CA  94566
+		P O BOX 248                UION CTY         CA  94587
+		PO BOX 130                 FOREST KNOLLS    CA  94933                              
+		PO BOX 1926                FREMONT          CA  94538                          
+		PO BOX 50548               PALO ALTO        CA  94303                            
+	*/
+			/****       
+			/****************** Regression Test Cases *****************/
+			/****
+			fa.aHouseNumber.theValue("545");            
+			fa.aStreetName.theValue("canyon woods ");
+			fa.aPostalCode.theValue("san ramon ca");
+			/***/
+            
+			/****************** eGateway Test Cases ********************/
+            
+			/**** /  //003 exact match; ILEC Test 1
+			fa.aHouseNumber.theValue("8166");
+			fa.aStreetName.theValue("Darnley");
+			fa.aStreetThoroughfare.theValue("Ct");
+			fa.aCity.theValue("Indianapolis");
+			fa.aState.theValue("IN");
+			fa.aPostalCode.theValue("46260");
+			/***/
+			/**** /  //no match found in ovals qms; ILEC Test 2
+			fa.aHouseNumber.theValue("715");
+			fa.aStreetName.theValue("Stadium");
+			fa.aStreetThoroughfare.theValue("Dr");
+			fa.aStructureType.theValue("Bldg");
+			fa.aStructureValue.theValue("Bell Cntr");
+			fa.aLevelType.theValue("Flr");
+			fa.aLevelValue.theValue("3");
+			fa.aCity.theValue("San Antonio");
+			fa.aState.theValue("TX");
+			fa.aPostalCode.theValue("78212");
+			/***/
+			/**** / //022, 53 rows; ILEC Test 3
+			fa.aHouseNumber.theValue("11900");
+			fa.aStreetName.theValue("Edgewater");
+			fa.aStreetThoroughfare.theValue("Dr");
+			fa.aUnitType.theValue("Apt");
+			fa.aUnitValue.theValue("1");
+			fa.aCity.theValue("Lakewood");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("44107");
+			/***/
+			/**** / // 005, 2 results found, one both SANO and SANOR populated, one both blank; ILEC Test 4
+			fa.aHouseNumber.theValue("471");
+			fa.aStreetName.theValue("Connecticut");
+			fa.aLevelType.theValue("Flr");
+			fa.aLevelValue.theValue("2");
+			fa.aCity.theValue("BPT");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06607");
+			/***/
+			/**** / //failed OVALS; ILEC Test 5
+			fa.aHouseNumber.theValue("3525");
+			fa.aStreetName.theValue("Ianni");
+			fa.aStreetThoroughfare.theValue("Av");
+			fa.aUnitType.theValue("Apt");
+			fa.aUnitValue.theValue("47");
+			fa.aCity.theValue("SAC");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("95821");
+			/***/
+			/**** / //501, invalid ZIP; ILEC Test 6
+			fa.aHouseNumber.theValue("345");
+			fa.aStreetName.theValue("Virginia");
+			fa.aStreetDirection.theValue("N");
+			fa.aUnitType.theValue("Rm");
+			fa.aUnitValue.theValue("Meeting");
+			fa.aLevelType.theValue("Flr");
+			fa.aLevelValue.theValue("Lwr");
+			fa.aCity.theValue("Reno");
+			fa.aState.theValue("NV");
+			fa.aPostalCode.theValue("89101");
+			/***/
+			/**** / //not tested, descriptive address
+			fa.aAdditionalInfo.theValue("City Hall");
+			fa.aLevelType.theValue("Flr");
+			fa.aLevelValue.theValue("20");
+			fa.aCity.theValue("CHGO");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("60602");
+			/***/
+			/**** / //not tested, descriptive address
+			fa.aAdditionalInfo.theValue("One Bell Center");
+			fa.aCity.theValue("St Louis");
+			fa.aState.theValue("MO");
+			fa.aPostalCode.theValue("63101");
+			/***/
+			/**** / //not tested, 
+			fa.aStreetName.theValue("@ Angel Mountain");
+			fa.aStreetThoroughfare.theValue("Rd");
+			fa.aAssignedHouseNumber.theValue("1");
+			fa.aCity.theValue("W Spgs");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("92086");
+			/***/
+			/**** / //not tested
+			fa.aStreetName.theValue("@ Main");
+			fa.aStreetThoroughfare.theValue("St");
+			fa.aStructureType.theValue("Bldg");
+			fa.aStructureValue.theValue("Dodd");
+			fa.aCity.theValue("E HDM");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06423");
+			/***/
+			/**** / //not tested
+			fa.aHouseNumber.theValue("AAC410");
+			fa.aStreetName.theValue("@ , Stagecoach");
+			fa.aCity.theValue("Slvr Spgs");
+			fa.aState.theValue("NV");
+			fa.aPostalCode.theValue("89429");
+			/***/
+			/**** / // not tested
+			fa.aAssignedHouseNumber.theValue("4924");
+			fa.aStreetName.theValue("@ , Belleville");
+			fa.aCity.theValue("Belleville");
+			fa.aState.theValue("KS");
+			fa.aPostalCode.theValue("66935");
+			/***/
+			/**** / objectnotfound ovals
+			fa.aHouseNumber.theValue("119001");
+			fa.aStreetName.theValue("Edgewater");
+			fa.aStreetThoroughfare.theValue("Dr");
+			fa.aCity.theValue("Lakewood");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("44107");
+			/***/
+           	
+			/**** / //from ASON log, alternative ranged
+			fa.aHouseNumber.theValue("1504");
+			fa.aStreetDirection.theValue("N");
+			fa.aStreetName.theValue("47TH");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("62204");
+			/***/
+			/**** / //from ASON log, alternative ranged
+			fa.aHouseNumber.theValue("50031");
+			fa.aStreetName.theValue("BAPTIST RIDGE");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aCity.theValue("LEE TWP");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("43946");
+			/***/
+			/****/ //from ASON log, gives RESPC 022
+			fa.aHouseNumber.theValue("3200");
+			fa.aStreetDirection.theValue("N");
+			fa.aStreetName.theValue("M-63");
+			fa.aCity.theValue("BENTON HRBR");
+			fa.aState.theValue("MI");
+			fa.aPostalCode.theValue("49022");
+			/***/
+			/**** / //from ASON log, gives RESPC 022
+			fa.aHouseNumber.theValue("700");
+			fa.aStreetName.theValue("BROAD RIPPLE");
+			fa.aStreetThoroughfare.theValue("AV");
+			fa.aCity.theValue("INDIANAPOLIS");
+			fa.aState.theValue("IN");
+			fa.aPostalCode.theValue("46220");
+			/***/
+			/**** / //from BRMS log, gives RESPC 022
+			fa.aHouseNumber.theValue("2991");
+			fa.aStreetName.theValue("MAIN");
+			fa.aStreetThoroughfare.theValue("ST");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06606");
+			/***/
+			/**** / //from BRMS log, gives RESPC 022
+			fa.aHouseNumber.theValue("12");
+			fa.aStreetName.theValue("RENEE'S");
+			fa.aStreetThoroughfare.theValue("WAY");
+			fa.aCity.theValue("GUILFORD");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06437");
+			/***/
+			/**** / //003
+			fa.aHouseNumber.theValue("6967");
+			fa.aStreetName.theValue("Stagecoach");
+			fa.aUnitType.theValue("Apt");
+			fa.aUnitValue.theValue("C");
+			fa.aStreetThoroughfare.theValue("Rd");
+			fa.aCity.theValue("Dublin");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("94568");
+			/***/
+			/**** / //objectnotfound-00001 from ovals qms
+			fa.aHouseNumber.theValue("897");
+			fa.aStreetName.theValue("Guisafd");
+			fa.aCity.theValue("YUISDF");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("91006");
+			/***/
+			/**** / //003
+			fa.aHouseNumber.theValue("6");
+			fa.aStreetName.theValue("COBBLER'S HILL");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06611");
+			/***/ 
+			/**** / //?to test large data set, passed
+			fa.aHouseNumber.theValue("11901");
+			fa.aStreetName.theValue("Edgewater");
+			fa.aStreetThoroughfare.theValue("Dr");
+			fa.aCity.theValue("Lakewood");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("44107");
+			/***/
+			/**** / //from Maneesh, but returned 2 address: both sano and sanor populated, and both blank
+			fa.aHouseNumber.theValue("471");
+			fa.aStreetName.theValue("Connecticut");
+			fa.aUnitType.theValue("Flr");
+			fa.aUnitValue.theValue("2");
+			fa.aCity.theValue("BPT");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06607");
+			/***/
+			/**** / //from al meadows, failed OVALS
+			fa.aHouseNumber.theValue("3200");
+			fa.aStreetName.theValue("M-6");
+			fa.aStreetDirection.theValue("N");
+			fa.aPostalCode.theValue("49022");
+			/***/        
+			/**** /
+			fa.aHouseNumber.theValue("1");
+			fa.aStreetName.theValue("Memorial");
+			fa.aState.theValue("MO");
+			fa.aPostalCode.theValue("63664");
+			/***/
+			/**** /
+			fa.aHouseNumber.theValue("111");
+			fa.aStreetName.theValue("Main");
+			fa.aStreetThoroughfare.theValue("St");
+			fa.aCity.theValue("Newark");
+			fa.aState.theValue("NJ");
+			fa.aPostalCode.theValue("07105");
+			/***/
+                      
+		//      tn = "5107061235";   // Fielded List - TN Match Menu
+		//      tn = "9259017651";   // Exception - TN not found
+		//      tn = "4153621000";   // Hit - with multiple working TNs
+		//      tn = "5107061234";   // Hit - CA
+		//      tn = "4158243205";   // Hit - CA
+		//      tn = "8607497393";   // DR 55489 - SNET
+		//      tn = "2032390150";  // Sanjiv Test
+		//      tn = "2032228249";  // Sanjiv test 2 Invalid phone number
+		//      tn = "8604236569";  // Sanjiv test 3
+		//      tn = "8607211267";  // Sanjiv test 4
+			  tn = "6083653942";   // AIT number - IN
+		//      tn = "7153421226";   // AIT number - IN
+		//      tn = "7753244198";   // AIT number - NV
+		//      tn = "9254177402";   // PB number - CA ( Invalid NPA NXX. - Does not exist in PREMIS. )
+		//      tn = "3178874951";   // AIT number - MI
+		//      tn = "5734839595";   // Route and Box - MI
+		//      tn = "7084587723";   // AIT number - IL
+		//      tn = "2162710485";   // AIT number - OH //ACCOUNT NOT FOUND
+		//      tn = "5803415767";   // AIT number - OK //SVC NOT FOUND
+		//      tn = "3143552124";   // SWBT number - MO ( TN menu - 2nd hit as exact )
+		//      tn = "4408386502";   // AIT number - OH // invalid NPA
+		//      tn = "3122250017";   // AIT number - IL - a list
+		//      tn = "8473959366";   // AIT number - IL - a list
+		//      tn = "4142761112";   // AIT number - IL - truncate APT value.
+		//      tn = "9183963999";   // SWBT number - OK
+		//        tn = "2037440011";   // CT
+		//        tn = "9023724474";   // WI
+    
+			fa.aHouseNumber.theValue("3535");
+			fa.aStreetName.theValue("TERRA GRANADA");
+			fa.aStreetThoroughfare.theValue("DR");
+			fa.aPostalCode.theValue("CITY");
+	//		fa.aUnitType    = IDLUtil.toOpt("UNIT");		
+	//		fa.aUnitValue   = IDLUtil.toOpt("4B");
+			/****/	
+            
+			/*** /          // OVALS test case
+			fa.aHouseNumber.theValue("80");
+			fa.aStreetName.theValue ("hancock");
+			fa.aCity.theValue("cambridge");
+			fa.aState.theValue("MA");
+			fa.aPostalCode.theValue("02139");   
+			/***/
+            
+			/*** /            // OVALS test case
+			fa.aHouseNumber.theValue("1010");
+			fa.aStreetName.theValue ("pine st");
+			// fa.aCity.theValue("cambridge");
+			// fa.aState.theValue("MA");
+			fa.aPostalCode.theValue("63101");   
+			/***/
+			/*** /  //EGateway
+			fa.aHouseNumber.theValue("8166");
+			fa.aStreetName.theValue("Darnley");
+			fa.aStreetThoroughfare.theValue("Ct");
+			fa.aCity.theValue("Indianapolis");
+			fa.aState.theValue("IN");
+			fa.aPostalCode.theValue("46260");
+			/*** /   // SNet
+			fa.aHouseNumber.theValue("9");  
+			fa.aStreetName.theValue("ELM RIDGE");
+			fa.aStreetThoroughfare.theValue("DR");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("06067");
+			/*** /   // SNet
+			fa.aHouseNumber.theValue("2");  
+			fa.aStreetName.theValue("BOSTON");
+			fa.aStreetThoroughfare.theValue("DR");
+			fa.aCity.theValue("LDYRD");
+			fa.aState.theValue("CT");
+			fa.aPostalCode.theValue("9503");
+			/*** /   // Shadow Services 
+			fa.aAssignedHouseNumber.theValue("1");  
+			fa.aStreetName.theValue("@ Angel Mountain");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aCity.theValue("W Spgs");
+			fa.aState.theValue("CA");
+			fa.aPostalCode.theValue("92086");
+			/*** /
+			/*** /   // Shadow Services
+			fa.aRoute.theValue("2");  
+			fa.aBox.theValue("544");
+			fa.aStreetName.theValue("@ , CAPE GIRARDEAU");
+			fa.aStreetThoroughfare.theValue("RD");
+			fa.aCity.theValue("CAPE GIRARDEAU");
+			fa.aPostalCode.theValue("63701");
+			/*** /
+			/*** /  //EGateway
+			fa.aHouseNumber.theValue("119001");
+			fa.aStreetName.theValue("Edgewater");
+			fa.aStreetThoroughfare.theValue("Dr");
+			fa.aCity.theValue("Lakewood");
+			fa.aState.theValue("OH");
+			fa.aPostalCode.theValue("44107");
+			/***/
+            
+			 /*** /  //EGateway
+			fa.aHouseNumber.theValue("1504");
+			fa.aStreetDirection.theValue("N");
+			fa.aStreetName.theValue("47TH");
+			fa.aState.theValue("IL");
+			fa.aPostalCode.theValue("62204");
+			/***/
+			/*** /			// OVALS test case - In Region
+			fa.aHouseNumber.theValue("1010");
+			fa.aStreetName.theValue ("pine st");
+			// fa.aCity.theValue("cambridge");
+			// fa.aState.theValue("MA");
+			fa.aPostalCode.theValue("63101");   
+			/***/
+		/********************************************************************
+			 *  Unfielded test cases.
+			 */
+			/*** /
+			String aAddressLineArray[] = new String [] 
+			{ "THE GREAT ATLANTIC &" , 
+			  "PACIFIC TEA CO",
+			  "P O BOX 2698-S FLESHMAN",
+			  "",
+			  "PATERSON, NJ 07509" } ;
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+			/****/
+			/**** /
+			String aAddressLineArray[] = new String [] 
+			{ "THE GREAT ATLANTIC &" , 
+			  "PACIFIC TEA CO",
+			  "P O BOX 2698-S FLESHMAN",
+			  "",
+			  "" } ;
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+			ufa.aCity.theValue("PATERSON");
+			ufa.aState.theValue("NJ");
+			ufa.aPostalCode.theValue("07509"); 
+			/****/
+					/**** /
+			String aAddressLineArray[] = new String [] 
+			{ "JENNIFER A BROME", 
+			  "SYDNEY RICKERT",
+			  "1800 SHEPHERD CT",
+			  "APT 218",
+			  "WAUKESHA, WI 53186-1421" } ;
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+			/****/
+			/**** /
+			String aAddressLineArray[] = new String [] 
+			{ "CM DUMM", 
+			  "104 MOHICAN CRT",
+			  "",
+			  "",
+			  "WEST LAFAYE 47906 N" } ;
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+			ufa.aBusinessName = IDLUtil.toOpt("",true);
+			/****/
+			/****/
+			String aAddressLineArray[] = new String [] 
+			{ "BAKER MARINE SERVICE", 
+			  "",
+			  "",
+			  "3085 MEMORIAL DR",
+			  "NORTH MUSKEGON, MI 49445-2123" } ;
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+			/****/
+			/**** /
+			String aAddressLineArray[] = new String [] 
+			{ "BAKER MARINE SERVICE", 
+			  "",
+			  "",
+			  "3085 MEMORIAL DR",
+			  "" } ;
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+			ufa.aCity = IDLUtil.toOpt("NORTH MUSKEGON");
+			ufa.aState = IDLUtil.toOpt("MI");
+			ufa.aPostalCode = IDLUtil.toOpt("49445-2123");
+			/****/
+			/**** /
+			String aAddressLineArray[] = new String [] 
+			{ "GLICK ENTERPRISES", 
+	//		  "",
+			  "370 3rd",
+			  "SUITE 5E",
+			  "San Francisco, CA" } ;
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+	//		ufa.aPostalCode.theValue("94595");
+			/****/
+			/**** /
+			String aAddressLineArray[] = new String [] { "  p. o. box 50548  " } ;
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+            
+			//ufa.aAddressLine.theValue("  p. o. box 50548  ");         
+			ufa.aCity.theValue("PALO ALTO");
+			ufa.aState.theValue("CA");
+			ufa.aPostalCode.theValue("94303"); 
+			/***/
+    		
+			/********************************************************************
+			 *  Multiple match test cases.
+			 */
+			/**** /
+			String aAddressLineArray[] = new String [] 
+			{ "",
+			  "80 Hancock",
+			  "Cambridge, MA"};
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+			/****/
+    		
+			/**** /
+			String aAddressLineArray[] = new String [] 
+			{ "",
+			  "344 4th ave N",
+			  "55401"};
+			ufa.aAddressLines = (StringSeqOpt) IDLUtil.toOpt( aAddressLineArray );
+			}

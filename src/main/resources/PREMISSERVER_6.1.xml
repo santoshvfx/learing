@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<vicuna>
+	<propertyList>
+		<PREMISSERVER>
+			<directory>
+				<search>
+					<service TYPE="STRING">C=US,O=PB,OU=OSSGW,CN=PREMISServer</service>
+					<version TYPE="STRING">6.1</version>
+				</search>
+				<selection>
+					<cacheDuration TYPE="USHORT">600</cacheDuration>
+				</selection>
+			</directory>
+		</PREMISSERVER>
+		<EventList>
+			<commHandle>
+				<protocol>
+					<profile>
+						<events>
+							<PREMIS_VALDT_ADDR_REQ>
+								<__id TYPE="LONG">6000</__id>
+								<PREMIS_HIT_RESP>
+									<__id TYPE="LONG">6001</__id>
+								</PREMIS_HIT_RESP>
+								<PREMIS_SAGA_MENU_RESP>
+									<__id TYPE="LONG">6002</__id>
+								</PREMIS_SAGA_MENU_RESP>
+								<PREMIS_ZIP_MENU_RESP>
+									<__id TYPE="LONG">6003</__id>
+								</PREMIS_ZIP_MENU_RESP>
+								<PREMIS_ST_NM_MENU_RESP>
+									<__id TYPE="LONG">6004</__id>
+								</PREMIS_ST_NM_MENU_RESP>
+								<PREMIS_DESC_NM_MENU_RESP>
+									<__id TYPE="LONG">6005</__id>
+								</PREMIS_DESC_NM_MENU_RESP>
+								<PREMIS_ADDR_RNGE_MENU_RESP>
+									<__id TYPE="LONG">6006</__id>
+								</PREMIS_ADDR_RNGE_MENU_RESP>
+								<PREMIS_ADDR_MENU_RESP>
+									<__id TYPE="LONG">6007</__id>
+								</PREMIS_ADDR_MENU_RESP>
+								<PREMIS_ST_ADDR_RANGE_MENU_RESP>
+									<__id TYPE="LONG">6008</__id>
+								</PREMIS_ST_ADDR_RANGE_MENU_RESP>
+								<PREMIS_UNNBRD_MENU_RESP>
+									<__id TYPE="LONG">6009</__id>
+								</PREMIS_UNNBRD_MENU_RESP>
+								<PREMIS_BASC_ADDR_MENU_RESP>
+									<__id TYPE="LONG">6010</__id>
+								</PREMIS_BASC_ADDR_MENU_RESP>
+								<PREMIS_UNADRM_MENU_RESP>
+									<__id TYPE="LONG">6011</__id>
+								</PREMIS_UNADRM_MENU_RESP>
+								<PREMIS_GSGM_MENU_RESP>
+									<__id TYPE="LONG">6012</__id>
+								</PREMIS_GSGM_MENU_RESP>
+								<PREMIS_TN_MATCH_MENU_RESP>
+									<__id TYPE="LONG">6013</__id>
+								</PREMIS_TN_MATCH_MENU_RESP>
+								<PREMIS_SUPP_ADDR_MENU_RESP>
+									<__id TYPE="LONG">6014</__id>
+								</PREMIS_SUPP_ADDR_MENU_RESP>
+								<PREMIS_UNADRM_GSGM_MENU_RESP>
+									<__id TYPE="LONG">6015</__id>
+								</PREMIS_UNADRM_GSGM_MENU_RESP>
+								<EXCEPTION>
+									<__id TYPE="LONG">9999</__id>
+								</EXCEPTION>
+							</PREMIS_VALDT_ADDR_REQ>
+
+							<PREMIS_TN_RSRV_REQ>
+								<__id TYPE="LONG">6030</__id>
+								<PREMIS_TN_RSRV_RESP>
+									<__id TYPE="LONG">6031</__id>
+								</PREMIS_TN_RSRV_RESP>
+								<PREMIS_TN_RSRV_TCAT_RESP>
+									<__id TYPE="LONG">6032</__id>
+								</PREMIS_TN_RSRV_TCAT_RESP>
+								<PREMIS_TN_RSRV_ADDLN_RESP>
+									<__id TYPE="LONG">6033</__id>
+								</PREMIS_TN_RSRV_ADDLN_RESP>
+								<EXCEPTION>
+									<__id TYPE="LONG">9999</__id>
+								</EXCEPTION>
+							</PREMIS_TN_RSRV_REQ>
+
+							<PREMIS_TN_SAVE_REQ>
+								<__id TYPE="LONG">6040</__id>
+								<PREMIS_TN_SAVE_RESP>
+									<__id TYPE="LONG">6041</__id>
+								</PREMIS_TN_SAVE_RESP>
+								<PREMIS_TN_SAVE_ADDLN_RESP>
+									<__id TYPE="LONG">6042</__id>
+								</PREMIS_TN_SAVE_ADDLN_RESP>
+								<EXCEPTION>
+									<__id TYPE="LONG">9999</__id>
+								</EXCEPTION>
+							</PREMIS_TN_SAVE_REQ>
+
+							<PREMIS_TN_RETN_REQ>
+								<__id TYPE="LONG">6050</__id>
+								<PREMIS_TN_RETN_RESP>
+									<__id TYPE="LONG">6051</__id>
+								</PREMIS_TN_RETN_RESP>
+								<EXCEPTION>
+									<__id TYPE="LONG">9999</__id>
+								</EXCEPTION>
+							</PREMIS_TN_RETN_REQ>
+
+							<PREMIS_TN_STA_REQ>
+								<__id TYPE="LONG">6060</__id>
+								<PREMIS_TN_STA_RESP>
+									<__id TYPE="LONG">6061</__id>
+								</PREMIS_TN_STA_RESP>
+								<EXCEPTION>
+									<__id TYPE="LONG">9999</__id>
+								</EXCEPTION>
+							</PREMIS_TN_STA_REQ>
+
+							<PREMIS_TN_MTT_REQ>
+								<__id TYPE="LONG">6070</__id>
+								<PREMIS_TN_MTT_RESP>
+									<__id TYPE="LONG">6071</__id>
+								</PREMIS_TN_MTT_RESP>
+								<EXCEPTION>
+									<__id TYPE="LONG">9999</__id>
+								</EXCEPTION>
+							</PREMIS_TN_MTT_REQ>
+						</events>
+					</profile>
+				</protocol>
+			</commHandle>
+		</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach TYPE="STRING"></Attach>
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</accept>
+		<listen>
+			<transport TYPE="STRING">MTCPAcceptor</transport>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+						<Family TYPE="LONG">2</Family>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>

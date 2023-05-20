@@ -1,0 +1,6 @@
+# $Id: LIM-OVALS-NSP-Rules.csv,v 1.4 
+#Error Code,Error Text to match,LIM Error Tag,LIM Description,Origin,Severity,BusinessRule,OVALS-NSP Error Text,LIM Error,Exception Type
+EDIT_ERR,OVALS NSP Invalid Data,LIM-InvalidData-08782,Invalid Data: OVALS NSP description: <%TAG=MSG%s>,OVALS NSP,1,0,Invalid data: Client input did not pass OVALS NSP edits,ERR_LIM_OVALS_NSP_INVALID_DATA,Invalid Data
+LIM_ERR,OVALS NSP Error,LIM-SystemFailure-08783,OVALS NSP description: <%TAG=MSG%s>.,OVALS NSP,1,0,OVALS NSP error encountered.,ERR_LIM_OVALS_NSP_SYSTEM_FAILURE,System Failure
+#Default,,,,,,,,,
+null,null,LIM-SystemFailure-09051,Unexpected error encountered. Exception message: <%TAG=MSG%s>.,OVALS NSP,1,0,Unexpected error code - Internal error.,ERR_LIM_OVALS-NSP,System Failure

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <authentication-client xmlns="urn:elytron:1.0">
+        <authentication-rules>
+            <rule use-configuration="default" />
+        </authentication-rules>
+        <authentication-configurations>
+            <configuration name="default">
+                <sasl-mechanism-selector
+                        selector="DIGEST-MD5" />
+                <set-user-name name="M10331" />
+                <credentials>
+                    <clear-password password="TXyq#093" />
+                </credentials>
+            </configuration>
+        </authentication-configurations>
+        <key-stores>
+            <key-store name="client-keystore" type="JKS">
+  			<file name="bcam.keystore" />		
+               <key-store-clear-password password="bds4limbis" />
+            </key-store>
+             <key-store name="client-truststore" type="JKS">
+                <file name="bcam.truststore" /> 
+            </key-store>
+        </key-stores>
+        <ssl-contexts>
+            <ssl-context name="client-ssl-context">
+                <trust-store key-store-name="client-truststore" />
+                   <key-store-ssl-certificate
+                        key-store-name="client-keystore" alias="bds-eastus2-stge-web-vm-2.az.3pc.att.com">
+                    <key-store-clear-password password="bds4limbis" /> 
+                </key-store-ssl-certificate> 
+            </ssl-context>
+        </ssl-contexts>
+        <ssl-context-rules>
+            <rule use-ssl-context="client-ssl-context" />
+        </ssl-context-rules>
+    </authentication-client>
+    <jboss-ejb-client
+            xmlns="urn:jboss:wildfly-client-ejb:3.0">
+        <connections>
+            <connection uri="remote+https://bds-eastus2-stge-web-vm-2.az.3pc.att.com:443" />
+        </connections>
+    </jboss-ejb-client>
+</configuration>

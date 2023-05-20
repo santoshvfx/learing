@@ -1,0 +1,19 @@
+# $Id$,,,,,,,,,
+#Error Code,Error Text to Match,LIM Error Tag,LIM Output Description,Origin,Severity,BusinessRule,Atlas Error Text,LIM Error,Exception Type
+EDIT_ERR,Missing Shipping Priority Code,LIM-InvalidData-03421,Missing Data: A valid carrier shipping priority code must be provided.,LIM,1,0,Missing Shipping Priority Code,ERR_LIM_MISSING_SHIPPING_PRIORITY_CODE,Invalid Data
+RCODE_ERR,10000000001,LIM-AccessDenied-02210,Access Denied: <%TAG=MSG%s>,Atlas,1,0,User ID is Invalid,ERR_LIM_APPLICATION_ACCESS_DENIED,AccessDenied
+RCODE_ERR,10000000002,LIM-AccessDenied-02210,Access Denied: <%TAG=MSG%s>,Atlas,1,0,Operation Not Permitted for User,ERR_LIM_APPLICATION_ACCESS_DENIED,AccessDenied
+RCODE_ERR,10000000003,LIM-AccessDenied-02210,Access Denied: <%TAG=MSG%s>,Atlas,1,0,Incomplete Credentials Provided,ERR_LIM_APPLICATION_ACCESS_DENIED,AccessDenied
+RCODE_ERR,^1.*,LIM-AccessDenied-02210,Access Denied: <%TAG=MSG%s>,Atlas,1,0,Other Access Denied from Atlas,ERR_LIM_APPLICATION_ACCESS_DENIED,AccessDenied
+RCODE_ERR,20000000001,LIM-SystemFailure-02211,System Failure: <%TAG=MSG%s>,Atlas,1,0,Service Is Not Available,ERR_LIM_SERVICE_SYSTEM_FAILURE,SystemFailure
+RCODE_ERR,20000000002,LIM-SystemFailure-02211,System Failure: <%TAG=MSG%s>,Atlas,1,0,Unable to Parse Response from Service Entity,ERR_LIM_SERVICE_SYSTEM_FAILURE,SystemFailure
+RCODE_ERR,20000000003,LIM-SystemFailure-02211,System Failure: <%TAG=MSG%s>,Atlas,1,0,A Resource Required By Service Is Not Available,ERR_LIM_SERVICE_SYSTEM_FAILURE,SystemFailure
+RCODE_ERR,20000000004,LIM-SystemFailure-02211,System Failure: <%TAG=MSG%s>,Atlas,1,0,Operation Retry Period Expired - Service Is Not Available,ERR_LIM_SERVICE_SYSTEM_FAILURE,SystemFailure
+RCODE_ERR,^2.*,LIM-SystemFailure-02211,System Failure: <%TAG=MSG%s>,Atlas,1,0,Other System Failure from Atlas,ERR_LIM_SERVICE_SYSTEM_FAILURE,SystemFailure
+RCODE_ERR,^3.*,LIM-InvalidData-02212,Invalid Data: <%TAG=MSG%s>,Atlas,1,0,<Element> Does Not Exist,ERR_LIM_INVALID_ELEMENT_DATA,InvalidData
+RCODE_ERR,^4.*,LIM-Invalid-Data-02213,Returns Parse Exception. Invalid Data: <%TAG=MSG%s>,Atlas,1,0,Returns Parse Exception,ERR_LIM_DATA_PARSING_EXCEPTION,InvalidData
+RCODE_ERR,^5.*,LIM-BusinessViolation-02214,Not Performed. Business Violation: <%TAG=MSG%s>,Atlas,1,0,Not Performed,ERR_LIM_APPLICATION_BUSINESS_VIOLATION,BusinessViolation
+RCODE_ERR,^9.*,LIM-SystemFailure-02107,Cingular Error: <%TAG=MSG%s>,Atlas,1,0,Unknown Error,ERR_LIM_CINGULAR,SystemFailure
+
+#Default, ,,,,,,,,
+null,null,LIM-SystemFailure-02107,Cingular Error: <%TAG=MSG%s>,Atlas,1,0,Unexpected error code - Internal error from Cingular/Atlas.,ERR_LIM_CINGULAR_ERROR,System Failure

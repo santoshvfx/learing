@@ -1,0 +1,141 @@
+## Test Data File
+##
+## First byte of record is transaction option:
+## Available Options are:
+##
+##   0 - RetrieveLocationForAddress	0|Unfielded Address
+##   1 - RetrieveLocationForAddress     1|Fielded Address	
+##   2 - RetrieveLocationForService     2|Service
+##   3 - RetrieveLocationForAddress     3|Descriptive Address	
+##   4 - FieldedAddress                 4|Unfielded Address
+##	 5 - RetrieveServiceAreaByPostalCode 5|PostalCode
+##
+## **RetrieveLocationForAddress - Unfielded Address
+#|AddressLine#City#State#Zip:Unit|
+#
+## **RetrieveLocationForAddress - Location Id
+#|StNbrPfx#StNbr#StNbrSfx#StDir#StNm#StThrfr#StNmSfx#City#State#Zip:Unit|
+#
+## **RetrieveLocationForService
+#|ServiceNbr|
+#
+#---PREMIS-----------------------------
+case-PREMIS=1|#25800###Carlos Bee Bl####CA#94542:|
+case-PREMIS.providerLocationProperties[0]=DataServices,LocationPropertiesToGetValue.SERVICEADDRESS,\
+								LocationPropertiesToGetValue.ALL
+case-PREMIS.BisContextProperty.SERVICECENTER=CA
+case-PREMIS.BisContextProperty.BUSINESSUNIT=ASI
+case-PREMIS.BisContextProperty.APPLICATION=LIM_BIS
+case-PREMIS.BisContextProperty.CUSTOMERNAME=LIM_BIS
+
+#---BRMS-----------------------------
+case-BRMS=1|#6###GRAY'S FARM#RD###CT#06883:|
+case-BRMS.providerLocationProperties[0]=DataServices,LocationPropertiesToGetValue.SERVICEADDRESS,\
+								LocationPropertiesToGetValue.ALL
+case-BRMS.BisContextProperty.SERVICECENTER=CT
+case-BRMS.BisContextProperty.BUSINESSUNIT=ASI
+case-BRMS.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-BRMS.BisContextProperty.APPLICATION=LIM_BIS
+
+#---ASON-----------------------------
+case-ASON=1|#17700###Broadway#AV##BEDFORD#OH#44146:++C4| 
+case-ASON.providerLocationProperties[0]=DataServices,LocationPropertiesToGetValue.SERVICEADDRESS,\
+								LocationPropertiesToGetValue.ALL
+case-ASON.BisContextProperty.SERVICECENTER=OH
+case-ASON.BisContextProperty.BUSINESSUNIT=ASI
+case-ASON.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-ASON.BisContextProperty.APPLICATION=LIM_BIS
+
+#---USPS-----------------------------
+case-USPS=1|#17700###Broadway#AV##BEDFORD#OH#44146:++C4| 
+case-USPS.providerLocationProperties[0]=SBC,LocationPropertiesToGetValue.POSTALADDRESS,\
+								LocationPropertiesToGetValue.ALL
+case-USPS.BisContextProperty.BUSINESSUNIT=ASI
+case-USPS.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-USPS.BisContextProperty.APPLICATION=LIM_BIS
+
+#---QMS-----------------------------
+case-QMS=1|#17700###Broadway#AV##BEDFORD#OH#44146:++C4| 
+case-QMS.providerLocationProperties[0]=SBC,LocationPropertiesToGetValue.SERVICEADDRESS,\
+								LocationPropertiesToGetValue.ALL
+case-QMS.BisContextProperty.SERVICECENTER=SBCT
+case-QMS.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-QMS.BisContextProperty.APPLICATION=LIM_BIS
+
+---NSP-----------------------------
+case-NSP=1|#501##S#Grand#Av##HARTFORD#WI#53027:| 
+case-NSP.ExchangeCode=HRFR
+case-NSP.providerLocationProperties[0]=SBC,LocationPropertiesToGetValue.E911ADDRESS,\
+								LocationPropertiesToGetValue.ALL
+case-NSP.BisContextProperty.SERVICECENTER=SBCT
+case-NSP.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-NSP.BisContextProperty.APPLICATION=LIM_BIS
+
+#---TN's-----------------------------
+case-ASON2=2|7153421226|
+case-ASON2.providerLocationProperties[0]=SBC,LocationPropertiesToGetValue.SERVICEADDRESS,\
+								LocationPropertiesToGetValue.ALL
+case-ASON2.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-ASON2.BisContextProperty.APPLICATION=LIM_BIS
+
+case-PREMIS2=2|4158243205|
+case-PREMIS2.providerLocationProperties[0]=SBC,LocationPropertiesToGetValue.SERVICEADDRESS,\
+								LocationPropertiesToGetValue.ALL
+case-PREMIS2.BisContextProperty.SERVICECENTER=CA
+case-PREMIS2.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-PREMIS2.BisContextProperty.APPLICATION=LIM_BIS
+
+case-BRMS2=2|2037440011|
+case-BRMS2.providerLocationProperties[0]=SBC,LocationPropertiesToGetValue.SERVICEADDRESS,\
+								LocationPropertiesToGetValue.ALL
+case-BRMS2.BisContextProperty.SERVICECENTER=CT
+case-BRMS2.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-BRMS2.BisContextProperty.APPLICATION=LIM_BIS
+
+#---FieldedAddress-----------------------------
+case-FA=4|400 S La Sallie#San Ramon#CA#94583:|
+
+#---RetrieveServiceAreaByPostalCode-----------------------------
+case-ServiceArea1=5|SWOT|47421|false|true|
+case-ServiceArea1.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-ServiceArea1.BisContextProperty.APPLICATION=LIM_BIS
+case-ServiceArea1.BisContextProperty.CONVERSATIONID=Abcdefghijklmnopqrstuvwxyz123456
+
+case-ServiceArea2=5|SWOT|00000|false|true|
+case-ServiceArea2.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-ServiceArea2.BisContextProperty.APPLICATION=LIM_BIS
+case-ServiceArea2.BisContextProperty.CONVERSATIONID=Abcdefghijklmnopqrstuvwxyz123456
+
+case-ServiceArea3=5|SWOT|47421|true|false|
+case-ServiceArea3.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-ServiceArea3.BisContextProperty.APPLICATION=LIM_BIS
+case-ServiceArea3.BisContextProperty.CONVERSATIONID=Abcdefghijklmnopqrstuvwxyz123456
+
+case-ServiceArea4=5|WOW|67217|true|true|
+case-ServiceArea4.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-ServiceArea4.BisContextProperty.APPLICATION=LIM_BIS
+case-ServiceArea4.BisContextProperty.CONVERSATIONID=Abcdefghijklmnopqrstuvwxyz123456
+
+#---ModifyServiceAddress---------------------------------------------
+case-ModifyServiceAddress1=6|old|124 BARR ST.##TX#:|new|124 BARR STS.##TX#:|npanxx|562123|target|Inventory|
+case-ModifyServiceAddress1.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-ModifyServiceAddress1.BisContextProperty.APPLICATION=LIM_BIS
+
+case-ModifyServiceAddress2=6|old|124 BARR STS.##TX#:|new|124 BARR ST.##TX#:|npanxx|562123|target|Inventory|
+case-ModifyServiceAddress2.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-ModifyServiceAddress2.BisContextProperty.APPLICATION=LIM_BIS
+
+case-ModifyServiceAddress3=6|old|124 BARR STS.##TX#:|new|124 BARR ST.##TX#:|npanxx|562124|target|Inventory|
+case-ModifyServiceAddress3.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-ModifyServiceAddress3.BisContextProperty.APPLICATION=LIM_BIS
+
+#---Ping---------------------------------------------
+case-Ping1=7|
+case-Ping1.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-Ping1.BisContextProperty.APPLICATION=LIM_BIS
+
+#---SelfTest---------------------------------------------
+case-SelfTest1=8|
+case-SelfTest1.BisContextProperty.CUSTOMERNAME=LIM_BIS
+case-SelfTest1.BisContextProperty.APPLICATION=LIM_BIS
+
